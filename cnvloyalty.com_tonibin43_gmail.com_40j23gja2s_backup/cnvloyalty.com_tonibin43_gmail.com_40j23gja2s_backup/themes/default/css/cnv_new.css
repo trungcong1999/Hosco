@@ -64,8 +64,8 @@ ul.primary-button li a.btn-menu {
     }
 }
 .event_banner_area {
-    background: #1f94cc;
-    min-height: 100vh;
+    background: #ffffff;
+    min-height: 70vh;
     position: relative;
     overflow: hidden;
     background-size: 100% 100% !important;
@@ -235,7 +235,6 @@ ul.primary-button li a.btn-menu {
 }
 .four_post_bottom_banner {
     z-index: 1;
-    position: relative;
 }
 .four_post_bottom_banner .item {
     background: #fff;
@@ -243,7 +242,7 @@ ul.primary-button li a.btn-menu {
     text-align: center;
     border: 1px solid #f3f0f0;
     padding: 17px 17px 50px;
-    box-shadow: 0 20px 50px rgba(243, 100, 140, 0.1);
+    box-shadow: inset 0px -1px 20px 4px rgb(252 3 3 / 10%);
 }
 .four_post_bottom_banner .item .ct p {
     color: #bfbfbf;

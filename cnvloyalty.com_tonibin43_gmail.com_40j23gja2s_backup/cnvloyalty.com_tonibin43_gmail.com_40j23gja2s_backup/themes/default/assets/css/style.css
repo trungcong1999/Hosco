@@ -5489,7 +5489,7 @@ nav.navbarmain-primary {
     align-items: center;
 }
 .navsub-primary-menu .logo-primary .svg_logo_loyalty {
-    width: 100px;
+    width: 140px;
 }
 .navsub-primary-menu .logo-primary svg {
     width: 150px;
@@ -9213,7 +9213,7 @@ feature-detail .feature {
     }
     header.fixed .navsub-primary-menu .logo-primary .show-scroll {
         display: block;
-        width: 166px;
+        width: 140px;
     }
     header.fixed .header-top {
         display: none;
