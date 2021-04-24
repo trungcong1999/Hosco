@@ -5546,12 +5546,12 @@ ul.primary-menu > li .cnv-submenu li {
     padding: 10px 35px 10px 0;
     border-top: 0;
     border-left: 0;
-    padding-left: 90px;
+    padding-left: 10px;
     position: relative;
 }
 ul.primary-menu > li .cnv-submenu li .content-sub-menu .title {
-    font-size: 18px;
-    color: #3d5067;
+    font-size: 16px;
+    color: #f91934;
     font-weight: 600;
 }
 ul.primary-menu > li .cnv-submenu li .content-sub-menu p {
@@ -5585,7 +5585,7 @@ ul.primary-menu > li .cnv-submenu li .icon img:last-child {
     opacity: 0;
 }
 ul.primary-menu > li .cnv-submenu li:hover .content-sub-menu .title {
-    color: #fd475d;
+    color: #3d5067;
 }
 ul.primary-menu > li .cnv-submenu li:hover .icon img:first-child {
     opacity: 0;
