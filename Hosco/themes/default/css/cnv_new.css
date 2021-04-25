@@ -59,8 +59,8 @@ ul.primary-button li a.btn-menu {
         display: initial;
     }
     header.fixed {
-    background: #fffefe !important;
-    padding: 0px;
+        background: #fffefe !important;
+        padding: 0px;
     }
 }
 .event_banner_area {
@@ -372,7 +372,7 @@ ul.primary-button li a.btn-menu {
     .customers_partner_desktop {
         display: none !important;
     }
-   
+
 }
 .you_choose_cnv .portfolio_choose_cnv {
     position: relative;
@@ -1009,14 +1009,14 @@ ul.primary-button li a.btn-menu {
 }
 .case_study .prev.slick-arrow {
     display: block;
-    left: -100px;
+    left: 0px;
     height: 70px;
     width: 70px;
     top: 40%;
 }
 .case_study .next.slick-arrow {
     display: block;
-    right: -100px;
+    right: 0px;
     height: 70px;
     width: 70px;
     top: 40%;
@@ -2006,7 +2006,7 @@ ul.primary-button li a.btn-menu {
     ul.primary-button li a.btn-menu.btn-menu-login.btn-menu-loyalty {
         display: none;
     }
-   
+
     .navsub-primary-menu .logo-primary .svg_logo_loyalty {
         width: 160px;
         margin-left: 10px;
@@ -2625,18 +2625,18 @@ ul.primary-button li a.btn-menu {
     }
 }
 .lineTransition:hover .inline{
-   width: 336px;
-   background: red;
+ width: 336px;
+ background: red;
 }
 .inline{
     width: 1px;
-  transition: width 1s;
+    transition: width 1s;
 }
 .column {
-     position: relative;
-    background: #fff;
-    box-shadow: #f2f2f2 0 10px 40px 1px;
-    padding-bottom: 35px;
+   position: relative;
+   background: #fff;
+   box-shadow: #f2f2f2 0 10px 40px 1px;
+   padding-bottom: 35px;
 }
 .cutomer_whatSaid{
     background: #ececec;
@@ -2655,19 +2655,20 @@ ul.primary-button li a.btn-menu {
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
-  }
+}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-  } 
+} 
 }
 
 .cultural{
     background: #ececec;
     margin-top: 20px;
+    padding-top: 50px;
 }  
 .hosco_cultural {
   position: relative;
@@ -2687,7 +2688,7 @@ ul.primary-button li a.btn-menu {
   padding: 20px;
 }
 .fh5co-blog{
-        position: relative;
+    position: relative;
     background: #fff;
     box-shadow: #f2f2f2 0 10px 40px 1px;
     padding-bottom: 35px;
@@ -2704,3 +2705,9 @@ ul.primary-button li a.btn-menu {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;}
+    .slider-ads>div img{
+        margin: 0 10px;
+    }
+.big_text_product{
+    font-weight: bold !important;
+}    
