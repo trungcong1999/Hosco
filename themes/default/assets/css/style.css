@@ -5078,7 +5078,7 @@ img {
 }
 .col-mar-0 > div[class^="col-"] {
     padding-left: 0;
-    padding-right: 0;
+
 }
 .col-mar-5 {
     margin-left: -5px;
