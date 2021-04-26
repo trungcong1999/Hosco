@@ -21,7 +21,6 @@ foreach ( $primatyNav as $navItem ) {
 						echo "</h4><hr class='inline'/></li>";
 						foreach ( $primatyNav as $navItem3 ) { 
 							if($navItem3 -> menu_item_parent == $navItem2 ->ID){
-
 								echo "<li class='list-sub'>";
 								echo "<div class='content-sub-menu'>";
 								echo "<a class='title' href='".$navItem3->url."'>".$navItem3->title;

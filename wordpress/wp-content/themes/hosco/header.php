@@ -8,7 +8,7 @@
     <link rel="icon" href="https://www.hosco.com.vn/wp-content/uploads/2019/05/icon-hosco.png">
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/bootstrap4.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/backend/css/plugins.css">
-    <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>assets/vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/flag/css/flag-icon.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/swiper-bundle.min.css">

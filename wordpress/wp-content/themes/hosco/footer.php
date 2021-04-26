@@ -1,4 +1,4 @@
- <footer>
+l <footer>
         <div class="container">
             <div class="row col-mar-0 footer-lien-he"  id="lien-he">
                 <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
@@ -18,7 +18,7 @@
                             <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             <a class="smooth y" target="_blank" href="https://www.youtube.com/channel/UChNHN8SaECRb3u8h9S8owSw/" title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
                             <a class="smooth l" target="_blank" href="index.html" title=""><i class="fa fa-linkedin"></i></a>
-                            <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo.png" alt=""></a>
+                            <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="themes/default/assets/images/zalo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -26,7 +26,7 @@
                             <div class="col-xl-auto col-md-4 wow " >
                                 <h4 class="f-title">HOSCO HOLDINGS</h4>
                                 <ul>
-                                    <li><a class="smooth" href="" title="">Về chúng tôi</a></li>
+                                    <li><a class="smooth" href="blogs/tin-tuc/gioi-thieu-cnv-loyalty-tien-phong-nen-tang-cham-soc-khach-hang-1-vn.html" title="">Về chúng tôi</a></li>
                                     <li><a class="smooth" href="index.html" title="">Sản phẩm</a></li>
                                     <li><a href="index.html">Khách hàng</a></li>
                                     <li><a href="index.html" target="_blank" rel="noopener noreferrer">Tuyển dụng</a></li>
@@ -162,31 +162,31 @@
         </div>
         <div class="group-contact-shops show">
             <div class="group-loya-contact">
-                <a id="fcb-phone" href="tel:?" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/phone_ly.png" alt="phone"></a>
-                <a id="fcb-mail" data-toggle="modal" data-target="#informationForm" href="#information-form" ><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/email_ly.png" alt="mail"></a>
-                <a id="fcb-zalo" href="https://zalo.me/?" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo_ly.png" alt="zalo"></a>
-                <a id="fcb-facebook" href="https://m.me/??ref=mess" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/messenger_ly.png" alt="facebook"></a>
+                <a id="fcb-phone" href="tel:?" rel="nofollow"><img src="themes/default/assets/images/phone_ly.png" alt="phone"></a>
+                <a id="fcb-mail" data-toggle="modal" data-target="#informationForm" href="#information-form" ><img src="themes/default/assets/images/email_ly.png" alt="mail"></a>
+                <a id="fcb-zalo" href="https://zalo.me/?" target="_blank" rel="nofollow"><img src="themes/default/assets/images/zalo_ly.png" alt="zalo"></a>
+                <a id="fcb-facebook" href="https://m.me/??ref=mess" target="_blank" rel="nofollow"><img src="themes/default/assets/images/messenger_ly.png" alt="facebook"></a>
             </div>
         </div>
         <div class="fix-toolbar social-mobile">
             <ul>
-               <li class="facebook fb-pc">
+             <li class="facebook fb-pc">
                 <a target="_blank" id="chatfb" href="https://www.facebook.com/" title="title" rel="noopener noreferrer">
-                  <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/facebook.png" alt="images"><br> <span>Facebook</span>
+                  <img class="lazy" data-src="themes/default/images/social/facebook.png" alt="images"><br> <span>Facebook</span>
               </li>
               <li class="twitter">
                 <a id="twitter" target="_blank" href="https://m.me/2199481010171926?ref=loyalty2021" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/message.png" alt="images"><br> <span>Nhắn tin</span>
+                    <img class="lazy" data-src="themes/default/images/social/message.png" alt="images"><br> <span>Nhắn tin</span>
                 </a>
             </li>
             <li class="zalo">
                 <a id="chatzalo" target="_blank" href="https://zalo.me/2405075103217684078" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/zalo_icon.png" alt="images"><br> <span>Chat zalo</span>
+                    <img class="lazy" data-src="themes/default/images/social/zalo_icon.png" alt="images"><br> <span>Chat zalo</span>
                 </a>
             </li>
             <li class="phone">
                 <a id="goidien"  href="tel:?" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/call_icon.png" alt="images"><br> <span>Gọi điện</span>
+                    <img class="lazy" data-src="themes/default/images/social/call_icon.png" alt="images"><br> <span>Gọi điện</span>
                 </a>
             </li>
         </ul>
@@ -224,7 +224,6 @@
 </script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/js/slick.min.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/js/swiper-bundle.min.js"></script>
-<script src=""></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/jquery.fancybox.pack.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
 <script defer>
@@ -311,40 +310,64 @@
 <script>
   $(document).ready(function(){
       $(window).on('scroll',function(){
-         var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-         if( windowWidth <= 991 ) {
-            var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-            if(scrollBottom <= 100){
-                $('.fix-toolbar').css({
-                    position: 'relative'
-                });
-            }else if(scrollBottom >= 110 ){
-             $('.fix-toolbar').css({
-                position: 'fixed'
+       var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+       if( windowWidth <= 991 ) {
+        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+        if(scrollBottom <= 100){
+            $('.fix-toolbar').css({
+                position: 'relative'
             });
-         }
-     }
- });
+        }else if(scrollBottom >= 110 ){
+           $('.fix-toolbar').css({
+            position: 'fixed'
+        });
+       }
+   }
+});
   });
 </script>
 <script type="text/javascript">jssor_1_slider_init();</script>
-<script src="<?php bloginfo("template_directory"); ?>/assets/css/owl.carousel.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.carousel.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
-        margin : 100,
-        loop:true,
+ $(document).ready(function() {
+  $("#slider-cutomer").owlCarousel({
 
-        nav:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            }
-        }
-    });
+
+    items:3,
+    itemsDesktop : [1000,3], 
+    itemsDesktopSmall : [900,3], 
+    itemsTablet: [600,3], 
+    itemsMobile :false, 
+
+
+});
+  $(".next").click(function(){
+    $(".owl-carousel").trigger('owl.next');
+});
+  $(".prev").click(function(){
+    $(".owl-carousel").trigger('owl.prev');
+});
+  $(".play").click(function(){
+    $(".owl-carousel").trigger('owl.play',1000);
+});
+  $(".stop").click(function(){
+    $(".owl-carousel").trigger('owl.stop');
+});
+  $("#owl-demo").owlCarousel({
+
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      autoplay:true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      center:true
+      
+
+  });
+      $("#owl-demo").trigger('owl.play',3000);
+
+});
 </script>
 </body>
 </html>
