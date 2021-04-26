@@ -1,196 +1,196 @@
- <footer>
-        <div class="container">
-            <div class="row col-mar-0 footer-lien-he"  id="lien-he">
-                <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <h2>CÔNG TY CỔ PHẦN HOSCO</h2>
-                    <h3 class="f-title">HOSCO MIỀN BẮC</h3>
-                    <div class="f-line">Cơ sở 01: P816, Tòa CT5, KĐT Mỹ Đình , Đường Phạm Hùng, Từ Liêm, Tp. Hà Nội
-                        <p>Cơ sở 02: 272 Khương Đình, Phường Hạ Đình, Quận Thanh Xuân, Tp.Hà Nội</p></div>
-                        <div class="f-line">Hotline: 1900 6129</div>
-                        <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
-                        <h3 class="f-title">HOSCO MIỀN NAM</h3>
-                        <div class="f-line">Lầu 3, Tòa nhà Ngọc Vân Trâm Anh, 33 Lê Văn Huân, Phường 13, Quận Tân Bình, TP. HCM</div>
-                        <div class="f-line">Hotline: 1900 6129</div>
-                        <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
-                        <div class="social_footer">
-                            <a class="smooth f" target="_blank" href="https://www.facebook.com/" title=""><i class="fa fa-facebook"></i></a>
-                            <a class="smooth f" target="_blank" href="https://www.facebook.com/groups/138659120889619/" title=""><i class="fa fa-facebook"></i></a>
-                            <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a class="smooth y" target="_blank" href="https://www.youtube.com/channel/UChNHN8SaECRb3u8h9S8owSw/" title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                            <a class="smooth l" target="_blank" href="index.html" title=""><i class="fa fa-linkedin"></i></a>
-                            <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo.png" alt=""></a>
+l <footer>
+    <div class="container">
+        <div class="row col-mar-0 footer-lien-he"  id="lien-he">
+            <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <h2>CÔNG TY CỔ PHẦN HOSCO</h2>
+                <h3 class="f-title">HOSCO MIỀN BẮC</h3>
+                <div class="f-line">Cơ sở 01: P816, Tòa CT5, KĐT Mỹ Đình , Đường Phạm Hùng, Từ Liêm, Tp. Hà Nội
+                    <p>Cơ sở 02: 272 Khương Đình, Phường Hạ Đình, Quận Thanh Xuân, Tp.Hà Nội</p></div>
+                    <div class="f-line">Hotline: 1900 6129</div>
+                    <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
+                    <h3 class="f-title">HOSCO MIỀN NAM</h3>
+                    <div class="f-line">Lầu 3, Tòa nhà Ngọc Vân Trâm Anh, 33 Lê Văn Huân, Phường 13, Quận Tân Bình, TP. HCM</div>
+                    <div class="f-line">Hotline: 1900 6129</div>
+                    <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
+                    <div class="social_footer">
+                        <a class="smooth f" target="_blank" href="https://www.facebook.com/" title=""><i class="fa fa-facebook"></i></a>
+                        <a class="smooth f" target="_blank" href="https://www.facebook.com/groups/138659120889619/" title=""><i class="fa fa-facebook"></i></a>
+                        <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="smooth y" target="_blank" href="https://www.youtube.com/channel/UChNHN8SaECRb3u8h9S8owSw/" title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a class="smooth l" target="_blank" href="index.html" title=""><i class="fa fa-linkedin"></i></a>
+                        <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-auto col-md-4 wow " >
+                            <h4 class="f-title">HOSCO HOLDINGS</h4>
+                            <ul>
+                                <li><a class="smooth" href="" title="">Về chúng tôi</a></li>
+                                <li><a class="smooth" href="" title="">Sản phẩm</a></li>
+                                <li><a href="index.html">Khách hàng</a></li>
+                                <li><a href="index.html" target="_blank" rel="noopener noreferrer">Tuyển dụng</a></li>
+                                <li><a href="index.html">Tin tức</a></li>
+                                <li><a class="smooth" href="index.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow " >
+                            <h4 class="f-title">Phần mềm</h4>
+                            <ul>
+                                <li>Phần mềm bán hàng Master Pro</li>
+                                <li>Phần mềm quản lý nhân sự Lotus Pro</li>
+                                <li>Phần mềm quản lý phân phối Lotus DMS</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow ">
+                            <h4 class="f-title">Trung tâm hỗ trợ</h4>
+                            <ul>
+                                <li><a class="smooth" href="index.html">Hướng dẫn sử dụng</a></li>
+                                <li><a class="smooth" href="index.html" title="">Hình thức thanh toán</a></li>
+                                <li><a class="smooth" href="#">Tài liệu nhà phát triển</a></li>
+                                <li><a class="smooth" href="" target="_blank" title="" rel="noopener noreferrer">Tuyển dụng</a></li>
+                                <li><a href="index.html">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="row justify-content-between">
-                            <div class="col-xl-auto col-md-4 wow " >
-                                <h4 class="f-title">HOSCO HOLDINGS</h4>
-                                <ul>
-                                    <li><a class="smooth" href="" title="">Về chúng tôi</a></li>
-                                    <li><a class="smooth" href="index.html" title="">Sản phẩm</a></li>
-                                    <li><a href="index.html">Khách hàng</a></li>
-                                    <li><a href="index.html" target="_blank" rel="noopener noreferrer">Tuyển dụng</a></li>
-                                    <li><a href="index.html">Tin tức</a></li>
-                                    <li><a class="smooth" href="index.html">Liên hệ</a></li>
-                                </ul>
+                </div>
+            </div>     
+        </div>
+    </footer>
+    <div id="informationForm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content trial-md-ct">
+                <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
+                <h2 class="title">Điền thông tin của bạn</h2>
+                <form method="POST" id="sheet-forms" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
+                    <input type="hidden" name="url_full" value="https://hosco.vn/">
+                    <div class="row col-mar-13">
+                        <div class="col-sm-12">
+                            <p>Họ và tên của bạn</p>
+                            <div class="input">
+                                <i class="ic ic-user"></i>
+                                <input required="" type="text" name="name">
                             </div>
-                            <div class="col-xl-auto col-md-4 wow " >
-                                <h4 class="f-title">Phần mềm</h4>
-                                <ul>
-                                    <li>Phần mềm bán hàng Master Pro</li>
-                                    <li>Phần mềm quản lý nhân sự Lotus Pro</li>
-                                    <li>Phần mềm quản lý phân phối Lotus DMS</li>
-                                </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Số điện thoại</p>
+                            <div class="input">
+                                <i class="ic ic-phone"></i>
+                                <input required="" type="text" class="numberic" name="phone">
                             </div>
-                            <div class="col-xl-auto col-md-4 wow ">
-                                <h4 class="f-title">Trung tâm hỗ trợ</h4>
-                                <ul>
-                                    <li><a class="smooth" href="index.html">Hướng dẫn sử dụng</a></li>
-                                    <li><a class="smooth" href="index.html" title="">Hình thức thanh toán</a></li>
-                                    <li><a class="smooth" href="#">Tài liệu nhà phát triển</a></li>
-                                    <li><a class="smooth" href="http://tuyendung.cnv.vn/" target="_blank" title="" rel="noopener noreferrer">Tuyển dụng</a></li>
-                                    <li><a href="index.html">Chính sách bảo mật</a></li>
-                                </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Email đăng ký</p>
+                            <div class="input">
+                                <i class="ic ic-email"></i>
+                                <input type="text" name="email" required>
                             </div>
-                            <div class="col-xl-auto col-md-4 wow ">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Ngành nghề</p>
+                            <div class="input">
+                                <input style="padding-left: 15px;" required="" type="text" name="job">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Mã giảm giá</p>
+                            <div class="input">
+                                <input style="padding-left: 15px;" type="text" name="voucher">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Nội dung</p>
+                            <div class="input">
+                                <textarea class="form-control" name="messages"></textarea>
                             </div>
                         </div>
                     </div>
-                </div>     
-            </div>
-        </footer>
-        <div id="informationForm" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content trial-md-ct">
-                    <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
-                    <h2 class="title">Điền thông tin của bạn</h2>
-                    <form method="POST" id="sheet-forms" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
-                        <input type="hidden" name="url_full" value="https://hosco.vn/">
-                        <div class="row col-mar-13">
-                            <div class="col-sm-12">
-                                <p>Họ và tên của bạn</p>
-                                <div class="input">
-                                    <i class="ic ic-user"></i>
-                                    <input required="" type="text" name="name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <p>Số điện thoại</p>
-                                <div class="input">
-                                    <i class="ic ic-phone"></i>
-                                    <input required="" type="text" class="numberic" name="phone">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <p>Email đăng ký</p>
-                                <div class="input">
-                                    <i class="ic ic-email"></i>
-                                    <input type="text" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>Ngành nghề</p>
-                                <div class="input">
-                                    <input style="padding-left: 15px;" required="" type="text" name="job">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>Mã giảm giá</p>
-                                <div class="input">
-                                    <input style="padding-left: 15px;" type="text" name="voucher">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>Nội dung</p>
-                                <div class="input">
-                                    <textarea class="form-control" name="messages"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
-                    </form>
-                </div>
+                    <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
+                </form>
             </div>
         </div>
-        <div id="price_quote" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content trial-md-ct">
-                    <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
-                    <h2 class="title">Điền thông tin của bạn</h2>
-                    <form method="POST" id="PriceSheet-home" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
-                        <input type="hidden" name="_token" value="aCYSuXiD3O9ocqtO5aYJgvO6lSOVAlNU6RCh2kGf">                <div class="row col-mar-13">
-                            <div class="col-sm-12" id="load-template-info">
-                            </div>
-                            <div class="col-sm-12" id="load-template-number-user"></div>
-                            <input type="hidden" name="tien_tong_cong" class="total_price_form" value="0">
-                            <input type="hidden" name="tien_thanh_toan_tat_ca" class="total_price_payment_form" value="0">
-                            <input type="hidden" name="current_date" value="23/04/2021">
-                            <input type="hidden" name="id_pdf" value="190442">
-                            <div class="col-sm-12">
-                                <p>Họ và tên của bạn</p>
-                                <div class="input">
-                                    <i class="ic ic-user"></i>
-                                    <input required="" type="text" name="name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <p>Số điện thoại</p>
-                                <div class="input">
-                                    <i class="ic ic-phone"></i>
-                                    <input required="" type="text" class="numberic" name="phone">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <p>Email</p>
-                                <div class="input">
-                                    <i class="ic ic-email"></i>
-                                    <input type="text" name="email">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>Ngành nghề</p>
-                                <div class="input">
-                                    <input style="padding-left: 15px;" required="" type="text" name="job">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="group-contact-shops show">
-            <div class="group-loya-contact">
-                <a id="fcb-phone" href="tel:?" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/phone_ly.png" alt="phone"></a>
-                <a id="fcb-mail" data-toggle="modal" data-target="#informationForm" href="#information-form" ><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/email_ly.png" alt="mail"></a>
-                <a id="fcb-zalo" href="https://zalo.me/?" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo_ly.png" alt="zalo"></a>
-                <a id="fcb-facebook" href="https://m.me/??ref=mess" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/messenger_ly.png" alt="facebook"></a>
-            </div>
-        </div>
-        <div class="fix-toolbar social-mobile">
-            <ul>
-               <li class="facebook fb-pc">
-                <a target="_blank" id="chatfb" href="https://www.facebook.com/" title="title" rel="noopener noreferrer">
-                  <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/facebook.png" alt="images"><br> <span>Facebook</span>
-              </li>
-              <li class="twitter">
-                <a id="twitter" target="_blank" href="https://m.me/2199481010171926?ref=loyalty2021" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/message.png" alt="images"><br> <span>Nhắn tin</span>
-                </a>
-            </li>
-            <li class="zalo">
-                <a id="chatzalo" target="_blank" href="https://zalo.me/2405075103217684078" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/zalo_icon.png" alt="images"><br> <span>Chat zalo</span>
-                </a>
-            </li>
-            <li class="phone">
-                <a id="goidien"  href="tel:?" title="title">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/call_icon.png" alt="images"><br> <span>Gọi điện</span>
-                </a>
-            </li>
-        </ul>
     </div>
+    <div id="price_quote" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content trial-md-ct">
+                <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
+                <h2 class="title">Điền thông tin của bạn</h2>
+                <form method="POST" id="PriceSheet-home" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
+                    <input type="hidden">                <div class="row col-mar-13">
+                        <div class="col-sm-12" id="load-template-info">
+                        </div>
+                        <div class="col-sm-12" id="load-template-number-user"></div>
+                        <input type="hidden" name="tien_tong_cong" class="total_price_form" value="0">
+                        <input type="hidden" name="tien_thanh_toan_tat_ca" class="total_price_payment_form" value="0">
+                        <input type="hidden" name="current_date" value="23/04/2021">
+                        <input type="hidden" name="id_pdf" value="190442">
+                        <div class="col-sm-12">
+                            <p>Họ và tên của bạn</p>
+                            <div class="input">
+                                <i class="ic ic-user"></i>
+                                <input required="" type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Số điện thoại</p>
+                            <div class="input">
+                                <i class="ic ic-phone"></i>
+                                <input required="" type="text" class="numberic" name="phone">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Email</p>
+                            <div class="input">
+                                <i class="ic ic-email"></i>
+                                <input type="text" name="email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Ngành nghề</p>
+                            <div class="input">
+                                <input style="padding-left: 15px;" required="" type="text" name="job">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="group-contact-shops show">
+        <div class="group-loya-contact">
+            <a id="fcb-phone" href="tel:?" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/phone_ly.png" alt="phone"></a>
+            <a id="fcb-mail" data-toggle="modal" data-target="#informationForm" href="#information-form" ><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/email_ly.png" alt="mail"></a>
+            <a id="fcb-zalo" href="https://zalo.me/?" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/zalo_ly.png" alt="zalo"></a>
+            <a id="fcb-facebook" href="https://m.me/??ref=mess" target="_blank" rel="nofollow"><img src="<?php bloginfo("template_directory"); ?>/themes/default/assets/images/messenger_ly.png" alt="facebook"></a>
+        </div>
+    </div>
+    <div class="fix-toolbar social-mobile">
+        <ul>
+           <li class="facebook fb-pc">
+            <a target="_blank" id="chatfb" href="https://www.facebook.com/" title="title" rel="noopener noreferrer">
+              <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/facebook.png" alt="images"><br> <span>Facebook</span>
+          </li>
+          <li class="twitter">
+            <a id="twitter" target="_blank" href="https://m.me/2199481010171926?ref=loyalty2021" title="title">
+                <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/message.png" alt="images"><br> <span>Nhắn tin</span>
+            </a>
+        </li>
+        <li class="zalo">
+            <a id="chatzalo" target="_blank" href="https://zalo.me/2405075103217684078" title="title">
+                <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/zalo_icon.png" alt="images"><br> <span>Chat zalo</span>
+            </a>
+        </li>
+        <li class="phone">
+            <a id="goidien"  href="tel:?" title="title">
+                <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/call_icon.png" alt="images"><br> <span>Gọi điện</span>
+            </a>
+        </li>
+    </ul>
+</div>
 </div>
 <!-- Google Tag Manager 14/01/2020 -->
 
@@ -224,7 +224,6 @@
 </script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/js/slick.min.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/js/swiper-bundle.min.js"></script>
-<script src=""></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/jquery.fancybox.pack.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
 <script defer>
@@ -328,23 +327,47 @@
   });
 </script>
 <script type="text/javascript">jssor_1_slider_init();</script>
-<script src="<?php bloginfo("template_directory"); ?>/assets/css/owl.carousel.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.carousel.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
-        margin : 100,
-        loop:true,
+   $(document).ready(function() {
+      $("#slider-cutomer").owlCarousel({
 
-        nav:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            }
-        }
+
+        items:3,
+        itemsDesktop : [1000,3], 
+        itemsDesktopSmall : [900,3], 
+        itemsTablet: [600,3], 
+        itemsMobile :false, 
+
+
     });
+      $(".next").click(function(){
+        $(".owl-carousel").trigger('owl.next');
+    });
+      $(".prev").click(function(){
+        $(".owl-carousel").trigger('owl.prev');
+    });
+      $(".play").click(function(){
+        $(".owl-carousel").trigger('owl.play',1000);
+    });
+      $(".stop").click(function(){
+        $(".owl-carousel").trigger('owl.stop');
+    });
+      $("#owl-demo").owlCarousel({
+
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem : true,
+          autoplay:true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+          center:true
+
+
+      });
+      $("#owl-demo").trigger('owl.play',3000);
+
+  });
 </script>
 </body>
 </html>

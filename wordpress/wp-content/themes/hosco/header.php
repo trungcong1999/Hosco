@@ -8,7 +8,7 @@
     <link rel="icon" href="https://www.hosco.com.vn/wp-content/uploads/2019/05/icon-hosco.png">
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/bootstrap4.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/backend/css/plugins.css">
-    <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>assets/vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/vendor/flag/css/flag-icon.min.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/swiper-bundle.min.css">
@@ -96,75 +96,10 @@
                                         </a>
                                     </div>
                                     <span class="line-br"></span>
-                                    <ul class="list-unstyled nav navbar-nav primary-menu">
-                                        <li>
-                                            <a href="#">VỀ HOSCO</a>
-                                        </li>
-                                        <li>
-                                            <a href="tinh-nang.html">SẢN PHẨM</a>
-                                            <ul class="cnv-submenu row">
-                                                <div class="col-lg-6 col-xs-6 lineTransition">
-                                                    <li class="list-sub" style="padding: 0px 35px 0px 10px !important;"><h4 style="font-weight: bold;">Hệ sinh thái phần mềm Hosco</h4><hr class="inline"/></li>
-                                                    
-                                                    <li class="list-sub">
-                                                    <!-- <a class="smooth icon " href="#" title="">
-                                                        <img src="storage/icons/spa.png" alt="" title="">
-                                                        <img src="storage/icons/spa.png" alt="" title="">
-                                                    </a> -->
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="<?php bloginfo("template_directory"); ?>/product.php" title="">Phần mềm bán hàng Master Pro</a>
-                                                    </div>
-                                                </li>
-                                                <li class="list-sub">
-
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="#" title="">Phần mềm quản lý nhân sự Lotus Pro</a>
-                                                    </div>
-                                                </li>
-                                                <li class="list-sub">
-
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="#" title="">Phần mềm quản lý phân phối Lotus DMS</a>
-                                                    </div>
-                                                </li>
-                                            </div>
-                                            <div class="col-lg-6 col-xs-6 lineTransition">
-                                                <li class="list-sub" style="padding: 0px 35px 0px 10px !important;"><h4 style="font-weight: bold;">Giải pháp quản lý doanh nghiệp</h4><hr class="inline"/></li>
-                                                <li class="list-sub">
-
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="#" title="">Phần mềm bán hàng tích hợp Lotus ERP</a>
-                                                    </div>
-                                                </li>
-                                                <li class="list-sub">
-
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="#" title="">Giải pháp quản lý nhân sự Lotus ERP</a>
-                                                    </div>
-                                                </li>
-                                                <li class="list-sub">
-
-                                                    <div class="content-sub-menu">
-                                                        <a class="title" href="#" title="">Phần mềm bán hàng tích hợp SAP B1</a>
-                                                    </div>
-                                                </li>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#nganh-hang">KHÁCH HÀNG</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">TUYỂN DỤNG</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">TIN TỨC</a>
-                                        
-                                    </li>
-                                    <li>
-                                        <a class="contact_animation" href="#lien-he">LIÊN HỆ</a>
-                                    </li>
-                                </ul>
+                                    <?php 
+                                    	get_template_part("menutop");
+                                     ?>
+                                    
                             </div>
                             <ul class="list-unstyled primary-button flex-align-primary">
                                 <li>

@@ -1009,14 +1009,14 @@ ul.primary-button li a.btn-menu {
 }
 .case_study .prev.slick-arrow {
     display: block;
-    left: -100px;
+    left: 0px;
     height: 70px;
     width: 70px;
     top: 40%;
 }
 .case_study .next.slick-arrow {
     display: block;
-    right: -100px;
+    right: 0px;
     height: 70px;
     width: 70px;
     top: 40%;
