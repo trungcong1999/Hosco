@@ -35,12 +35,13 @@ ul.primary-menu > li > a {
 }
 ul.primary-menu > li > a,
 ul.primary-menu > li:hover a {
-    color: #f3132d;
+    color: #fd475d;
+    font-weight: 600;
 }
 ul.primary-menu > li:hover a {
     position: relative;
     border-bottom: 2px solid #fff;
-    color: black;
+    color: #fe0000;
 }
 ul.primary-menu > li > a {
     padding: 0 !important;

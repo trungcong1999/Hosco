@@ -42,10 +42,10 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
                 <div class="item">
                     <div class="img">
-                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/app-nv.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Nong-nghiep-thog-minh-chot.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">App cho nhân viên</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Nông nghiệp thông minh</a></h3>
                         <p>App cho nhân viên, hoàn toàn miễn phí. Quản lý tập trung và khoa học, chỉ có tại CNV Loyalty.</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
@@ -54,10 +54,10 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
                 <div class="item">
                     <div class="img">
-                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/quan-ly-booking.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Thuong-mai-dien-tu.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Quản lý Booking</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Thương mại điện tử</a></h3>
                         <p>Ứng dụng booking (trên IPAD) cho chủ doanh nghiệp, giúp quản lý đặt bàn, đặt chỗ của khách hàng</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
@@ -66,40 +66,40 @@
             <div class="four_post_bottom_banner_mobile col-lg-3 col-md-3 col-sm-6 col-12">
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/loyalty-app-brand.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/dichvuphanmem.svg" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Loyalty App của brand</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Dịch vụ phần mềm</a></h3>
                         <p>Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...</p>
                         <a class="smooth more" href="#nganh-hang" title="">Xem thêm</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/cdp.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/giaiphapdoanhnghiep.svg" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Customer Data Platform</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Giải pháp doanh nghiệp</a></h3>
                         <p>(Sắp ra mắt) Nền tảng dữ liệu khách hàng, giúp DN thấu hiểu hành vi theo thời gian thực.</p>
                         <a class="smooth more" href="javascript:void(0)" title="">Xem thêm</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/app-nv.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Nong-nghiep-thog-minh-chot.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">App cho nhân viên</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Nông nghiệp thông minh</a></h3>
                         <p>App cho nhân viên, hoàn toàn miễn phí. Quản lý tập trung và khoa học, chỉ có tại CNV Loyalty.</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/quan-ly-booking.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Thuong-mai-dien-tu.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Quản lý Booking</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Thương mại</a></h3>
                         <p>Ứng dụng booking (trên IPAD) cho chủ doanh nghiệp, giúp quản lý đặt bàn, đặt chỗ của khách hàng</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
@@ -247,7 +247,7 @@
                                 </div>
                                 <div class="row group_content_he_sinh_thai">
                                  <div class="col-lg-3 thumbnail_app">
-                                     <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/he_sinh_thai_cong_ty.png" alt="">
+                                     <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/phan-mem-quan-ly-ban-hang-online-2.svg" alt="">
                                      <p class="title_he_sinh_thai">Hệ sinh thái Master Pro</p>
                                  </div>
                                  <div class="col-lg-9">
@@ -259,12 +259,13 @@
                                                 </div>
                                                 <div class="col-lg-7 group_content_app">
                                                     <div class="content">
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Là nơi để khách hàng và doanh nghiệp tương tác với nhau mà không phải thông qua một nền tảng thứ 3 nào khác.</p>
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> App được đặt tên theo Brandname của doanh nghiệp, tạo sự khác biệt với các thương hiệu đối thủ khác</p>
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Khách hàng có thể quản lý được lịch sử mua hàng, điểm tích luỹ, được cập nhập các chương trình khuyến mãi, thông báo của doanh nghiệp..</p>
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Nhận feedback từ khách hàng một cách nhanh chóng, hạn chế tạo ra bad review khó khắc phục như trước đây.</p>
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Nhờ tính năng Call-in-app, khách hàng có thể liên hệ trực tiếp đến bộ phận chăm sóc khách hàng giúp tiết kiệm được chi phí hạ tầng call center</p>
-                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Tăng sự trải nghiệm, tạo sự yêu thích, dẫn đến sự trung thành một cách chủ động</p>
+                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Cung cấp cho người dùng khả năng tự xây dựng công thức lương động, báo cáo động, đáp ứng mức độ khác nhau theo từng thời điểm của Doanh nghiệp.</p>
+                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Chức năng đánh giá năng lực nhân sự dựa vào các tham số đầu vào được thiết lập tùy chỉnh giúp nhà Quản trị nhân lực đánh giá chính xác hơn, khách quan hơn về tình hình biến động cũng như khả năng thực sự của từng nhân viên. phần mềm có khả năng tự đưa ra đánh giá dựa trên than số đầu vào do người quản trị thiết lập một cách linh hoạt và khách quan.</p>
+                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Chức năng quản lý quy trình, công văn và văn bản
+                                                        Là một phần phân hệ trong hệ thống NextOffice ERP: Tài chính, kế toán, quy trình, công việc và công văn.</p>
+                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Công nghệ xử lý đa nền tảng, cho phép chạy cả trên các thiết bị Smartphone, trên nền web và trên ứng dụng.</p>
+                                                        <p><img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/like_app_nghanh.png" alt=""> Công nghệ xử lý đa nền tảng, cho phép chạy cả trên các thiết bị Smartphone, trên nền web và trên ứng dụng.</p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -492,7 +493,7 @@
         <div class="row">
             <div class="portfolio">
                 <div class="img">
-                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/giap-phap-so-1/giai-phap-doanh-nghiep.png" alt="" width="591" height="679" />
+                    <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/giap-phap-so-1/Tinh-nang-noi-bat.svg" alt="" width="591" height="679" />
                 </div>
                 <div class="items solution_app_desktop">
                     <div class="item">
@@ -552,31 +553,31 @@
     </div>
 </section>
 <section class="group_case_study">
-        <div class="container">
-            <div class="headbox">
-                <h2 class="title">Dự án tiêu biểu</h2>
-            </div>
-            <div class="row row_group">
-                <div class="case_study col-lg-12">
-                    <div class="items row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-4">
-                            <div class="t-icon">
-                                <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/comfit.jpg"  alt="" title="">
-                            </div>
+    <div class="container">
+        <div class="headbox">
+            <h2 class="title">Dự án tiêu biểu</h2>
+        </div>
+        <div class="row row_group">
+            <div class="case_study col-lg-12">
+                <div class="items row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="t-icon">
+                            <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/comfit.jpg"  alt="" title="">
                         </div>
-                        <div class="col-md-5 group_content_case_study">
-                            <div class="headbox headbox_case">
-                                <h2 class="title">Dự án Hệ Thống dân cư Thành phố Hải Phòng</h2>
-                            </div>
-                            <div class="group_post_case">
-                                <p>Quản lý công việc hiệu quả không chỉ đòi hỏi  người làm phải có được những kỹ năng chuyên môn cần thiết, mà còn phải có được cả những kỹ năng điều phối, phân tích, hệ thống từng nội dung cụ thể. Một ngày chúng ta phải giải quyết vô vàn những công việc liên quan đến quản lý hồ sơ, quản lý tài liệu, giấy tờ, con người. Để tránh tình trạng quá tải  bạn cần có kỹ năng quản lý công việc. Và để làm được điều này, người quản lý nên dành ra một chút thời gian để phân tích và tìm ra giải pháp tối ưu nhất để thực hiện và giải quyết công việc đó.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
                     </div>
+                    <div class="col-md-5 group_content_case_study">
+                        <div class="headbox headbox_case">
+                            <h2 class="title">Dự án Hệ Thống dân cư Thành phố Hải Phòng</h2>
+                        </div>
+                        <div class="group_post_case">
+                            <p>Quản lý công việc hiệu quả không chỉ đòi hỏi  người làm phải có được những kỹ năng chuyên môn cần thiết, mà còn phải có được cả những kỹ năng điều phối, phân tích, hệ thống từng nội dung cụ thể. Một ngày chúng ta phải giải quyết vô vàn những công việc liên quan đến quản lý hồ sơ, quản lý tài liệu, giấy tờ, con người. Để tránh tình trạng quá tải  bạn cần có kỹ năng quản lý công việc. Và để làm được điều này, người quản lý nên dành ra một chút thời gian để phân tích và tìm ra giải pháp tối ưu nhất để thực hiện và giải quyết công việc đó.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <?php get_footer(); ?>

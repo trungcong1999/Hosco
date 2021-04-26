@@ -42,10 +42,10 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
                 <div class="item">
                     <div class="img">
-                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/app-nv.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Nong-nghiep-thog-minh-chot.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">App cho nhân viên</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Nông nghiệp thông minh</a></h3>
                         <p>App cho nhân viên, hoàn toàn miễn phí. Quản lý tập trung và khoa học, chỉ có tại CNV Loyalty.</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
@@ -54,10 +54,10 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
                 <div class="item">
                     <div class="img">
-                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/quan-ly-booking.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Thuong-mai-dien-tu.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Quản lý Booking</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Thương mại</a></h3>
                         <p>Ứng dụng booking (trên IPAD) cho chủ doanh nghiệp, giúp quản lý đặt bàn, đặt chỗ của khách hàng</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
@@ -66,40 +66,40 @@
             <div class="four_post_bottom_banner_mobile col-lg-3 col-md-3 col-sm-6 col-12">
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/loyalty-app-brand.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/dichvuphanmem.svg" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Loyalty App của brand</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Dịch vụ phần mềm</a></h3>
                         <p>Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...</p>
                         <a class="smooth more" href="#nganh-hang" title="">Xem thêm</a>
                     </div>
                 </div>
-                <div class="item">
+               <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/cdp.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/giaiphapdoanhnghiep.svg" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Customer Data Platform</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Giải pháp doanh nghiệp</a></h3>
                         <p>(Sắp ra mắt) Nền tảng dữ liệu khách hàng, giúp DN thấu hiểu hành vi theo thời gian thực.</p>
                         <a class="smooth more" href="javascript:void(0)" title="">Xem thêm</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/app-nv.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Nong-nghiep-thog-minh-chot.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">App cho nhân viên</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Nông nghiệp thông minh</a></h3>
                         <p>App cho nhân viên, hoàn toàn miễn phí. Quản lý tập trung và khoa học, chỉ có tại CNV Loyalty.</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
                 </div>
-                <div class="item">
+               <div class="item">
                     <div class="img">
-                        <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/news/quan-ly-booking.png" alt="" title="">
+                        <img src="<?php bloginfo("template_directory"); ?>/storage/news/Thuong-mai-dien-tu.png" alt="" title="">
                     </div>
                     <div class="ct">
-                        <h3 class="title"><a class="smooth" href="#" title="">Quản lý Booking</a></h3>
+                        <h3 class="title"><a class="smooth" href="#" title="">Thương mại</a></h3>
                         <p>Ứng dụng booking (trên IPAD) cho chủ doanh nghiệp, giúp quản lý đặt bàn, đặt chỗ của khách hàng</p>
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>

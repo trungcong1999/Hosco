@@ -91,8 +91,8 @@
                                 <div class="navsub-primary-menu flex-align-primary">
                                     <div class="navbar-logo">
                                         <a class="logo-primary" href="index.html">
-                                            <img class="hide-scroll svg_logo_loyalty" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/logo-hosco-Full.png" alt="">
-                                            <img class="show-scroll svg_iconlogo_loyalty" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/logo-hosco-Full.png" alt="">
+                                            <img class="hide-scroll svg_logo_loyalty" src="<?php bloginfo("template_directory"); ?>/storage/logo/logo.png" alt="">
+                                            <img class="show-scroll svg_iconlogo_loyalty" src="<?php bloginfo("template_directory"); ?>/storage/logo/logo.png" alt="">
                                         </a>
                                     </div>
                                     <span class="line-br"></span>
