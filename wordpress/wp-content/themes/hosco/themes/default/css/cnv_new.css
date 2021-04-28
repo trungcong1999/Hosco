@@ -3,7 +3,7 @@
 }
 html,
 body {
-    font-family: "SVN Poppins" !important;
+    font-family: "Roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -243,7 +243,7 @@ ul.primary-button li a.btn-menu {
     text-align: center;
     border: 1px solid #f3f0f0;
     padding: 17px 17px 50px;
-    box-shadow: inset 0px -1px 20px 4px rgb(252 3 3 / 10%);
+    box-shadow: 0 20px 50px 0 rgb(9 76 169 / 8%);
 }
 .four_post_bottom_banner .item .ct p {
     color: #bfbfbf;
@@ -334,17 +334,16 @@ ul.primary-button li a.btn-menu {
     text-transform: initial;
     color: #afafaf;
     font-size: 16px;
-    font-family: "SVN Poppins" !important;
     letter-spacing: 1px;
 }
 .partner {
     padding: 48px 0;
 }
 .headbox .title {
-    font-family: "SVN Poppins" !important;
     margin-bottom: 0 !important;
     font-weight: 300;
     font-size: 30px !important;
+    padding-top: 65px;
 }
 .customers_partner_mobile {
     display: none !important;
@@ -945,16 +944,15 @@ ul.primary-button li a.btn-menu {
     background: #f8f8f8;
 }
 .group_case_study {
-    background: #1a2b4d;
-    margin-top: 70px;
+    margin-top: 0px;
+    background: #f5f5f5;
 }
 .group_case_study .headbox {
     padding-top: 30px;
     margin-bottom: 40px;
 }
 .group_case_study .headbox .title {
-    color: #fff;
-    font-size: 22px !important;
+    color: #3e5167;
 }
 .group_case_study .case_study {
     margin-bottom: 30px;
@@ -1056,14 +1054,15 @@ ul.primary-button li a.btn-menu {
     line-height: 41px;
     width: 154px;
     text-align: center;
-    color: #afafaf;
+    color: #777676;
 }
 .h-posts ul li a:hover {
-    color: #f3648c;
+    color: #000000;
 }
 .h-posts ul li a.active {
-    background: #f3648c;
+    background: #f33232;
     color: #fff;
+    border-radius: 20px;
 }
 .h-posts .news-item {
     position: relative;
@@ -1199,7 +1198,6 @@ ul.primary-button li a.btn-menu {
     margin-bottom: 30px;
     margin-left: 30px;
     text-transform: uppercase;
-    font-family: revert;
     position: relative;
     font-weight: 700;
 }
@@ -1660,6 +1658,8 @@ ul.primary-button li a.btn-menu {
 @media screen and (max-width: 1366px) and (min-width: 1201px) {
     ul.primary-menu > li > a {
         margin: 0 18px;
+        font-weight: bold;
+        color: #363636;
     }
 }
 @media screen and (max-width: 1280px) and (min-width: 1200px) {
@@ -1912,7 +1912,6 @@ ul.primary-button li a.btn-menu {
     font-weight: 700;
 }
 .sb-post-related .ct p {
-    font-family: "Tahoma";
     line-height: 24px;
     color: #afafaf;
 }
@@ -2640,8 +2639,7 @@ ul.primary-button li a.btn-menu {
    padding-bottom: 35px;
 }
 .cutomer_whatSaid{
-    background: #ececec;
-    margin-top: 20px;
+    background: #f5f5f5;
 }
 .content_customer{
     text-align: center;
@@ -2712,3 +2710,22 @@ ul.primary-button li a.btn-menu {
 .big_text_product{
     font-weight: bold !important;
 }    
+.font-big{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #606672;
+}
+.aplly{
+    margin-top: 5%;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #606672;
+}
+.notify{
+    position: relative;
+    background: #fff;
+    box-shadow: #f2f2f2 0 10px 40px 1px;
+    padding-bottom: 35px;
+}

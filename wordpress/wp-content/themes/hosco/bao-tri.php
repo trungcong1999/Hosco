@@ -47,7 +47,7 @@
         </div>
 
     </div>
-    <div class="tab-content-news">
+    <div class="tab-content-news" style="margin-top: 20px">
         <div id="tin-tuc" class="tab-pane fade in active show">
             <div class="row row-ibl">
              <div class="col-xl-4 col-lg-4 col-md-6 col-12 item">

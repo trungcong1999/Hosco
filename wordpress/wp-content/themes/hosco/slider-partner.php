@@ -51,4 +51,90 @@
         </div>
     </div>
 
+<<<<<<< Updated upstream
 </div>
+=======
+</div> -->
+  <div class="container">
+        <div class="headbox">
+            <h2 class="title">Khách hàng - Đối tác</h2>
+            <p><span style="font-family: arial, helvetica, sans-serif;color: #343a40;
+    font-weight: 600;">Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết kiệm</span></p>
+        </div>
+        <div class="customers_partner customers_partner_desktop" >
+            <div id="jssor_1" style="margin:auto;width:1000px;height:100px;overflow:hidden;">        
+                <div data-u="slides" style="cursor:default;width:1000px;height:100px;overflow:hidden;" class="slider-ads">
+                    <div>
+                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
+                    </div>
+                    <div>
+                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vingroup-logo.jpg" />
+                    </div>
+                    <div>
+                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-cc1-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vtv-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-loc-troi-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-ad-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-vifon-logo.jpg" />
+                    </div>
+                    <div>
+                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-hoa-thien-phu-logo.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="customers_partner customers_partner_mobile">
+        <div id="jssor_2" style="margin:auto;width:500px;height:100px;overflow:hidden;">        
+            <div data-u="slides" class="slider-ads" style="cursor:default;width:500px;height:100px;overflow:hidden;">
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vingroup-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-cc1-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vtv-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-loc-troi-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-ad-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-vifon-logo.jpg" />
+                </div>
+                <div>
+                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-hoa-thien-phu-logo.jpg" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+>>>>>>> Stashed changes

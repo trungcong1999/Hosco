@@ -120,6 +120,7 @@
                  <?php get_template_part('bao-tri'); ?>
             </div>
         </div>
+<<<<<<< Updated upstream
     </section>
     <!-- slide -->
     <section class="cutomer_whatSaid">
@@ -129,6 +130,20 @@
             </div>
             <div class="col" style="margin:0 auto; width: 80%; overflow:hidden; ">
                 <div class="owl-carousel owl-theme" id="slider-cutomer" style="margin:100px auto;">
+=======
+    </div>
+</section>
+<section class="partner" id="khach-hang">
+    <?php get_template_part('slider-partner'); ?>
+</section>
+<section class="group_case_study" >
+   <div class="container">
+    <div class="headbox">
+        <h2 class="title">Phần mềm - Giải Pháp CNTT</h2>
+    </div>
+    <div class="col" style="margin:0 auto; width: 90%; overflow:hidden; ">
+        <div class="owl-carousel owl-theme" id="slider-product">
+>>>>>>> Stashed changes
 
                     <div class="item" style="margin:0 10%;" >
                         <div class="testimony-slide active text-center">
@@ -182,10 +197,21 @@
                     <a class="btn prev" style="height: 100%;"><img src="themes/default/images/template_new/arrow_left_circle.png" alt=""></a>
                     <a class="btn next" style="height: 100%;"><img src="themes/default/images/template_new/arrow_right_circle.png" alt=""></a>
 
+<<<<<<< Updated upstream
+=======
+          <div class="item notify" style="padding: 5%;">
+           <div>
+            <div class="fh5co-blog" style="box-shadow: none;">
+                <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
+                <div class="blog-text"   style="padding: 5%;"  >
+                    <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
+                    <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
+>>>>>>> Stashed changes
                 </div>
             </div>
             
         </div>
+<<<<<<< Updated upstream
     </section>
     <!-- endslide -->
     <section class="cultural">
@@ -201,6 +227,73 @@
                             <h3><a href="#">Công nhận TOP 10 Giải thưởng Sao Khuê 2021 tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021</a></h3>
                             <p> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
                         </div>
+=======
+    </div>
+    <div class="item notify" style="padding: 5%;" >
+       <div>
+        <div class="fh5co-blog" style="box-shadow: none;">
+            <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
+            <div class="blog-text"   style="padding: 5%;"  >
+                <h3 class="font-big"><a href="#">Phần mềm quản lý nhân sự Lotus Pro</a></h3>
+                <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>              
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item notify" style="padding: 5%;">
+   <div>
+    <div class="fh5co-blog" style="box-shadow: none;">
+        <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
+        <div class="blog-text"   style="padding: 5%;"  >
+            <h3 class="font-big"><a href="#">Phần mềm Gym Master</a></h3>
+            <p sclass="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
+        </div>
+    </div>
+</div>
+</div>
+<div class="item notify" style="padding: 5%;">
+   <div>
+    <div class="fh5co-blog" style="box-shadow: none;">
+        <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
+        <div class="blog-text"  style="padding: 5%;"   >
+            <h3 class="font-big"><a href="#">Phần mềm nông nghiệp thông minh</a></h3>
+            <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</section>
+<section class="group_case_study">
+   <?php get_template_part('slider-product-tieu-bieu'); ?>
+</section>
+<section class="group_news h-posts">
+ <?php get_template_part('bao-tri'); ?>
+</div>
+</div>
+</section>
+<!-- slide -->
+<section class="cutomer_whatSaid">
+    <div class="container">
+        <div class="headbox">
+            <h2 class="title">KHÁCH HÀNG NÓI GÌ VỀ HOSCO</h2>
+        </div>
+        <div class="col" style="margin:0 auto; width: 80%; overflow:hidden; ">
+            <div class="owl-carousel owl-theme" id="slider-cutomer" style="margin:60px auto;">
+
+                <div class="item" style="margin:0 10%;" >
+                    <div class="testimony-slide active text-center">
+                        <div class="user" style="background-image: url(<?php bloginfo("template_directory"); ?>/storage/avatars/KH_Tien_nong.jpg);"></div>
+                        <span><span style="text-transform: uppercase;"><b>Ông Nguyễn Thế Việt Dũng</b></span><br><span style="color: #7b8794;font-size: 12px;letter-spacing: .3px;line-height: 17px;text-align: center;text-transform: none;">Tổng Giám đốc Công ty CP Văn phòng phẩm Hải Phòng</span></span>
+                        <blockquote style="color: #7b8794;font-size: 14px; line-height: 24px;text-align: center;">
+                            <p>“Bài toán của chúng tôi khá đặc thù và có độ khó nhất định. Nhưng về cơ bản, tôi đánh giá phần mềm ERP BRAVO đã được triển khai hoàn thành đúng với yêu cầu, hoạt động theo chuẩn mục tiêu ban đầu hai bên đã thỏa thuận.”</p>
+                        </blockquote>
+>>>>>>> Stashed changes
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
