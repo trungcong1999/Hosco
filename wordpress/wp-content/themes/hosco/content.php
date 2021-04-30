@@ -112,23 +112,15 @@
 <section class="partner" id="khach-hang">
   <?php get_template_part('slider-partner'); ?>
 </section>
-<section class="group_case_study" style="background-image: url('<?php bloginfo("template_directory"); ?>/storage/avatars/hinh.jpg');background-repeat: none;background-size: cover;">
+<section class="group_case_study">
  <div class="container">
   <div class="headbox">
     <h2 class="title">Phần mềm - Giải Pháp CNTT</h2>
   </div>
-  <div class="col" style="margin:0 auto; width: 90%; overflow:hidden; ">
-    <div class="owl-carousel owl-theme" id="slider-product">
-
+ 
  <?php get_template_part('product-giaiphap'); ?>
 
-     
-    
-
-
-</div>
-
-</div>
+           
 </div>
 </section>
 <section class="group_case_study">

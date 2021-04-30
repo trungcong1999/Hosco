@@ -12,7 +12,7 @@
                 <?php global $product; ?>
                 <div class="item" style="height: 100%;">
                     <div class="col-md-2"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 raw-center">
                         <div class="t-icon">
                             <img class="lazy" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>"  alt="" title="">
                         </div>
@@ -26,13 +26,8 @@
                         </div>
                     </div>
                     <div class="col-md-1"></div>
-                </div>
-
-
-                
+                </div>    
             <?php endwhile; wp_reset_postdata(); ?>
-
-
         </div>
     </div>
 </div>

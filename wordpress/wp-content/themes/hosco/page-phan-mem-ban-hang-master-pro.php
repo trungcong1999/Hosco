@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="event_banner_area" style="background: #257dff !important;min-height: 100vh;">
-   <div class="parallax-effect"></div>
-   <div class="container">
+ <div class="parallax-effect"></div>
+ <div class="container">
     <div class="row banner_main">
         <div class="col-lg-6 event_banner_content">
             <h6 class="">Phần mềm bán hàng</h6>
@@ -232,7 +232,7 @@
                                     <p>Nền tảng #1 giúp doanh nghiệp tạo app chăm sóc khách hàng chuyên nghiệp.</p>
                                 </div>
                                 <div class="row">
-                                 <div class="col-lg-9 offset-lg-3 group_tab_app_nen_tang">
+                                   <div class="col-lg-9 offset-lg-3 group_tab_app_nen_tang">
                                     <ul class="nav_app nav">
                                         <li>
                                             <a data-toggle="tab" class="smooth active" href="#tab1" title="">Lotus Pro</a>
@@ -246,11 +246,11 @@
                                     </ul>
                                 </div>
                                 <div class="row group_content_he_sinh_thai">
-                                 <div class="col-lg-3 thumbnail_app">
-                                     <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/phan-mem-quan-ly-ban-hang-online-2.svg" alt="">
-                                     <p class="title_he_sinh_thai">Hệ sinh thái Master Pro</p>
-                                 </div>
-                                 <div class="col-lg-9">
+                                   <div class="col-lg-3 thumbnail_app">
+                                       <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/phan-mem-quan-ly-ban-hang-online-2.svg" alt="">
+                                       <p class="title_he_sinh_thai">Hệ sinh thái Master Pro</p>
+                                   </div>
+                                   <div class="col-lg-9">
                                     <div class="tab-content">
                                         <div class="item_tab tab-pane fade active show" id="tab1">
                                             <div class="row">
@@ -318,43 +318,43 @@
                                 <ul class="nav_app nav">
                                     <li>
                                         <a data-toggle="tab" class="smooth active" href="#app-nganh-retail" title="">
-                                           <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
-                                           Bán Hàng Thời Trang
-                                       </a>
-                                   </li>
-                                   <li>
+                                         <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
+                                         Bán Hàng Thời Trang
+                                     </a>
+                                 </li>
+                                 <li>
                                     <a data-toggle="tab" class="smooth " href="#app-nganh-f-b" title="">
-                                       <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fb.png" alt="">
-                                       Bán Hàng Nhà Thuốc
-                                   </a>
-                               </li>
-                               <li>
+                                     <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fb.png" alt="">
+                                     Bán Hàng Nhà Thuốc
+                                 </a>
+                             </li>
+                             <li>
                                 <a data-toggle="tab" class="smooth " href="#app-nganh-fitness" title="">
-                                   <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fitness.png" alt="">
-                                   Bán Hàng Siêu Thị
-                               </a>
-                           </li>
-                           <li>
+                                 <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fitness.png" alt="">
+                                 Bán Hàng Siêu Thị
+                             </a>
+                         </li>
+                         <li>
                             <a data-toggle="tab" class="smooth " href="#app-nganh-spa" title="">
-                               <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-spa.png" alt="">
-                               Bán Hàng Mỹ Phẩm
-                           </a>
-                       </li>
-                       <li>
+                             <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-spa.png" alt="">
+                             Bán Hàng Mỹ Phẩm
+                         </a>
+                     </li>
+                     <li>
                         <a data-toggle="tab" class="smooth " href="#app-nganh-auto" title="">
-                           <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-auto.png" alt="">
-                           Vật Liệu Xây Dựng
-                       </a>
-                   </li>
-                   <li>
+                         <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-auto.png" alt="">
+                         Vật Liệu Xây Dựng
+                     </a>
+                 </li>
+                 <li>
                     <a data-toggle="tab" class="smooth " href="#nganh-hospitality" title="">
-                       <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
-                       Cửa Hàng Điện Nước
-                   </a>
-               </li>
-           </ul>
-       </div>
-       <div class="col-lg-9">
+                     <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
+                     Cửa Hàng Điện Nước
+                 </a>
+             </li>
+         </ul>
+     </div>
+     <div class="col-lg-9">
         <div class="tab-content">
             <div class="item_tab tab-pane fade active show" id="app-nganh-retail">
                 <div class="row">

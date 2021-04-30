@@ -17,7 +17,7 @@ function slider_post_type(){
         'labels' => $label, 
         'description' => 'Ảnh slider',
         'supports' => array(
-        	'title',
+            'title',
             'thumbnail'
 
         ), 
@@ -322,6 +322,7 @@ class T5_Richtext_Excerpt
     public static function show( $post )
     {
     ?>
+        
         <label class="screen-reader-text" for="excerpt"><?php
         _e( 'Excerpt' )
         ?></label>

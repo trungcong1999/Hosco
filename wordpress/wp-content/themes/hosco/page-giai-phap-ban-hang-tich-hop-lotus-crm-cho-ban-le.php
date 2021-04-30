@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-<section class="event_banner_area" style="background: #257dff !important;min-height: 100vh;">
+    <section class="event_banner_area" style="background: #257dff !important;min-height: 100vh;">
    <div class="parallax-effect"></div>
    <div class="container">
     <div class="row banner_main">
         <div class="col-lg-6 event_banner_content">
-            <h6 class="">Giải pháp bán hàng tích hợp</h6>
-            <h6 class="big_text_product">LOTUS CRM</h6>
-            <h2 class="">Giải pháp Phần mềm quản lý hệ thống phân phối LOTUS CRM Phần mềm quản lý hệ thống phân phối LOTUS CRM là  sản phẩm giúp cho các giám đốc kinh doanh quản lý, giám sát hoạt động kinh doanh của hệ thống phân phối hiệu quả, tăng doanh số bán hàng.</h2>
+            <h6 class="">Giải pháp quản lý nhân sự</h6>
+            <h6 class="big_text_product">LOTUS ERP</h6>
+            <h2 class="">Giải pháp Phần mềm quản lý hệ thống phân phối LOTUS ERP Phần mềm quản lý hệ thống phân phối LOTUS ERP là  sản phẩm giúp cho các giám đốc kinh doanh quản lý, giám sát hoạt động kinh doanh của hệ thống phân phối hiệu quả, tăng doanh số bán hàng.</h2>
             <a class="event_btn btn_hover" data-toggle="modal" data-target="#informationForm" href="#information-form"><img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/calling.png" alt="" />Đăng ký tư vấn</a> <a class="event_btn event_btn_two btn_hover" data-toggle="modal" data-target="#informationForm" href="#information-form"><i class="arrow_triangle-right_alt2"></i>Dùng thử miễn phí</a></div>
             <div class="col-lg-6 banner_main_img"><img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/banner-main.png" alt="" /></div>
         </div>
@@ -118,16 +118,16 @@
             <div id="jssor_1" style="margin:auto;width:1000px;height:100px;overflow:hidden;">        
                 <div data-u="slides" style="cursor:default;width:1000px;height:100px;overflow:hidden;" class="slider-ads">
                     <div>
-                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
+                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
                     </div>
                     <div>
-                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
+                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
                     </div>
                     <div>
                         <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vingroup-logo.jpg" />
                     </div>
                     <div>
-                        <img style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
+                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
                     </div>
                     <div>
                         <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-cc1-logo.jpg" />
@@ -194,12 +194,12 @@
 <section class="you_choose_cnv">
     <div class="container">
         <div class="headbox">
-            <h2 class="title">Lý do bạn nên chọn LOTUS CRM</h2>
+            <h2 class="title">Lý do bạn nên chọn LOTUS ERP</h2>
         </div>
         <div class="row">
             <div class="portfolio_choose_cnv">
                 <div class="img">
-                    <a data-toggle="modal" data-target="#informationForm" href="#information-form"><img src="<?php bloginfo("template_directory"); ?>/storage/ly-do-chon/anh1.jpg" class="lazy" alt="" width="676" height="598" /></a>
+                    <a data-toggle="modal" data-target="#informationForm" href="#information-form"><img data-src="<?php bloginfo("template_directory"); ?>/storage/ly-do-chon/anh1.jpg" class="lazy" alt="" width="676" height="598" /></a>
                 </div>
                 <div class="items">
                     <div class="item">
@@ -228,7 +228,7 @@
                         <section class="app_nen_tang" id="app-nen-tang">
                             <div class="container">
                                 <div class="headbox">
-                                    <h2 class="title">Hệ sinh thái LOTUS CRM</h2>
+                                    <h2 class="title">Hệ sinh thái LOTUS ERP</h2>
                                     <p>Nền tảng #1 giúp doanh nghiệp tạo app chăm sóc khách hàng chuyên nghiệp.</p>
                                 </div>
                                 <div class="row">
@@ -248,7 +248,7 @@
                                 <div class="row group_content_he_sinh_thai">
                                  <div class="col-lg-3 thumbnail_app">
                                      <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/he_sinh_thai_cong_ty.png" alt="">
-                                     <p class="title_he_sinh_thai">Hệ sinh thái LOTUS CRM</p>
+                                     <p class="title_he_sinh_thai">Hệ sinh thái LOTUS ERP</p>
                                  </div>
                                  <div class="col-lg-9">
                                     <div class="tab-content">
@@ -310,7 +310,7 @@
                 <section class="app_nghanh_hang" id="nganh-hang">
                     <div class="container">
                         <div class="headbox">
-                            <h2 class="title">LOTUS CRM - Tối ưu từng ngành hàng</h2>
+                            <h2 class="title">LOTUS ERP - Tối ưu từng ngành hàng</h2>
                         </div>
                         <div class="row">
                             <div class="col-lg-3">
