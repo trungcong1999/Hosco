@@ -117,11 +117,10 @@
   <div class="headbox">
     <h2 class="title">Phần mềm - Giải Pháp CNTT</h2>
   </div>
-  <div class="col gp-apbig" style="margin:0 auto; width: 90%; overflow:hidden; ">
-    <div class="owl-carousel owl-theme" id="slider-product">
+ 
  <?php get_template_part('product-giaiphap'); ?>
-</div>
-</div>
+
+           
 </div>
 </section>
 <section class="group_case_study">
@@ -134,10 +133,7 @@
 </section>
 <!-- slide -->
 <section class="cutomer_whatSaid">
-  <div class="container">
-
     <?php get_template_part("customer-whatSaid"); ?>
-  </div>
 </section>
 <!-- endslide -->
 <section class="group_news h-posts">

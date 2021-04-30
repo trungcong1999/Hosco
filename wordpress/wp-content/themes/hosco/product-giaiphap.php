@@ -1,72 +1,32 @@
-
-    <div class="owl-min owl-desktop" style="padding: 0 12px;">
-    <div class="item notify" style="padding: 5%;">
-        <div class="fh5co-blog" style="box-shadow: none;">
-            <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
-            <div class="blog-text"   style="padding: 5%;"  >
-                <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-                <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
-            </div>
-        </div>
-    </div>
-</div>
-<div class="owl-min owl-desktop" style="padding: 0 12px;">
-    <div class="item notify" style="padding: 5%;">
-        <div class="fh5co-blog" style="box-shadow: none;">
-            <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
-            <div class="blog-text"   style="padding: 5%;"  >
-                <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-                <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
-            </div>
-        </div>
-    </div>
-</div>
-<div class="owl-min owl-desktop" style="padding: 0 12px;">
-    <div class="item notify" style="padding: 5%;">
-        <div class="fh5co-blog" style="box-shadow: none;">
-            <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
-            <div class="blog-text"   style="padding: 5%;"  >
-                <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-                <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="owl-min-mobile">
-    <div class="row">
-        <div class=" mobile-full-gp">
-            <div class="owl-min" style="padding: 0 12px;">
-                <div class="item notify" style="padding: 5%;">
-                    <div class="fh5co-blog" style="box-shadow: none;">
-                        <img alt="" src="https://hosco.vn/wp-content/uploads/2020/04/201806151641001950-eb2ffb9bf416c4561b6b79d14a202938.jpg" />
-                        <div class="blog-text"   style="padding: 5%;"  >
-                            <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-                            <p class=""> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>                    
+    
+<div class="container">
+    <div class="col gp-apbig" style="margin:0 auto; width: 90%; overflow:hidden; ">
+        <div class="owl-carousel owl-theme" id="slider-product">
+            <?php
+            $tax_query[] = array(
+                'taxonomy' => 'product_visibility',
+                'field'    => 'name',
+                'terms'    => 'featured',
+                'operator' => 'IN',
+            );
+            ?>
+            <?php $args = array( 'post_type' => 'product','posts_per_page' => 10,'ignore_sticky_posts' => 1, 'tax_query' => $tax_query); ?>
+            <?php $getposts = new WP_query( $args);?>
+            <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+            <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                <?php global $product; ?>
+                <div class="owl-min owl-desktop" style="padding: 0 12px;">
+                    <div class="item notify" style="padding: 5%;">
+                        <div class="fh5co-blog" style="box-shadow: none;">
+                            <img alt="" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" />
+                            <div class="blog-text"   style="padding: 5%;"  >
+                                <h3 class="font-big"><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <?php the_content(); ?>                
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class=" mobile-full-gp">
-           <div class="blog-text"   style="padding: 5%;"  >
-            <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-            <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p>       
-            <div class="continue">
-                <a href="#" class="article-title" target="_blank" title="">Đọc tiếp →</a>
-            </div>             
-        </div>
-
-    </div>
-    <div class=" mobile-full-gp">
-        <div class="blog-text"   style="padding: 5%;"  >
-            <h3 class="font-big"><a href="#">Phần mềm bán hàng Master Pro</a></h3>
-            <p class="aplly"> Sáng 24/4, tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021 &amp; tại Lễ Công bố và trao Giải thưởng Sao Khuê 2021...</p> 
-            <div class="continue">
-                <a href="index.html" class="article-title" target="_blank" title="">Đọc tiếp →</a>
-            </div>                   
+            <?php endwhile; wp_reset_postdata(); ?> 
         </div>
     </div>
-    
 </div>
-</div>            

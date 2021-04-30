@@ -1,16 +1,5 @@
-<?php get_header(); ?>
-    <section class="event_banner_area" style="background: #257dff !important;min-height: 100vh;">
-   <div class="parallax-effect"></div>
-   <div class="container">
-    <div class="row banner_main">
-        <div class="col-lg-6 event_banner_content">
-            <h6 class="">Giải pháp quản lý nhân sự</h6>
-            <h6 class="big_text_product">LOTUS ERP</h6>
-            <h2 class="">Giải pháp Phần mềm quản lý hệ thống phân phối LOTUS ERP Phần mềm quản lý hệ thống phân phối LOTUS ERP là  sản phẩm giúp cho các giám đốc kinh doanh quản lý, giám sát hoạt động kinh doanh của hệ thống phân phối hiệu quả, tăng doanh số bán hàng.</h2>
-            <a class="event_btn btn_hover" data-toggle="modal" data-target="#informationForm" href="#information-form"><img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/calling.png" alt="" />Đăng ký tư vấn</a> <a class="event_btn event_btn_two btn_hover" data-toggle="modal" data-target="#informationForm" href="#information-form"><i class="arrow_triangle-right_alt2"></i>Dùng thử miễn phí</a></div>
-            <div class="col-lg-6 banner_main_img"><img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/banner-main.png" alt="" /></div>
-        </div>
-    </div>
+<section class="event_banner_area" style="background: #257dff !important;min-height: 100vh;">
+ <?php get_template_part('banner-product'); ?>
 </section>
 <section class="four_post_bottom_banner" style="margin-top: 0px;position: relative;">
     <div class="container">
@@ -74,7 +63,7 @@
                         <a class="smooth more" href="#nganh-hang" title="">Xem thêm</a>
                     </div>
                 </div>
-               <div class="item">
+                <div class="item">
                     <div class="img">
                         <img src="<?php bloginfo("template_directory"); ?>/storage/news/giaiphapdoanhnghiep.svg" alt="" title="">
                     </div>
@@ -94,7 +83,7 @@
                         <a class="smooth more" href="#app-nen-tang" title="">Xem thêm</a>
                     </div>
                 </div>
-               <div class="item">
+                <div class="item">
                     <div class="img">
                         <img src="<?php bloginfo("template_directory"); ?>/storage/news/Thuong-mai-dien-tu.png" alt="" title="">
                     </div>
@@ -109,97 +98,18 @@
     </div>
 </section>
 <section class="partner" id="khach-hang">
-    <div class="container">
-        <div class="headbox">
-            <h2 class="title">Khách hàng - Đối tác</h2>
-            <p><span style="font-family: arial, helvetica, sans-serif;">Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết kiệm</span></p>
-        </div>
-        <div class="customers_partner customers_partner_desktop" >
-            <div id="jssor_1" style="margin:auto;width:1000px;height:100px;overflow:hidden;">        
-                <div data-u="slides" style="cursor:default;width:1000px;height:100px;overflow:hidden;" class="slider-ads">
-                    <div>
-                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vingroup-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-cc1-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vtv-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-loc-troi-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-ad-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-vifon-logo.jpg" />
-                    </div>
-                    <div>
-                        <img  style="width:100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-hoa-thien-phu-logo.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <?php get_template_part('slider-partner'); ?>
 
-
-    <div class="customers_partner customers_partner_mobile">
-        <div id="jssor_2" style="margin:auto;width:500px;height:100px;overflow:hidden;">        
-            <div data-u="slides" class="slider-ads" style="cursor:default;width:500px;height:100px;overflow:hidden;">
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/thiet-ke-lo-go-sao-kim-10-1.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-viglacera-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vingroup-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-becamex-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-cc1-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fhn-vtv-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-loc-troi-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-ad-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-vifon-logo.jpg" />
-                </div>
-                <div>
-                    <img  style="width: 100px !important;" src="https://www.hosco.com.vn/wp-content/uploads/2019/05/fsg-hoa-thien-phu-logo.jpg" />
-                </div>
-            </div>
-        </div>
-
-    </div>
 </section>
 <section class="you_choose_cnv">
     <div class="container">
         <div class="headbox">
-            <h2 class="title">Lý do bạn nên chọn LOTUS ERP</h2>
+            <h2 class="title">Lý do bạn nên chọn LOTUS CRM</h2>
         </div>
         <div class="row">
             <div class="portfolio_choose_cnv">
                 <div class="img">
-                    <a data-toggle="modal" data-target="#informationForm" href="#information-form"><img data-src="<?php bloginfo("template_directory"); ?>/storage/ly-do-chon/anh1.jpg" class="lazy" alt="" width="676" height="598" /></a>
+                    <a data-toggle="modal" data-target="#informationForm" href="#information-form"><img src="<?php bloginfo("template_directory"); ?>/storage/ly-do-chon/anh1.jpg" class="lazy" alt="" width="676" height="598" /></a>
                 </div>
                 <div class="items">
                     <div class="item">
@@ -228,11 +138,11 @@
                         <section class="app_nen_tang" id="app-nen-tang">
                             <div class="container">
                                 <div class="headbox">
-                                    <h2 class="title">Hệ sinh thái LOTUS ERP</h2>
+                                    <h2 class="title">Hệ sinh thái LOTUS CRM</h2>
                                     <p>Nền tảng #1 giúp doanh nghiệp tạo app chăm sóc khách hàng chuyên nghiệp.</p>
                                 </div>
                                 <div class="row">
-                                 <div class="col-lg-9 offset-lg-3 group_tab_app_nen_tang">
+                                   <div class="col-lg-9 offset-lg-3 group_tab_app_nen_tang">
                                     <ul class="nav_app nav">
                                         <li>
                                             <a data-toggle="tab" class="smooth active" href="#tab1" title="">Lotus Pro</a>
@@ -246,11 +156,11 @@
                                     </ul>
                                 </div>
                                 <div class="row group_content_he_sinh_thai">
-                                 <div class="col-lg-3 thumbnail_app">
-                                     <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/he_sinh_thai_cong_ty.png" alt="">
-                                     <p class="title_he_sinh_thai">Hệ sinh thái LOTUS ERP</p>
-                                 </div>
-                                 <div class="col-lg-9">
+                                   <div class="col-lg-3 thumbnail_app">
+                                       <img src="<?php bloginfo("template_directory"); ?>/themes/default/images/template_new/he_sinh_thai_cong_ty.png" alt="">
+                                       <p class="title_he_sinh_thai">Hệ sinh thái LOTUS CRM</p>
+                                   </div>
+                                   <div class="col-lg-9">
                                     <div class="tab-content">
                                         <div class="item_tab tab-pane fade active show" id="tab1">
                                             <div class="row">
@@ -310,50 +220,50 @@
                 <section class="app_nghanh_hang" id="nganh-hang">
                     <div class="container">
                         <div class="headbox">
-                            <h2 class="title">LOTUS ERP - Tối ưu từng ngành hàng</h2>
+                            <h2 class="title">LOTUS CRM - Tối ưu từng ngành hàng</h2>
                         </div>
                         <div class="row">
                             <div class="col-lg-3">
                                 <ul class="nav_app nav">
                                     <li>
                                         <a data-toggle="tab" class="smooth active" href="#app-nganh-retail" title="">
-                                           <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
-                                           Bán Hàng Thời Trang
-                                       </a>
-                                   </li>
-                                   <li>
+                                         <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
+                                         Bán Hàng Thời Trang
+                                     </a>
+                                 </li>
+                                 <li>
                                     <a data-toggle="tab" class="smooth " href="#app-nganh-f-b" title="">
-                                       <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fb.png" alt="">
-                                       Bán Hàng Nhà Thuốc
-                                   </a>
-                               </li>
-                               <li>
+                                     <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fb.png" alt="">
+                                     Bán Hàng Nhà Thuốc
+                                 </a>
+                             </li>
+                             <li>
                                 <a data-toggle="tab" class="smooth " href="#app-nganh-fitness" title="">
-                                   <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fitness.png" alt="">
-                                   Bán Hàng Siêu Thị
-                               </a>
-                           </li>
-                           <li>
+                                 <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-fitness.png" alt="">
+                                 Bán Hàng Siêu Thị
+                             </a>
+                         </li>
+                         <li>
                             <a data-toggle="tab" class="smooth " href="#app-nganh-spa" title="">
-                               <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-spa.png" alt="">
-                               Bán Hàng Mỹ Phẩm
-                           </a>
-                       </li>
-                       <li>
+                             <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-spa.png" alt="">
+                             Bán Hàng Mỹ Phẩm
+                         </a>
+                     </li>
+                     <li>
                         <a data-toggle="tab" class="smooth " href="#app-nganh-auto" title="">
-                           <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-auto.png" alt="">
-                           Vật Liệu Xây Dựng
-                       </a>
-                   </li>
-                   <li>
+                         <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-auto.png" alt="">
+                         Vật Liệu Xây Dựng
+                     </a>
+                 </li>
+                 <li>
                     <a data-toggle="tab" class="smooth " href="#nganh-hospitality" title="">
-                       <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
-                       Cửa Hàng Điện Nước
-                   </a>
-               </li>
-           </ul>
-       </div>
-       <div class="col-lg-9">
+                     <img class="icon_app lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/nghanh-hang/nghanh-ban-le.png" alt="">
+                     Cửa Hàng Điện Nước
+                 </a>
+             </li>
+         </ul>
+     </div>
+     <div class="col-lg-9">
         <div class="tab-content">
             <div class="item_tab tab-pane fade active show" id="app-nganh-retail">
                 <div class="row">
@@ -552,31 +462,30 @@
     </div>
 </section>
 <section class="group_case_study">
-        <div class="container">
-            <div class="headbox">
-                <h2 class="title">Dự án tiêu biểu</h2>
-            </div>
-            <div class="row row_group">
-                <div class="case_study col-lg-12">
-                    <div class="items row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-4">
-                            <div class="t-icon">
-                                <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/comfit.jpg"  alt="" title="">
-                            </div>
+    <div class="container">
+        <div class="headbox">
+            <h2 class="title">Dự án tiêu biểu</h2>
+        </div>
+        <div class="row row_group">
+            <div class="case_study col-lg-12">
+                <div class="items row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="t-icon">
+                            <img class="lazy" data-src="<?php bloginfo("template_directory"); ?>/storage/comfit.jpg"  alt="" title="">
                         </div>
-                        <div class="col-md-5 group_content_case_study">
-                            <div class="headbox headbox_case">
-                                <h2 class="title">Dự án Hệ Thống dân cư Thành phố Hải Phòng</h2>
-                            </div>
-                            <div class="group_post_case">
-                                <p>Quản lý công việc hiệu quả không chỉ đòi hỏi  người làm phải có được những kỹ năng chuyên môn cần thiết, mà còn phải có được cả những kỹ năng điều phối, phân tích, hệ thống từng nội dung cụ thể. Một ngày chúng ta phải giải quyết vô vàn những công việc liên quan đến quản lý hồ sơ, quản lý tài liệu, giấy tờ, con người. Để tránh tình trạng quá tải  bạn cần có kỹ năng quản lý công việc. Và để làm được điều này, người quản lý nên dành ra một chút thời gian để phân tích và tìm ra giải pháp tối ưu nhất để thực hiện và giải quyết công việc đó.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
                     </div>
+                    <div class="col-md-5 group_content_case_study">
+                        <div class="headbox headbox_case">
+                            <h2 class="title">Dự án Hệ Thống dân cư Thành phố Hải Phòng</h2>
+                        </div>
+                        <div class="group_post_case">
+                            <p>Quản lý công việc hiệu quả không chỉ đòi hỏi  người làm phải có được những kỹ năng chuyên môn cần thiết, mà còn phải có được cả những kỹ năng điều phối, phân tích, hệ thống từng nội dung cụ thể. Một ngày chúng ta phải giải quyết vô vàn những công việc liên quan đến quản lý hồ sơ, quản lý tài liệu, giấy tờ, con người. Để tránh tình trạng quá tải  bạn cần có kỹ năng quản lý công việc. Và để làm được điều này, người quản lý nên dành ra một chút thời gian để phân tích và tìm ra giải pháp tối ưu nhất để thực hiện và giải quyết công việc đó.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
         </div>
-    </section>
-<?php get_footer(); ?>
+    </div>
+</section>

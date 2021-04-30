@@ -322,6 +322,7 @@ class T5_Richtext_Excerpt
     public static function show( $post )
     {
     ?>
+        
         <label class="screen-reader-text" for="excerpt"><?php
         _e( 'Excerpt' )
         ?></label>

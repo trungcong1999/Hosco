@@ -1,122 +1,188 @@
-<?php 
-$menuLocations =get_nav_menu_locations();
-$menuId = $menuLocations['main-nav'];
-
-$primatyNav = wp_get_nav_menu_items($menuId);
-$id_parent =0;
-// var_dump($primatyNav[1]);
-echo "<ul class='list-unstyled nav navbar-nav primary-menu'>";
-foreach ( $primatyNav as $navItem ) {
-	// var_dump($navItem);
-	if($navItem -> menu_item_parent == $id_parent){
-		echo '<li> <a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a>'; 
-		foreach ( $primatyNav as $navItem2 ) { 
-			if($navItem2 -> menu_item_parent == $navItem ->ID){
-				echo "<ul class='cnv-submenu row'>";
-				foreach ( $primatyNav as $navItem2 ) { 
-					if($navItem2 -> menu_item_parent == $navItem ->ID){
-						echo "<div class='col-lg-6 col-xs-6 lineTransition'>";
-
-						echo "<li class='list-sub' style='padding: 0px 35px 0px 10px !important;'><h4 style='font-weight: bold;'>".$navItem2->title;
-						echo "</h4><hr class='inline'/></li>";
-						foreach ( $primatyNav as $navItem3 ) { 
-							if($navItem3 -> menu_item_parent == $navItem2 ->ID){
-								echo "<li class='list-sub'>";
-								echo "<div class='content-sub-menu'>";
-								echo "<a class='title' href='".$navItem3->url."'>".$navItem3->title;
-								echo "</a>";
-								echo "</div>";
-								echo "</li>";
-
-							} 
-						}
-
-						echo "</div>";
-
-						
-					} 
-				}
-				echo "</ul>";
-
-				break;
-			} 
-			
-		}
-		
-		
-		
-		echo '</li>';
-	}
-
-	
-}
-echo "</ul>";
-
-
-?>
-<!-- <ul class="list-unstyled nav navbar-nav primary-menu">
+<ul class="list-unstyled nav navbar-nav primary-menu">
 	<li>
-		<a href="#">VỀ HOSCO</a>
+		<a href="#">Về HOSCO</a>
 	</li>
 	<li>
-		<a href="tinh-nang.html">SẢN PHẨM</a>
-		<ul class="cnv-submenu row">
-			<div class="col-lg-6 col-xs-6 lineTransition">
-				<li class="list-sub" style="padding: 0px 35px 0px 10px !important;"><h4 style="font-weight: bold;">Hệ sinh thái phần mềm Hosco</h4><hr class="inline"/></li>
+		<a href="#">Sản phẩm</a>
+		<div class="swap">
+			<div class="show-swap">
+				<ul class="nav nav-tabs">
+					<li class="active show"><a data-toggle="tab" href="#home">Phần mềm</a></li>
+					<li><a data-toggle="tab" href="#menu1">Giải pháp</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active show">
+						<div class="tab-menu-mini">
+							<ul class="row">
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">MASTER PRO</a>
+												<p>Phần mềm quản lý bán hàng</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">LOTUS PRO</a>
+												<p>Phần mềm quản lý nhân sự</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">LOTUS DMS</a>
+												<p>Phần mềm phân phối</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">GYM MASTER</a>
+												<p>Phần mềm tiện tích</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">NEXT FARM</a>
+												<p>Phần mềm nông nghiệp thông minh</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
 
-				<li class="list-sub">
-
-					<div class="content-sub-menu">
-						<a class="title" href="<?php bloginfo("template_directory"); ?>/product.php" title="">Phần mềm bán hàng Master Pro</a>
+							</ul>
+						</div>
 					</div>
-				</li>
-				<li class="list-sub">
+					<div id="menu1" class="tab-pane fade">
+						<div class="tab-menu-mini">
+							<ul class="row">
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">LOTUS ERP</a>
+												<p>Giải pháp bán hàng tích hợp</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">ERP</a>
+												<p>Giải pháp quản lý nhân sự</p>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">LOTUS CRM</a>
+												<p>Giải pháp bán hàng tích hợp cho bán lẻ</p>
+											</div>
+										</div>
+									</div>		
+								</li>
+								<li class="col-lg-6 col-xs-6 list-sub">
+									<div class="map-product-item">
+										<div class="map-product-logo">
+											<a class="smooth icon " href="pages_id_1.html" title="">
+												<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+											</a>
+										</div>
+										<div class="map-product-info">
+											<div class="content-sub-menu">
+												<a class="title" href="pages_id_1.html" title="">SAP B1</a>
+												<p>Giải pháp bán hàng tích hợp </p>
+											</div>
+										</div>
+									</div>		
+								</li>
 
-					<div class="content-sub-menu">
-						<a class="title" href="#" title="">Phần mềm quản lý nhân sự Lotus Pro</a>
+							</ul>
+						</div>
 					</div>
-				</li>
-				<li class="list-sub">
-
-					<div class="content-sub-menu">
-						<a class="title" href="#" title="">Phần mềm quản lý phân phối Lotus DMS</a>
-					</div>
-				</li>
+				</div>
 			</div>
-			<div class="col-lg-6 col-xs-6 lineTransition">
-				<li class="list-sub" style="padding: 0px 35px 0px 10px !important;"><h4 style="font-weight: bold;">Giải pháp quản lý doanh nghiệp</h4><hr class="inline"/></li>
-				<li class="list-sub">
-
-					<div class="content-sub-menu">
-						<a class="title" href="#" title="">Phần mềm bán hàng tích hợp Lotus ERP</a>
-					</div>
-				</li>
-				<li class="list-sub">
-
-					<div class="content-sub-menu">
-						<a class="title" href="#" title="">Giải pháp quản lý nhân sự Lotus ERP</a>
-					</div>
-				</li>
-				<li class="list-sub">
-
-					<div class="content-sub-menu">
-						<a class="title" href="#" title="">Phần mềm bán hàng tích hợp SAP B1</a>
-					</div>
-				</li>
-			</div>
-		</ul>
+		</div>
 	</li>
 	<li>
-		<a href="#nganh-hang">KHÁCH HÀNG</a>
+		<a href="#nganh-hang">Khách hàng</a>
 	</li>
 	<li>
-		<a href="index.html">TUYỂN DỤNG</a>
+		<a href="index.html">Tuyển dụng</a>
 	</li>
 	<li>
-		<a href="#">TIN TỨC</a>
+		<a href="#">Tin tức</a>
 
 	</li>
 	<li>
-		<a class="contact_animation" href="#lien-he">LIÊN HỆ</a>
+		<a class="contact_animation" href="#lien-he">Liên hệ</a>
 	</li>
-</ul> -->
+</ul>
+

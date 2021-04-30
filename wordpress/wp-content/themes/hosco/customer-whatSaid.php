@@ -3,7 +3,7 @@
         <h2 class="title">KHÁCH HÀNG NÓI GÌ VỀ HOSCO</h2>
     </div>
     <div class="col" style="margin:0 auto; width: 80%; overflow:hidden; ">
-        <div class="owl-carousel owl-theme" id="slider-cutomer" style="margin:100px auto;">
+        <div class="owl-carousel owl-theme" id="slider-cutomer" >
 
             
             

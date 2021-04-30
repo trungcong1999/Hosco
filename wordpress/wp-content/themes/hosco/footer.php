@@ -332,23 +332,50 @@ l <footer>
  $(document).ready(function() {
   $("#slider-cutomer").owlCarousel({
 
+center:true,
+      pagination:true,
+    items:2,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
 
-    items:3,
-    itemsDesktop : [1000,3], 
-    itemsDesktopSmall : [900,3], 
-    itemsTablet: [600,3], 
-    itemsMobile :false, 
 
 
 });
   $("#slider-product").owlCarousel({
 
-
+      center:true,
+      pagination:true,
     items:3,
-    itemsDesktop : [1000,3], 
-    itemsDesktopSmall : [900,3], 
-    itemsTablet: [600,3], 
-    itemsMobile :false, 
+   responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
 
 
 });
@@ -380,6 +407,8 @@ l <footer>
       $("#owl-demo").trigger('owl.play',3000);
 
 });
+
 </script>
+
 </body>
 </html>

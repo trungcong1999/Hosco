@@ -50,7 +50,7 @@
 
 </div>
 <div class="tab-content-news">
-    <div id="tin-tuc" class="tab-pane fade in active show">
+    <div id="bao-tri" class="tab-pane fade in active show">
         <div class="row row-ibl">
             <?php $args = array( 'post_type' => 'Press_talk','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
             <?php $getposts = new WP_query( $args);?>
