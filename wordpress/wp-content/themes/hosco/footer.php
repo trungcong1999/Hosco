@@ -52,7 +52,7 @@ l <footer>
                                     <li><a href="index.html">Chính sách bảo mật</a></li>
                                 </ul>
                             </div>
-                            <div class="col-xl-auto col-md-4 wow ">
+                            <div class="col-xl-auto col-md-4 wow hint-map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
