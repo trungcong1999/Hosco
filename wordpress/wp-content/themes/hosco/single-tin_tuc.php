@@ -67,6 +67,7 @@
 								<?php if( $the_query->have_posts() ): ?>
 									<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 										<h1><?php the_title( ); ?></h1>
+										<?php  ?>
 										<?php the_content(); ?>
 
 
