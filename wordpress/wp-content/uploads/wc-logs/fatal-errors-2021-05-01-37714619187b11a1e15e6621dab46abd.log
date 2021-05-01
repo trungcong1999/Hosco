@@ -1,0 +1,68 @@
+2021-05-01T03:16:23+00:00 CRITICAL syntax error, unexpected '<' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 205
+
+2021-05-01T04:38:15+00:00 CRITICAL syntax error, unexpected ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 385
+
+2021-05-01T05:34:06+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 470
+
+2021-05-01T05:34:07+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 470
+
+2021-05-01T05:34:08+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 470
+
+2021-05-01T06:31:49+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 452
+
+2021-05-01T06:33:47+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 452
+
+2021-05-01T06:35:48+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 452
+
+2021-05-01T06:37:49+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 452
+
+2021-05-01T06:38:43+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 451
+
+2021-05-01T06:38:43+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 451
+
+2021-05-01T06:56:57+00:00 CRITICAL syntax error, unexpected '"'>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 453
+
+2021-05-01T07:03:17+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 471
+
+2021-05-01T07:13:55+00:00 CRITICAL Uncaught Error: Function name must be a string in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php:8
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 8
+
+2021-05-01T07:14:18+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 8
+
+2021-05-01T07:33:52+00:00 CRITICAL syntax error, unexpected '$args' (T_VARIABLE) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 14
+
+2021-05-01T07:44:56+00:00 CRITICAL syntax error, unexpected '">Lotus Pro</a></li>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 274
+
+2021-05-01T07:46:18+00:00 CRITICAL syntax error, unexpected '">Lotus Pro</a></li>"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 274
+
+2021-05-01T08:05:14+00:00 CRITICAL syntax error, unexpected '.' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 300
+
+2021-05-01T15:13:41+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 562
+
+2021-05-01T15:15:26+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 562
+
+2021-05-01T15:15:26+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 562
+
+2021-05-01T17:17:21+00:00 CRITICAL syntax error, unexpected ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 570
+
+2021-05-01T17:17:23+00:00 CRITICAL syntax error, unexpected ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 570
+
+2021-05-01T17:17:34+00:00 CRITICAL syntax error, unexpected ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 570
+
+2021-05-01T18:37:45+00:00 CRITICAL syntax error, unexpected ''p'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 569
+
+2021-05-01T18:37:46+00:00 CRITICAL syntax error, unexpected ''p'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 569
+
+2021-05-01T19:40:47+00:00 CRITICAL Uncaught Error: Call to undefined function length() in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php:344
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 344
+

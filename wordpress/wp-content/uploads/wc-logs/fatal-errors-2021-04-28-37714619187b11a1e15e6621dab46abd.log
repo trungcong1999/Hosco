@@ -1,0 +1,17 @@
+2021-04-28T15:52:29+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\slider-product-tieu-bieu.php on line 13 and at least 1 expected in E:\Xampp\htdocs\wordpress\wp-includes\post.php:2225
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\slider-product-tieu-bieu.php(13): get_post_meta()
+#1 E:\Xampp\htdocs\wordpress\wp-includes\template.php(732): require('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\wp-includes\template.php(676): load_template('E:\\Xampp\\htdocs...', false, Array)
+#3 E:\Xampp\htdocs\wordpress\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\content.php(176): get_template_part('slider-product-...')
+#5 E:\Xampp\htdocs\wordpress\wp-includes\template.php(732): require('E:\\Xampp\\htdocs...')
+#6 E:\Xampp\htdocs\wordpress\wp-includes\template.php(676): load_template('E:\\Xampp\\htdocs...', false, Array)
+#7 E:\Xampp\htdocs\wo in E:\Xampp\htdocs\wordpress\wp-includes\post.php on line 2225
+
+2021-04-28T17:02:49+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\bao-tri.php on line 66
+
+2021-04-28T17:03:09+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\bao-tri.php on line 66
+
+2021-04-28T22:50:27+00:00 CRITICAL syntax error, unexpected ''thumbnail'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 162
+
