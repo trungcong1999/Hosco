@@ -5,11 +5,11 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="menu-tab-infor">
-					<div class="sidenav-tt">
+					<h1>tin tuc</h1>
+					<div class="sidenav">
 						<div class="main-left">
-
 							<div class="list-category">
-							<h1 style="font-size: 20px;margin-left: 15px;">Tin Tức</h1>
+							
 
 							<?php 
 							$args = array(
@@ -67,6 +67,7 @@
 								<?php if( $the_query->have_posts() ): ?>
 									<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 										<h1><?php the_title( ); ?></h1>
+										<?php  ?>
 										<?php the_content(); ?>
 
 

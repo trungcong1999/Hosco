@@ -133,7 +133,10 @@
 </section>
 <!-- slide -->
 <section class="cutomer_whatSaid">
+  <div class="container">
+
     <?php get_template_part("customer-whatSaid"); ?>
+  </div>
 </section>
 <!-- endslide -->
 <section class="group_news h-posts">

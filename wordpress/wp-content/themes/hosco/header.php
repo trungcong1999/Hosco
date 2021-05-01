@@ -134,5 +134,5 @@
                         </div>
                     </div>
                 </nav>
-                <button class="menu-btn nav-open" type="button"><i></i></button>
+                <!-- <button class="menu-btn nav-open" type="button"><i></i></button> -->
             </header>

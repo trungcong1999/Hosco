@@ -39,7 +39,6 @@ ul.primary-menu > li:hover a {
 }
 ul.primary-menu > li:hover a {
     position: relative;
-    border-bottom: 2px solid #fff;
     color: black;
 }
 ul.primary-menu > li > a {
@@ -3059,6 +3058,21 @@ ul.primary-button li a.btn-menu {
     .hint-map{
         display: none !important;
     }
+    /*menu-mobile*/
+    .m-nav ul.primary-menu > li ul{display: block;}
+    .show-swap .tab-content{display: block;padding: 0!important}
+    .nav-tabs li{ text-align: unset !important; }
+    .m-nav ul.primary-menu > li ul {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        pointer-events: all;
+
+    }
+    span.icon-menu-mobile {
+        display: block !important;
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -3083,14 +3097,21 @@ ul.primary-button li a.btn-menu {
     .group_case_study .group_content_case_study {
     padding-top: 0%;
     }
+    span.icon-menu-mobile {
+    display: none;
+    }
     
 }
 @media only screen and (min-width: 1025px){
     .owl-min-mobile {
         display: none;
     } 
+    span.icon-menu-mobile {
+    display: none;
+    }
 }  
 /*-------------menu--------------*/
+
 .nav-tabs{
     display: flex;
     min-width: 615px;
@@ -3159,6 +3180,7 @@ ul.primary-button li a.btn-menu {
     display: block;
     max-width: 60px;
     height: auto;
+    margin-top: -5px;
 }
 .map-product-info{
         padding-left: 45px;
@@ -3176,6 +3198,7 @@ ul.primary-button li a.btn-menu {
 .tab-menu-mini .list-sub:hover{
     background: #e6f9fe;
 }
+
 .primary-menu li a:hover{
     color: #0089ff !important;
     border-bottom: 0 !important;
@@ -3192,4 +3215,67 @@ button.menu-btn.nav-open {
     background: #fff;
     overflow-x: hidden;
     text-align: left;
+}
+.show-swap li.active{
+    border-bottom: 3px solid #3fa3e4;
+    
+}
+.show-swap li.active a{
+    color: #0089ff !important;
+}
+
+/*menu-mobile-sut*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.tab-menu li{
+    display: none;
+}
+
+
+@media screen and (max-height: 800px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
