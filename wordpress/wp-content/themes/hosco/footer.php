@@ -408,5 +408,20 @@ center:true,
 
 });
 </script>
+<script type="text/javascript">
+  $(".show-swap ul li").click(function(){
+  $(".show-swap ul li").removeClass("active");
+  $(this).addClass("active");
+});
+</script>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </body>
 </html>

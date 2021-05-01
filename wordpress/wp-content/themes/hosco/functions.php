@@ -262,10 +262,7 @@ function customer_whatSaid(){
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
+
         'can_export' => true, 
         'has_archive' => true, 
         'exclude_from_search' => false,
@@ -295,10 +292,7 @@ function he_sinh_thai(){
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
+ 
         'can_export' => true, 
         'has_archive' => true, 
         'exclude_from_search' => false,
@@ -328,10 +322,7 @@ function ban_hang_thoi_trang(){
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
+
         'can_export' => true, 
         'has_archive' => true, 
         'exclude_from_search' => false,
@@ -364,18 +355,18 @@ class T5_Richtext_Excerpt
         }
 
         remove_meta_box(
-            'postexcerpt' // ID
-        ,   ''            // Screen, empty to support all post types
-        ,   'normal'      // Context
+            'postexcerpt' 
+        ,   ''           
+        ,   'normal'      
     );
 
         add_meta_box(
-            'postexcerpt2'     // Reusing just 'postexcerpt' doesn't work.
-        ,   __( 'Mô tả ngắn' )    // Title
-        ,   array ( __CLASS__, 'show' ) // Display function
-        ,   null              // Screen, we use all screens with meta boxes.
-        ,   'normal'          // Context
-        ,   'core'            // Priority
+            'postexcerpt2'     
+        ,   __( 'Mô tả ngắn' )    
+        ,   array ( __CLASS__, 'show' ) 
+        ,   null             
+        ,   'normal'          
+        ,   'core'            
     );
     }
 
@@ -393,14 +384,12 @@ class T5_Richtext_Excerpt
         _e( 'Excerpt' )
         ?></label>
         <?php
-        // var_dump($post);
-        // We use the default name, 'excerpt', so we don’t have to care about
-        // saving, other filters etc.
+
         wp_editor(
             self::unescape( $post->post_excerpt ),
             'excerpt',
             array (
-            // 'textarea_rows' => 15
+
               'media_buttons' => FALSE,
               'teeny'         => TRUE,
               'tinymce'       => TRUE
@@ -436,10 +425,7 @@ function meta_box_detail_san_pham_hst()
 }
 add_action( 'add_meta_boxes', 'meta_box_detail_san_pham_hst' );
 
-/**
- Khai báo callback
- @param $post là đối tượng WP_Post để nhận thông tin của post
- **/
+
  function he_sinh_thai_box( $post )
  {
     $product_page = get_post_meta( $post->ID, '_product_page', true );
@@ -458,12 +444,12 @@ add_action( 'add_meta_boxes', 'meta_box_detail_san_pham_hst' );
         if($product_page ==get_post()->ID){
             $kt=true;
         }
-     if($kt==false){
-      echo "<option value='".get_post()->ID."'>".get_post()->post_title."</option> ";
+        if($kt==false){
+          echo "<option value='".get_post()->ID."'>".get_post()->post_title."</option> ";
 
-  }else{
-    echo "<option value='".get_post()->ID."' selected>".get_post()->post_title."</option> ";
-  }
+      }else{
+        echo "<option value='".get_post()->ID."' selected>".get_post()->post_title."</option> ";
+    }
 endwhile; 
 endif;
 wp_reset_query();
@@ -482,14 +468,14 @@ if( $the_query->have_posts() ):
     $kt = false;
     if($link_download!=NULL){
         foreach ($link_download as $value) {
-        if($value ==get_post()->ID){
+            if($value ==get_post()->ID){
 
-            echo "<input type='checkbox' id='".get_post()->post_name."' name='hesinhthai[]' value='".get_post()->ID."' checked>";
-            echo "<label for='".get_post()->post_name."'>".the_title()."</label>"; 
-            $kt=true;
-            break;
-        }     
-    }
+                echo "<input type='checkbox' id='".get_post()->post_name."' name='hesinhthai[]' value='".get_post()->ID."' checked>";
+                echo "<label for='".get_post()->post_name."'>".the_title()."</label>"; 
+                $kt=true;
+                break;
+            }     
+        }
     }
     
     if($kt==false){
@@ -513,3 +499,156 @@ function he_sinh_thai_save( $post_id )
 
 }
 add_action( 'save_post', 'he_sinh_thai_save' );
+
+
+
+// metabox nghanh hang
+function meta_box_nghanh_hang()
+{
+   add_meta_box( 'nghanh-hang', 'Lựa Chọn Nghành Hàng', 'nghanh_hang_box', 'product' );
+}
+add_action( 'add_meta_boxes', 'meta_box_nghanh_hang' );
+
+
+ function nghanh_hang_box( $post )
+ {
+
+    wp_enqueue_script( 'nghanhhang.js', get_theme_file_uri( '/template/js/nghanhhang.js' ) , array(), '1.0', true );
+
+    $product_page = get_post_meta( $post->ID, '_product_page', true );
+    $args = array(
+        'post_type'      => 'ban_hang_thoi_trang'
+    );
+    $the_query = new WP_Query( $args );
+    echo "<label for='product'>Chọn Sản Phẩm Hiển Thị :</label>";
+    echo "<select name='pr_ID' id='product_nghanh_hang' onchange='validateSelectBox(this)'>";
+    echo "<option value=''>Chưa Chọn Sản Phẩm</option> ";
+
+    if( $the_query->have_posts() ): 
+     while( $the_query->have_posts() ) : $the_query->the_post(); 
+        $kt = false;
+        
+        if($product_page ==get_post()->ID){
+            $kt=true;
+        }
+        if($kt==false){
+          echo "<option value='".get_post()->ID."'>".get_post()->post_title."</option> ";
+
+      }else{
+        echo "<option value='".get_post()->ID."'>".get_post()->post_title."</option> ";
+    }
+endwhile; 
+endif;
+wp_reset_query();
+echo "</select>";
+echo "<h5>Danh Sách Sản Phẩm Hiển Thị :</h5>";
+echo "<div id='choose-pr'>";
+$nghanh_hang_post = get_post_meta( $post->ID, '_product_nghanh_hang', true );
+if($nghanh_hang_post != ""){
+    foreach ($nghanh_hang_post as  $value) {
+
+        $args = array(
+
+            'post_type'      => 'ban_hang_thoi_trang',
+            'p'=> $value
+        );
+        $the_query = new WP_Query( $args );
+        if( $the_query->have_posts() ): 
+         while( $the_query->have_posts() ) : $the_query->the_post(); 
+             echo "<div style='display:inline-block;''>";
+             echo "<p style='display:inline-block;box-shadow: 0px 0px 10px 2px inset gray ;'>".get_post()->post_title."</p>";
+             echo "<button type='button' style='width: 16.2px;padding: 0;border: 1px solid #c56565;'' onclick='remove(this)''><img src='../wp-content/themes/hosco/template/image/remove-image.png' alt='' width='100%'' height='100%''></button>";
+             echo "<input type='hidden' name='prozzzzduct-".$value."' value='".$value."'>";
+             echo "</div>";
+
+         endwhile; 
+     endif;
+     wp_reset_query();
+
+ }
+}
+
+echo "</div>";
+}
+function nghanh_hang_save( $post_id )
+{
+    $list = array();
+    foreach ($_POST as $key => $value) {
+
+        if(strpos($key, 'prozzzzduct')===0){
+            array_push($list, $value);
+        }
+        
+    }
+    var_dump($list);
+
+    update_post_meta( $post_id, '_product_nghanh_hang', $list );
+    
+    // die();
+    
+}
+add_action( 'save_post', 'nghanh_hang_save' );
+
+
+add_action(
+  'add_meta_boxes',
+  function(){
+    add_meta_box(
+      'my-metaboxx1', 
+      'Thêm Icon Cho Nghành Hàng', 
+      'func99999', 
+      'ban_hang_thoi_trang', 
+      'normal'
+  );
+},
+9
+);
+function func99999($post){
+  $url = get_post_meta($post->ID, '_nghanh-hang-icon', true); ?>
+  <input id="my_image_URL" name="my_image_URL" type="text"
+  value="<?php echo $url;?>" style="width:400px;" />
+  <input id="my_upl_button" type="button" value="Upload Image" /><br/>
+  <img src="<?php echo $url;?>" style="width:200px;" id="picsrc" />
+  <script>
+      jQuery(document).ready( function($) {
+        jQuery('#my_upl_button').click(function() {
+          window.send_to_editor = function(html) {
+            imgurl = jQuery(html).attr('src')
+            jQuery('#my_image_URL').val(imgurl);
+            jQuery('#picsrc').attr("src", imgurl);
+            tb_remove();
+        }
+
+        formfield = jQuery('#my_image_URL').attr('name');
+        tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true' );
+        return false;
+    }); 
+    });
+</script>
+<?php
+}
+
+add_action('save_post', function ($post_id) {
+  if (isset($_POST['my_image_URL'])){
+    update_post_meta($post_id, '_nghanh-hang-icon', $_POST['my_image_URL']);
+}
+});
+
+add_action('plugins_loaded', function(){
+  if($GLOBALS['pagenow']=='post.php'){
+    add_action('admin_print_scripts', 'my_admin_scripts');
+    add_action('admin_print_styles',  'my_admin_styles');
+}
+});
+
+function my_admin_scripts(){
+  wp_enqueue_script('jquery');
+  wp_enqueue_script('media-upload');
+  wp_enqueue_script('thickbox');
+}
+
+
+
+function my_admin_styles(){
+  wp_enqueue_style('thickbox');
+}

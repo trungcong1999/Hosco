@@ -8,7 +8,7 @@
             <div data-u="slides" style="cursor:default;width:1000px;height:100px;overflow:hidden;" class="slider-ads">
                 <?php 
                 $args = array(
-                    'posts_per_page' => 20,
+                    
                     'post_type'      => 'slider-partner'
                 );
                 $the_query = new WP_Query( $args );
@@ -34,7 +34,7 @@
         <div data-u="slides" class="slider-ads" style="cursor:default;width:500px;height:100px;overflow:hidden;">
             <?php 
             $args = array(
-                'posts_per_page' => 20,
+              
                 'post_type'      => 'slider-partner'
             );
             $the_query = new WP_Query( $args );

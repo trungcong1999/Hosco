@@ -5,11 +5,10 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="menu-tab-infor">
-					<h1>tin tuc</h1>
-					<div class="sidenav">
+					<div class="sidenav-tt">
 						<div class="main-left">
 							<div class="list-category">
-							
+							<h1 style="font-size: 20px;margin-left: 15px;">Tin Tức</h1>
 
 							<?php 
 							$args = array(

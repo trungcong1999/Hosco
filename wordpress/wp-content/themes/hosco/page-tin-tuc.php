@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="menu-tab-infor">
-					<div class="sidenav">
+					<div class="sidenav-tt">
 						<div class="main-left">
 							<nav class="menu-left aside-left">
 								<ul>
