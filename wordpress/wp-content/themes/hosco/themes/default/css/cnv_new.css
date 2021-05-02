@@ -16,6 +16,9 @@ body {
 .group_btn_banner {
     margin-top: 64px;
 }
+.container-primary.container-fluid {
+    border-bottom: 1px solid #cccccca6;
+}
 .gia_tang {
     color: #fd475d !important;
 }
@@ -64,7 +67,7 @@ ul.primary-button li a.btn-menu {
 }
 .event_banner_area {
     background: #ffffff;
-    min-height: 70vh;
+    min-height: 68vh;
     position: relative;
     overflow: hidden;
     background-size: 100% 100% !important;
@@ -2978,7 +2981,11 @@ ul.primary-button li a.btn-menu {
     }
     
 }
-/*Ipad dọc(768 x 1024)*/
+@media only screen and (max-width: 767px){
+    .sidenav{
+        display: none !important;
+    }
+}
 @media only screen and (max-width: 768px) {
     .hint-map {
         display: none !important;
@@ -3070,9 +3077,10 @@ ul.primary-button li a.btn-menu {
         pointer-events: all;
 
     }
-    span.icon-menu-mobile {
+    .icon-menu-body{
         display: block !important;
     }
+    
 }
 
 @media only screen and (max-width: 1024px){
@@ -3097,17 +3105,15 @@ ul.primary-button li a.btn-menu {
     .group_case_study .group_content_case_study {
     padding-top: 0%;
     }
-    span.icon-menu-mobile {
-    display: none;
-    }
+    
     
 }
 @media only screen and (min-width: 1025px){
     .owl-min-mobile {
         display: none;
     } 
-    span.icon-menu-mobile {
-    display: none;
+    .icon-menu-body{
+        display: none;
     }
 }  
 /*-------------menu--------------*/
@@ -3225,6 +3231,50 @@ button.menu-btn.nav-open {
 }
 
 /*menu-mobile-sut*/
+.menu-mobile-in {
+  position: relative;
+  margin: 50px;
+  width: 80%;
+}
+.menu-mobile-in ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-mobile-in ul li {
+  /* Sub Menu */
+}
+.menu-mobile-in ul li a {
+    font-size: 18px;
+  display: block;
+  padding: 20px 15px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.menu-mobile-in ul li a:hover {
+  color: #ffffff;
+}
+.menu-mobile-in ul li a .fa {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+  float:right;
+}
+.menu-mobile-in ul ul {
+
+}
+.menu-mobile-in ul li ul li a {
+  border-left: 4px solid transparent;
+  padding: 10px 20px;
+}
+.menu-mobile-in ul li ul li a:hover {
+  border-left: 4px solid #3498db;
+}
 .overlay {
   height: 100%;
   width: 0;
@@ -3256,7 +3306,7 @@ button.menu-btn.nav-open {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .overlay .closebtn {
@@ -3266,12 +3316,7 @@ button.menu-btn.nav-open {
   font-size: 60px;
 }
 
-.tab-menu li{
-    display: none;
-}
-
-
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;

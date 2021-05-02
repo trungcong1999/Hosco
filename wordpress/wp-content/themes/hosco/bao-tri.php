@@ -52,7 +52,7 @@
 <div class="tab-content-news">
     <div id="tin-tuc" class="tab-pane fade in active show">
         <div class="row row-ibl">
-            <?php $args = array( 'post_type' => 'Press_talk','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
+            <?php $args = array( 'category_name' => 'bao-chi','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
             <?php $getposts = new WP_query( $args);?>
             <?php global $wp_query; $wp_query->in_the_loop = true; ?>
             <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
@@ -82,7 +82,7 @@
          
 
             <div class="col-lg-12 col-12 text-center load_more_new">
-                <a href="index.html"> →Xem tất cả bài viết </a>
+                <a href="?page_id=24"> →Xem tất cả bài viết </a>
             </div>
         </div>
     </div>

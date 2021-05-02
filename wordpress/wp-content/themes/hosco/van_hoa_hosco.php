@@ -9,7 +9,7 @@
    <div class="tab-content tab-content-news">
       <div id="vanhoa" class="tab-pane fade in active show">
          <div class="row row-ibl">
-            <?php $args = array( 'post_type' => 'van_hoa_hosco','posts_per_page' => 10,'ignore_sticky_posts' => 3,   'orderby' => 'date','order' => 'DESC',     ); ?>
+            <?php $args = array( 'category_name' => 'van-hoa-hosco','posts_per_page' => 3,'ignore_sticky_posts' => 3,   'orderby' => 'date','order' => 'DESC',     ); ?>
             <?php $getposts = new WP_query( $args);?>
             <?php global $wp_query; $wp_query->in_the_loop = true; ?>
             <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
@@ -41,12 +41,12 @@
 
       </div>
       <div class="col-lg-12 col-12 text-center load_more_new">
-         <a href="index.html"> →Xem tất cả bài viết </a>
+         
       </div>
    </div>
    <div id="tintuc" class="tab-pane fade">
    <div class="row row-ibl">
-<?php $args = array( 'post_type' => 'tin_tuc','posts_per_page' => 3,'ignore_sticky_posts' => 3,   'orderby' => 'date','order' => 'DESC',     ); ?>
+<?php $args = array( 'category_name' => 'tin-tuc','posts_per_page' => 3,'ignore_sticky_posts' => 3,   'orderby' => 'date','order' => 'DESC',     ); ?>
      <?php $getposts = new WP_query( $args);?>
      <?php global $wp_query; $wp_query->in_the_loop = true; ?>
      <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
@@ -77,7 +77,7 @@
 
 </div>
 <div class="col-lg-12 col-12 text-center load_more_new">
-   <a href="index.html"> →Xem tất cả bài viết </a>
+   
 </div>
 </div>
 </div>

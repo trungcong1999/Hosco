@@ -66,3 +66,21 @@ Stack trace:
 #3 {main}
   thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 344
 
+2021-05-01T22:57:23+00:00 CRITICAL syntax error, unexpected end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 327
+
+2021-05-01T22:57:24+00:00 CRITICAL syntax error, unexpected end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 327
+
+2021-05-01T22:57:24+00:00 CRITICAL syntax error, unexpected end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 327
+
+2021-05-01T22:58:24+00:00 CRITICAL syntax error, unexpected end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 327
+
+2021-05-01T22:58:26+00:00 CRITICAL syntax error, unexpected end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 327
+
+2021-05-01T23:06:13+00:00 CRITICAL syntax error, unexpected 'sub' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 203
+
+2021-05-01T23:06:15+00:00 CRITICAL syntax error, unexpected 'sub' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 203
+
+2021-05-01T23:07:35+00:00 CRITICAL syntax error, unexpected 'sub' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 203
+
+2021-05-01T23:07:36+00:00 CRITICAL syntax error, unexpected 'sub' (T_STRING), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\menutop.php on line 203
+

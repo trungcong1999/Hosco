@@ -1,60 +1,49 @@
-<?php get_header(); ?>
-
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                    <div class="page-wrapper">
-                     <div class="blog-top clearfix">
-                        <h4 class="pull-left">Tuyển Dụng <a href="#"><i class="fa fa-rss"></i></a></h4>
-                    </div><!-- end blog-top -->
-                    <div class="blog-list clearfix">
+<?php get_header();?>
 
 
-                        <?php 
-                        $args = array(
+<section class="section single-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <div class="page-wrapper">
+                    <?php 
 
-                            'category_name' => 'tuyen-dung'
-                        );
-                        $the_query = new WP_Query( $args );
-                        ?>
-                        <?php if( $the_query->have_posts() ): ?>
-                            <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    $args = array(
+                        'posts_per_page' => 20,
+                        'post_type'      => 'tin_tuc',
+                        'name'=>$_GET['tin_tuc']
+                    );
+                    $the_query = new WP_Query( $args );
+                    ?>
+                    <?php if( $the_query->have_posts() ): ?>
+                        <?php while( $the_query->have_posts() ) : $the_query->the_post();  ?>
 
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="<?php echo get_post_permalink(); ?>" title="">
-                                                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
+                            <div class="blog-title-area text-center">
+                                <h3><?php the_title(); ?> </h3>
+                                <div class="blog-meta big-meta">
+                                    <small><a href="tech-single.html" title=""><?php $date=date_create(get_post()->post_date);
+echo date_format($date,"Y/m/d"); ?></a></small>
+                                    
+                                </div><!-- end meta -->
+                            </div><!-- end title -->
 
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="<?php echo get_post_permalink(); ?>" title=""><?php the_title(); ?></a></h4>
-                                        <p><?php echo get_post()->post_excerpt;  ?></p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
 
-                                <hr class="invis">
+                    <div class="single-post-media">
+                        <img src="upload/tech_menu_08.jpg" alt="" class="img-fluid">
+                    </div><!-- end media -->
+                    <div class="blog-content">  
+                        <?php the_content(); ?>
+                    </div><!-- end content -->
 
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                        <?php wp_reset_query(); ?>
-
-
-
-                    </div><!-- end blog-list -->
+                    
                 </div><!-- end page-wrapper -->
-
-                <hr class="invis">
-
-
             </div><!-- end col -->
 
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="sidebar">                       
+                <div class="sidebar">
                     <div class="widget">
                         <h2 class="widget-title">Tin Hosco</h2>
                         <div class="blog-list-widget">
@@ -74,7 +63,8 @@
                                             <div class="w-100 justify-content-between">
                                                 <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1"><?php the_title(); ?></h5>
-                                                <small>12 Jan, 2016</small>
+                                                <small><?php $date=date_create(get_post()->post_date);
+echo date_format($date,"Y/m/d"); ?></small>
                                             </div>
                                         </a>
 
@@ -102,7 +92,8 @@
                                             <div class="w-100 justify-content-between">
                                                 <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1"><?php the_title(); ?></h5>
-                                                <small>12 Jan, 2016</small>
+                                                <small><?php $date=date_create(get_post()->post_date);
+echo date_format($date,"Y/m/d"); ?></small>
                                             </div>
                                         </a>
 
@@ -110,9 +101,9 @@
                              </div>
                          </div><!-- end blog-list -->
                      </div><!-- end widget -->
-                 </div><!-- end sidebar -->
-             </div><!-- end col -->
-         </div><!-- end row -->
-     </div><!-- end container -->
- </section> 
- <?php get_footer(); ?>
+                </div><!-- end sidebar -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<?php get_footer(); ?>

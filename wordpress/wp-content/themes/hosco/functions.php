@@ -145,105 +145,7 @@ function typical_projects(){
 
 }
 add_action('init', 'typical_projects');
-function Press_talk(){
 
-    $label = array(
-        'name' => 'Báo Chí', 
-        'singular_name' => 'Thông Tin Báo Chí'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Báo Chí',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('Press_talk', $args); 
-
-}
-add_action('init', 'Press_talk');
-function van_hoa_hosco(){
-
-    $label = array(
-        'name' => 'Văn Hóa Hosco', 
-        'singular_name' => 'Văn Hóa Hosco'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Văn Hóa Hosco',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('van_hoa_hosco', $args); 
-
-}
-add_action('init', 'van_hoa_hosco');
-function tin_tuc(){
-
-    $label = array(
-        'name' => 'Tin Tức', 
-        'singular_name' => 'Tin Tức'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Tin Tức',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('tin_tuc', $args); 
-
-}
-add_action('init', 'tin_tuc');
 function customer_whatSaid(){
 
     $label = array(
@@ -256,9 +158,9 @@ function customer_whatSaid(){
         'labels' => $label, 
         'description' => 'the customer says',
         'supports' => array(
-           'title', 'editor', 'thumbnail'
+         'title', 'editor', 'thumbnail'
 
-       ), 
+     ), 
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
@@ -286,13 +188,13 @@ function he_sinh_thai(){
         'labels' => $label, 
         'description' => 'Hệ Sinh Thái',
         'supports' => array(
-           'title', 'editor', 'thumbnail'
+         'title', 'editor', 'thumbnail'
 
-       ), 
+     ), 
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
- 
+        
         'can_export' => true, 
         'has_archive' => true, 
         'exclude_from_search' => false,
@@ -316,9 +218,9 @@ function ban_hang_thoi_trang(){
         'labels' => $label, 
         'description' => 'Nghành Hàng',
         'supports' => array(
-           'title', 'editor', 'thumbnail'
+         'title', 'editor', 'thumbnail'
 
-       ), 
+     ), 
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
@@ -356,18 +258,18 @@ class T5_Richtext_Excerpt
 
         remove_meta_box(
             'postexcerpt' 
-        ,   ''           
-        ,   'normal'      
-    );
+            ,   ''           
+            ,   'normal'      
+        );
 
         add_meta_box(
             'postexcerpt2'     
-        ,   __( 'Mô tả ngắn' )    
-        ,   array ( __CLASS__, 'show' ) 
-        ,   null             
-        ,   'normal'          
-        ,   'core'            
-    );
+            ,   __( 'Mô tả ngắn' )    
+            ,   array ( __CLASS__, 'show' ) 
+            ,   null             
+            ,   'normal'          
+            ,   'core'            
+        );
     }
 
     /**
@@ -413,7 +315,6 @@ class T5_Richtext_Excerpt
     }
 }
 
-add_post_type_support( 'page', 'excerpt' );
 add_filter( 'widget_text', 'do_shortcode' );
 add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
 function d4p_32752_completly_disable_block_editor($use_block_editor) {
@@ -421,13 +322,17 @@ function d4p_32752_completly_disable_block_editor($use_block_editor) {
 }
 function meta_box_detail_san_pham_hst()
 {
-   add_meta_box( 'he-sinh-thai', 'Hệ Sinh Thái Sản Phẩm', 'he_sinh_thai_box', 'page' );
+    // var_dump(get_post());
+    // var_dump(basename(get_page_template()));
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+     add_meta_box( 'he-sinh-thai', 'Hệ Sinh Thái Sản Phẩm', 'he_sinh_thai_box', 'page' );
+ }
 }
 add_action( 'add_meta_boxes', 'meta_box_detail_san_pham_hst' );
 
 
- function he_sinh_thai_box( $post )
- {
+function he_sinh_thai_box( $post )
+{
     $product_page = get_post_meta( $post->ID, '_product_page', true );
     $args = array(
         'post_type'      => 'product'
@@ -438,7 +343,7 @@ add_action( 'add_meta_boxes', 'meta_box_detail_san_pham_hst' );
     echo "<option value=''>Chưa Chọn Sản Phẩm</option> ";
 
     if( $the_query->have_posts() ): 
-     while( $the_query->have_posts() ) : $the_query->the_post(); 
+       while( $the_query->have_posts() ) : $the_query->the_post(); 
         $kt = false;
         
         if($product_page ==get_post()->ID){
@@ -464,7 +369,7 @@ $args = array(
 $the_query = new WP_Query( $args );
 echo "<div style='border:1px;'>";
 if( $the_query->have_posts() ): 
- while( $the_query->have_posts() ) : $the_query->the_post(); 
+   while( $the_query->have_posts() ) : $the_query->the_post(); 
     $kt = false;
     if($link_download!=NULL){
         foreach ($link_download as $value) {
@@ -479,9 +384,9 @@ if( $the_query->have_posts() ):
     }
     
     if($kt==false){
-     echo "<input type='checkbox' id='".get_post()->post_name."' name='hesinhthai[]' value='".get_post()->ID."' >";
-     echo "<label for='".get_post()->post_name."'>".the_title()."</label>"; 
- }
+       echo "<input type='checkbox' id='".get_post()->post_name."' name='hesinhthai[]' value='".get_post()->ID."' >";
+       echo "<label for='".get_post()->post_name."'>".the_title()."</label>"; 
+   }
 
 endwhile; 
 endif;
@@ -505,13 +410,13 @@ add_action( 'save_post', 'he_sinh_thai_save' );
 // metabox nghanh hang
 function meta_box_nghanh_hang()
 {
-   add_meta_box( 'nghanh-hang', 'Lựa Chọn Nghành Hàng', 'nghanh_hang_box', 'product' );
+ add_meta_box( 'nghanh-hang', 'Lựa Chọn Nghành Hàng', 'nghanh_hang_box', 'product' );
 }
 add_action( 'add_meta_boxes', 'meta_box_nghanh_hang' );
 
 
- function nghanh_hang_box( $post )
- {
+function nghanh_hang_box( $post )
+{
 
     wp_enqueue_script( 'nghanhhang.js', get_theme_file_uri( '/template/js/nghanhhang.js' ) , array(), '1.0', true );
 
@@ -525,7 +430,7 @@ add_action( 'add_meta_boxes', 'meta_box_nghanh_hang' );
     echo "<option value=''>Chưa Chọn Sản Phẩm</option> ";
 
     if( $the_query->have_posts() ): 
-     while( $the_query->have_posts() ) : $the_query->the_post(); 
+       while( $the_query->have_posts() ) : $the_query->the_post(); 
         $kt = false;
         
         if($product_page ==get_post()->ID){
@@ -554,18 +459,18 @@ if($nghanh_hang_post != ""){
         );
         $the_query = new WP_Query( $args );
         if( $the_query->have_posts() ): 
-         while( $the_query->have_posts() ) : $the_query->the_post(); 
-             echo "<div style='display:inline-block;''>";
-             echo "<p style='display:inline-block;box-shadow: 0px 0px 10px 2px inset gray ;'>".get_post()->post_title."</p>";
-             echo "<button type='button' style='width: 16.2px;padding: 0;border: 1px solid #c56565;'' onclick='remove(this)''><img src='../wp-content/themes/hosco/template/image/remove-image.png' alt='' width='100%'' height='100%''></button>";
-             echo "<input type='hidden' name='prozzzzduct-".$value."' value='".$value."'>";
-             echo "</div>";
+           while( $the_query->have_posts() ) : $the_query->the_post(); 
+               echo "<div style='display:inline-block;''>";
+               echo "<p style='display:inline-block;box-shadow: 0px 0px 10px 2px inset gray ;'>".get_post()->post_title."</p>";
+               echo "<button type='button' style='width: 16.2px;padding: 0;border: 1px solid #c56565;'' onclick='remove(this)''><img src='../wp-content/themes/hosco/template/image/remove-image.png' alt='' width='100%'' height='100%''></button>";
+               echo "<input type='hidden' name='prozzzzduct-".$value."' value='".$value."'>";
+               echo "</div>";
 
-         endwhile; 
-     endif;
-     wp_reset_query();
+           endwhile; 
+       endif;
+       wp_reset_query();
 
- }
+   }
 }
 
 echo "</div>";
