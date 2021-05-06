@@ -12,7 +12,6 @@ function slider_post_type(){
 
     );
 
-
     $args = array(
         'labels' => $label, 
         'description' => 'Ảnh slider',
@@ -124,7 +123,8 @@ function typical_projects(){
         'supports' => array(
             'title',
             'thumbnail',
-            'editor'
+            'editor','excerpt'
+            
 
         ), 
         'hierarchical' => false, 
@@ -145,105 +145,7 @@ function typical_projects(){
 
 }
 add_action('init', 'typical_projects');
-function Press_talk(){
 
-    $label = array(
-        'name' => 'Báo Chí', 
-        'singular_name' => 'Thông Tin Báo Chí'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Báo Chí',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('Press_talk', $args); 
-
-}
-add_action('init', 'Press_talk');
-function van_hoa_hosco(){
-
-    $label = array(
-        'name' => 'Văn Hóa Hosco', 
-        'singular_name' => 'Văn Hóa Hosco'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Văn Hóa Hosco',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('van_hoa_hosco', $args); 
-
-}
-add_action('init', 'van_hoa_hosco');
-function tin_tuc(){
-
-    $label = array(
-        'name' => 'Tin Tức', 
-        'singular_name' => 'Tin Tức'
-    );
-
-
-    $args = array(
-        'labels' => $label, 
-        'description' => 'Tin Tức',
-        'supports' => array(
-           'title', 'editor', 'thumbnail', 'excerpt'
-
-       ), 
-        'hierarchical' => false, 
-        'public' => true,
-        'show_ui' => true,
-        // 'show_in_menu' => true, 
-        // 'show_in_nav_menus' => true, 
-        // 'show_in_admin_bar' => true,
-        // 'menu_position' => 5, 
-        'can_export' => true, 
-        'has_archive' => true, 
-        'exclude_from_search' => false,
-        'publicly_queryable' => true,
-        'capability_type' => 'post'
-    );
-
-    register_post_type('tin_tuc', $args); 
-
-}
-add_action('init', 'tin_tuc');
 function customer_whatSaid(){
 
     $label = array(
@@ -292,7 +194,7 @@ function he_sinh_thai(){
         'hierarchical' => false, 
         'public' => true,
         'show_ui' => true,
- 
+        
         'can_export' => true, 
         'has_archive' => true, 
         'exclude_from_search' => false,
@@ -356,18 +258,18 @@ class T5_Richtext_Excerpt
 
         remove_meta_box(
             'postexcerpt' 
-        ,   ''           
-        ,   'normal'      
-    );
+            ,   ''           
+            ,   'normal'      
+        );
 
         add_meta_box(
             'postexcerpt2'     
-        ,   __( 'Mô tả ngắn' )    
-        ,   array ( __CLASS__, 'show' ) 
-        ,   null             
-        ,   'normal'          
-        ,   'core'            
-    );
+            ,   __( 'Mô tả ngắn' )    
+            ,   array ( __CLASS__, 'show' ) 
+            ,   null             
+            ,   'normal'          
+            ,   'core'            
+        );
     }
 
     /**
@@ -413,7 +315,6 @@ class T5_Richtext_Excerpt
     }
 }
 
-add_post_type_support( 'page', 'excerpt' );
 add_filter( 'widget_text', 'do_shortcode' );
 add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
 function d4p_32752_completly_disable_block_editor($use_block_editor) {
@@ -421,16 +322,24 @@ function d4p_32752_completly_disable_block_editor($use_block_editor) {
 }
 function meta_box_detail_san_pham_hst()
 {
-   add_meta_box( 'he-sinh-thai', 'Hệ Sinh Thái Sản Phẩm', 'he_sinh_thai_box', 'page' );
+    // var_dump(get_post());
+    // var_dump(basename(get_page_template()));
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+       add_meta_box( 'he-sinh-thai', 'Hệ Sinh Thái Sản Phẩm', 'he_sinh_thai_box', 'page' );
+   }
 }
 add_action( 'add_meta_boxes', 'meta_box_detail_san_pham_hst' );
 
 
- function he_sinh_thai_box( $post )
- {
+function he_sinh_thai_box( $post )
+{
     $product_page = get_post_meta( $post->ID, '_product_page', true );
     $args = array(
-        'post_type'      => 'product'
+        'post_type'      => 'product',
+        'post_status' => array(           
+            'publish'                     
+            
+        ),
     );
     $the_query = new WP_Query( $args );
     echo "<label for='product'>Chọn Sản Phẩm Hiển Thị :</label>";
@@ -491,10 +400,14 @@ echo "</div>";
 }
 function he_sinh_thai_save( $post_id )
 {
-    $link_download = $_POST['hesinhthai'] ;
-    update_post_meta( $post_id, '_he_sinh_thai', $link_download );
-    $pr_id = $_POST['pr_ID'] ;
-    update_post_meta( $post_id, '_product_page', $pr_id );
+
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+       $link_download = $_POST['hesinhthai'] ;
+       update_post_meta( $post_id, '_he_sinh_thai', $link_download );
+       $pr_id = $_POST['pr_ID'] ;
+       update_post_meta( $post_id, '_product_page', $pr_id );
+   }
+   
 
 
 }
@@ -510,8 +423,8 @@ function meta_box_nghanh_hang()
 add_action( 'add_meta_boxes', 'meta_box_nghanh_hang' );
 
 
- function nghanh_hang_box( $post )
- {
+function nghanh_hang_box( $post )
+{
 
     wp_enqueue_script( 'nghanhhang.js', get_theme_file_uri( '/template/js/nghanhhang.js' ) , array(), '1.0', true );
 
@@ -580,7 +493,7 @@ function nghanh_hang_save( $post_id )
         }
         
     }
-    var_dump($list);
+   
 
     update_post_meta( $post_id, '_product_nghanh_hang', $list );
     
@@ -652,3 +565,23 @@ function my_admin_scripts(){
 function my_admin_styles(){
   wp_enqueue_style('thickbox');
 }
+
+
+add_filter('upload_mimes','add_custom_mime_types');
+function add_custom_mime_types($mimes) {
+    return array_merge($mimes, array(
+        'ac3' => 'audio/ac3',
+        'mpa' => 'audio/MPA',
+        'flv' => 'video/x-flv',
+        'svg' => 'image/svg+xml',
+        'svgz' => 'image/svgz+xml'
+    ));
+}
+//==========================================
+function showWidget(){
+  register_sidebar(  array('name'=>'Sidebar1','id'=>'footer') );
+  register_sidebar(  array('name'=>'menuFooter','id'=>'menuFooter') );
+    register_sidebar(  array('name'=>'menuProduct','id'=>'menuProduct') );
+ register_sidebar(  array('name'=>'trungtamhotro','id'=>'trungtamhotro') );
+}
+add_action( 'widgets_init', 'showWidget' );

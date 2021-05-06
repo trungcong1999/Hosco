@@ -1,257 +1,481 @@
-<?php get_header(); ?>
-<div class="wrapper">
-        <!-- About Start -->
-        <div class="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="https://www.phanmembanhang.com/wp-content/uploads/2020/05/phan-mem-ban-hang-sao-khue-1024x521.png" alt="Image">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Lịch sử hình thành phát triển</h2>
-                        <p> Với thâm niên hơn 10 năm trong lĩnh vực CNTT, kết hợp với đội ngũ Nhân viên trình độ cao và có nhiều kinh nghiệm, hiện nay HOSCO Việt Nam là một trong những công ty cung cấp về dịch vụ có uy tín tại thị trường Việt Nam.
-                        Thế mạnh làm nên thương hiệu HOSCO Việt Nam khác biệt chính là: Chúng tôi tạo nên một Hệ sinh thái các phần mềm, giúp khách hàng nhanh chóng tiếp cận công nghệ, giảm chi phí và nâng cao hiệu quả kinh doanh. Sự chuyên môn hóa trong từng bộ phận, tính trách nhiệm cao cùng những đội ngũ kỹ thuật làm việc nghiêm túc, cẩn thận nhằm tạo nên những sản phẩm hoàn thiện nhất.</p>
-                        <p>Phương châm “ Đồng hành cùng Khách hàng”, và định hướng “Liên tục cải tiến” HOSCO Việt Nam đã luôn nỗ lực cả về nhân lực, vật lực, xây dựng uy tín thương hiệu, niềm tin với khách hàng với những sản phẩm chúng tôi cung cấp. Sự tin tưởng và ủng hộ của khách hàng trong suốt thời gian qua là nguồn động viên to lớn trên bước đường phát triển của HOSCO. Chúng tôi không ngừng hoàn thiện, phục vụ khách hàng tốt nhất để luôn xứng đáng với niềm tin ấy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
+<?php get_header();?>
+<!-- đây là phần đầu ảnh của trang về hosco -->
+<div id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="home-img"><img src="https://bahanto.net/wp-content/uploads/2021/05/home-img.jpg" alt=""></div>
+			</div>
 
+			<div class="col-md-6 col-sm-6">
+				<div class="home-thumb">
+					<div class="section-title">
+						<h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
+						<h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Stimulus</strong> currently based in New York city.</h1>
+						<p class="wow fadeInUp" data-wow-delay="0.9s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tab-navications">
+	<ul class="tab-group">
+		<li class="tab is-active">GIỚI THIỆU</li>
+		<li class="tab">VĂN HÓA DOANH NGHIỆP</li>
+		<li class="tab">HỆ THỐNG</li>
+		<li class="tab">LĨNH VỰC</li>
+		<li class="tab">ĐỐI TÁC</li>
+		<li class="tab">GIẢI THƯỞNG</li>
+	</ul>
+</div>
+<!-- cai nay cho dien thoi -->
+<section class="mobile-ve-hosco">
+	<div class="container">
+		<div class="row">
+			<div class="col-12"><select id="colorselector" class="custom-select">
+				<option class="white-fin is-active" value="1">GIỚI THIỆU</option>
+				<option class="white-fin" value="2">VĂN HÓA DOANH NGHIỆP</option>
+				<option class="white-fin" value="3">HỆ THỐNG</option>
+				<option class="white-fin" value="4">LĨNH VỰC</option>
+				<option class="white-fin" value="5">ĐỐI TÁC</option>
+				<option class="white-fin" value="6">GIẢI THƯỞNG</option>
+			</select></div>
+			<div class="output">
+				<div id="1" class="colors 1">
+					<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
 
-        <!-- Service Start -->
-        <div class="service">
-            <div class="container-fluid">
-                <div class="section-header">
-                    <h2>Sản phẩm và Giả pháp CNTT</h2>
-                    <p>Với kinh nghiệp 10 năm hình thành và phát triển Công ty cổ phần Hosco Việt Nam đã cho ra đời nhiều phần mềm ứng dụng, các giải pháp CNTT tân tiến nhất</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>MASTER PRO</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm bán hàng</p>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>LOTUS PRO</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm quản lý phân phối</p>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>SAP ERP</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Hệ thống tích hợp</p>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>Lotus ERP for CRM.</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm quản lý quan hệ khách hàng</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>HOSCO RMS</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm quản lý nhà hàng, quán bar karaoke</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>Hosco BMS</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm quản lý kinh doanh</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>eOffice Pro</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm văn phòng điện tử</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="service-item">
-                            <h3>Hosco Contact</h3>
-                            <img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="Service">
-                            <p>Phần mềm sổ liên lạc điện tử</p>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
 
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
 
-        <!-- FAQs Start -->
-        <div class="faqs">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="section-title">CHIẾN LƯỢC<h2>
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                           QUAN ĐIỂM HOẠT ĐỘNG KINH DOANH, ĐỐI TÁC CHIẾN LƯỢC TIN CẬY
-                                       </a>
-                                   </div>
-                                   <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Hệ thống phần mềm quản lý tổng thể doanh nghiệp Lotus ERP.</p>
-                                        <p>– Giải pháp phần mềm quản lý bán hàng Master Pro.</p>
-                                        <p>– Giải pháp phần mềm quản lý sản xuất Lotus ERP for Manufacturing.</p>
-                                        <p> – Giải pháp phần mềm quản lý nhân sự Lotus Pro.</p>
-                                        <p> – Giải pháp phần mềm quản lý hệ thống phân phối Lotus in ERP in DMS.</p>
-                                        <p> – Giải pháp phần mềm kế toán Lotus ERP for Accounting.</p>
-                                        <p> – Giải pháp phần mềm quản lý Gym –  Yoga Gym Master.</p>
-                                        <p> – Giải pháp hệ thống phần mềm quản lý quan hệ khách hàng Lotus ERP for CRM.</p>
-                                        <p> – Giải pháp hội thảo trực tuyến HOSCO Conference.</p>
-                                        <p>– Giải pháp phần mềm quản lý nhà hàng, quán bar karaoke HOSCO RMS.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                        CHIẾN LƯỢC CẠNH TRANH
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <b>Sản phẩm (phần mềm)</b>
-                                        <p>+ Nhanh hơn: Tốc độ xử lý của phần mềm ngày càng nhanh, giúp khách hàng tăng tốc độ tác nghiệp và khai thác thông tin, đặc biệt trong điều kiện số lượng giao dịch, cơ sở dữ liệu ngày càng lớn và hoạt động trong môi trường online thông qua internet.</p>
-                                        <p>+ Thông minh hơn: Có nhiều tính năng, chức năng thông minh, giải quyết các bài toán nghiệp vụ và quản trị của khách hàng, giúp khách hàng tác nghiệp và khai thác dữ liệu nhanh hơn, hiệu quả hơn.</p>
-                                        <b>Về dịch vụ tư vấn, hỗ trợ và chăm sóc khách hàng</b>
-                                        <p>+ Nhanh hơn: Thời gian hoàn thành các dự án tư vấn ứng dụng, hoàn thành các dịch vụ hỗ trợ khách hàng ngày càng nhanh hơn.</p>
-                                        <p>+ Thông minh hơn: Đưa ra các giải pháp tư vấn ứng dụng thông minh, giải quyết các bài toán nghiệp vụ và quản trị của khách hàng, giúp khách hàng tác nghiệp và khai thác dữ liệu nhanh hơn, hiệu quả hơn.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                        PHƯƠNG PHÁP QUẢN TRỊ HOẠT ĐỘNG
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Quản trị hoạt động kinh doanh và các hoạt động của công ty theo phương pháp quản trị theo mục tiêu (MBO – Management by Objectives) thông qua hệ thống các chỉ tiêu đánh giá (KPI – Key Peformance Indicators).</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/faqs.jpg" alt="Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FAQs End -->
-        <!-- Testimonial Start -->
-        <div class="testimonial">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Khách hàng nói gì về Hosco</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-slider-nav">
-                            <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Testimonial"></div>
-                            <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Testimonial"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-slider">
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                            <div class="slider-item">
-                                <h3>Customer Name</h3>
-                                <h4>profession</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
 
+						</div>
+					</div>
 
-        <!-- News Start -->
-        <div class="news">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="img/news.jpg" alt="Image">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="section-title">Read Latest News</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- News End -->
-    </div>
+					<div class="col-md-6 col-sm-6">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<div id="quotes" class="parallax-section">
+			<div class="overlay-fix"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 col-sm-12">
+						<i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+						<h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+						<p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- het cai anh fix o giua -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+				</div>
+				<div id="2" class="colors 2">
+					
+				</div>
+				<div id="3" class="colors 3">
+					
+				</div>
+				<div id="4" class="colors 4">
+					
+				</div>
+				<div id="5" class="colors 5">
+					
+				</div>
+				<div id="6" class="colors 6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- het mobile -->
+<div class="panel-group">
+	<div class="panel is-show">
+		<!-- bat dau section -->
+		<h2 class="main-text-pos">GIỚI THIỆU</h2>
+		<div id="education" class="parallax-section">
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<!-- cái ảnh này để linh tinh cho tách biệt đẹp tí thôi -->
+		<div id="quotes" class="parallax-section">
+			<div class="overlay-fix"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10 col-sm-12">
+						<i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+						<h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+						<p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- het cai anh fix o giua -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+		<!-- bat dau section -->
+		<div id="education" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="color-white education-thumb">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+								<h1>My Education</h1>
+								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+									<p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+								<div class="media-object media-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+									<p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ket thuc section -->
+	</div>
+	<div class="panel">
+
+	</div>
+	<div class="panel">
+
+	</div>
+	<div class="panel">
+
+	</div>
+	<div class="panel">
+
+	</div>
+	<div class="panel">
+
+	</div>
+</div>
 <?php get_footer(); ?>

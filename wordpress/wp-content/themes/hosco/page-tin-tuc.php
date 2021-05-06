@@ -1,286 +1,289 @@
 <?php get_header(); ?>
-<!-- <section class="blog-pp">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="menu-tab-infor">
-					<div class="sidenav">
-						<div class="main-left">
-							<nav class="menu-left aside-left">
-								<ul>
-									<li>
-										<a class="active" href="https://hosco.vn/tin-tuc" title="Tin Tức">Tin Tức</a>
-									</li>
-								</ul>
-							</nav>           
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<div class="tin-tuc">
-					<div class="main-right">
-						<div class="list-category">
-							
+<!-- cai nay la anh dau -->
+<div class="heading-page header-text">
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-content">
+            <h4>Recent Posts</h4>
+            <h2>Our Recent Blog Entries</h2>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</div> 
 
-							<?php 
-							$args = array(
-								'posts_per_page' => 20,
-								'post_type'      => 'tin_tuc'
-							);
-							$the_query = new WP_Query( $args );
-							?>
-							<?php if( $the_query->have_posts() ): ?>
-								<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-									<div class="list-category-box">
-										<div class="box-img">
-											<a href="<?php echo get_post_permalink(); ?>" class="img">
-												<img width="600px" height="350px" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="">                    </a>
-											</div>
-											<div class="box-txt">
-												<p class="title">
-													<a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a>
-												</p>
-												<div class="summary"><p><?php echo get_post()->post_excerpt;  ?></p>
-												</div>
-											</div>
-										</div>
-
-									<?php endwhile; ?>
-								<?php endif; ?>
-								<?php wp_reset_query(); ?>
-
-
-
-
-
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>						
-	</section> -->
-	<section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <div class="page-wrapper">
-                        	<div class="blog-top clearfix">
-                                <h4 class="pull-left">Tin mới nhất <a href="#"><i class="fa fa-rss"></i></a></h4>
-                            </div><!-- end blog-top -->
-                            <div class="blog-list clearfix">
-                              
-
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">Applications for taking photos of nature in your mobile phones</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">Say hello to colored strap models in smart hours</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">How about evaluating your old mobile phones in different ways?</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">Drinking coffee at the computer rests the spirit</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">If you are considering buying a new safe for your mobile phone, be sure to read this article</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">Enjoy a summer with a colorful headset</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-
-                                <hr class="invis">
-
-                                <div class="blog-box row">
-                                    <div class="col-md-4">
-                                        <div class="post-media">
-                                            <a href="#" title="">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid">
-                                                <div class="hovereffect"></div>
-                                            </a>
-                                        </div><!-- end media -->
-                                    </div><!-- end col -->
-
-                                    <div class="blog-meta big-meta col-md-8">
-                                        <h4><a href="#" title="">Google has developed a brand new algorithm. Forget all your knowledge!</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    </div><!-- end meta -->
-                                </div><!-- end blog-box -->
-                            </div><!-- end blog-list -->
-                        </div><!-- end page-wrapper -->
-
-                        <hr class="invis">
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-start">
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end col -->
-
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <div class="sidebar">                       
-                            <div class="widget">
-                                <h2 class="widget-title">Tin Hosco</h2>
-                                <div class="blog-list-widget">
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">5 Beautiful buildings you need..</h5>
-                                                <small>12 Jan, 2016</small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="https://hosco.vn/wp-content/uploads/2021/04/ban-hang-da-kenh-la-gi-03.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">Let's make an introduction for..</h5>
-                                                <small>11 Jan, 2016</small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 last-item justify-content-between">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">Did you see the most beautiful..</h5>
-                                                <small>07 Jan, 2016</small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- end blog-list -->
-                            </div><!-- end widget -->
-
-                            <div class="widget">
-                                <h2 class="widget-title">Bài viết mới</h2>
-                                <div class="blog-list-widget">
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">Banana-chip chocolate cake recipe..</h5></div>
-                                        </a>
-
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 justify-content-between">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">10 practical ways to choose organic..</h5>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="w-100 last-item justify-content-between">
-                                                <img src="http://localhost/wordpress/wp-content/uploads/2021/05/tech_blog_01.jpg" alt="" class="img-fluid float-left">
-                                                <h5 class="mb-1">We are making homemade ravioli..</h5>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- end blog-list -->
-                            </div><!-- end widget -->
-                        </div><!-- end sidebar -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section> 
-	<?php get_footer(); ?>
+<!-- cai nay la thong tin tin tuc -->
+<section class="blog-posts grid-system">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="all-blog-posts">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="blog-post">
+                <div class="blog-thumb">
+                  <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+              </div>
+              <div class="down-content">
+                  <span>Lifestyle</span>
+                  <!-- cho nay dien link -->
+                  <a href="#"><h4>Donec tincidunt leo</h4></a>
+                  <ul class="post-info">
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">May 31, 2020</a></li>
+                    <li><a href="#">12 Comments</a></li>
+                </ul>
+                <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+                <div class="post-options">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ul class="post-tags">
+                          <li><i class="fa fa-tags"></i></li>
+                          <li><a href="#">Best Templates</a>,</li>
+                          <li><a href="#">TemplateMo</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="blog-post">
+    <div class="blog-thumb">
+      <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+  </div>
+  <div class="down-content">
+      <span>Lifestyle</span>
+      <a href="#"><h4>Suspendisse et metus</h4></a>
+      <ul class="post-info">
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">May 22, 2020</a></li>
+        <li><a href="#">26 Comments</a></li>
+    </ul>
+    <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+    <div class="post-options">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="post-tags">
+              <li><i class="fa fa-tags"></i></li>
+              <li><a href="#">Best Templates</a>,</li>
+              <li><a href="#">TemplateMo</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="blog-post">
+    <div class="blog-thumb">
+      <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+  </div>
+  <div class="down-content">
+      <span>Lifestyle</span>
+      <a href="#"><h4>Donec tincidunt leo</h4></a>
+      <ul class="post-info">
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">May 18, 2020</a></li>
+        <li><a href="#">42 Comments</a></li>
+    </ul>
+    <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+    <div class="post-options">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="post-tags">
+              <li><i class="fa fa-tags"></i></li>
+              <li><a href="#">Best Templates</a>,</li>
+              <li><a href="#">TemplateMo</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="blog-post">
+    <div class="blog-thumb">
+      <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+  </div>
+  <div class="down-content">
+      <span>Lifestyle</span>
+      <a href="#"><h4>Mauris ac dolor ornare</h4></a>
+      <ul class="post-info">
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">May 16, 2020</a></li>
+        <li><a href="#">28 Comments</a></li>
+    </ul>
+    <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+    <div class="post-options">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="post-tags">
+              <li><i class="fa fa-tags"></i></li>
+              <li><a href="#">Best Templates</a>,</li>
+              <li><a href="#">TemplateMo</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="blog-post">
+    <div class="blog-thumb">
+      <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+  </div>
+  <div class="down-content">
+      <span>Lifestyle</span>
+      <a href="post-details.html"><h4>Donec tincidunt leo</h4></a>
+      <ul class="post-info">
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">May 12, 2020</a></li>
+        <li><a href="#">16 Comments</a></li>
+    </ul>
+    <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+    <div class="post-options">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="post-tags">
+              <li><i class="fa fa-tags"></i></li>
+              <li><a href="#">Best Templates</a>,</li>
+              <li><a href="#">TemplateMo</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="blog-post">
+    <div class="blog-thumb">
+      <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-thumb-01.jpg" alt="">
+  </div>
+  <div class="down-content">
+      <span>Lifestyle</span>
+      <a href="#"><h4>Mauris ac dolor ornare</h4></a>
+      <ul class="post-info">
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">May 10, 2020</a></li>
+        <li><a href="#">3 Comments</a></li>
+    </ul>
+    <p>Nullam nibh mi, tincidunt sed sapien ut, rutrum hendrerit velit. Integer auctor a mauris sit amet eleifend.</p>
+    <div class="post-options">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="post-tags">
+              <li><i class="fa fa-tags"></i></li>
+              <li><a href="#">Best Templates</a>,</li>
+              <li><a href="#">TemplateMo</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+  <ul class="page-numbers">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+    <div class="sidebar">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sidebar-item search">
+            <form id="search_form" name="gs" method="GET" action="#">
+              <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
+          </form>
+      </div>
+  </div>
+  <div class="col-lg-12">
+      <div class="sidebar-item recent-posts">
+        <div class="sidebar-heading">
+          <h2>Recent Posts</h2>
+      </div>
+      <div class="content">
+          <ul>
+            <li><a href="#">
+                <p class="imagea">
+                    <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-post-02.jpg" alt="">
+                </p>
+                <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
+                <span>May 31, 2020</span>
+            </a></li>
+            <li><a href="#">
+                <p class="imagea">
+                    <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-post-02.jpg" alt="">
+                </p>
+                <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                <span>May 28, 2020</span>
+            </a></li>
+            <li><a href="#">
+                <p class="imagea">
+                    <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-post-02.jpg" alt="">
+                </p>
+                <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
+                <span>May 14, 2020</span>
+            </a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="col-lg-12">
+  <div class="sidebar-item categories">
+    <div class="sidebar-heading">
+      <h2>Categories</h2>
+  </div>
+  <div class="content">
+      <ul>
+        <li><a href="#">- Nature Lifestyle</a></li>
+        <li><a href="#">- Awesome Layouts</a></li>
+        <li><a href="#">- Creative Ideas</a></li>
+        <li><a href="#">- Responsive Templates</a></li>
+        <li><a href="#">- HTML5 / CSS3 Templates</a></li>
+        <li><a href="#">- Creative &amp; Unique</a></li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+  <div class="sidebar-item tags">
+    <div class="sidebar-heading">
+      <h2>Tag Clouds</h2>
+  </div>
+  <div class="content">
+      <ul>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Creative</a></li>
+        <li><a href="#">HTML5</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">PSD</a></li>
+        <li><a href="#">Responsive</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<?php get_footer(); ?>

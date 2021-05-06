@@ -1,65 +1,42 @@
-l <footer>
-        <div class="container">
-            <div class="row col-mar-0 footer-lien-he"  id="lien-he">
-                <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                    <h2>CÔNG TY CỔ PHẦN HOSCO</h2>
-                    <h3 class="f-title">HOSCO MIỀN BẮC</h3>
-                    <div class="f-line">Cơ sở 01: P816, Tòa CT5, KĐT Mỹ Đình , Đường Phạm Hùng, Từ Liêm, Tp. Hà Nội
-                        <p>Cơ sở 02: 272 Khương Đình, Phường Hạ Đình, Quận Thanh Xuân, Tp.Hà Nội</p></div>
-                        <div class="f-line">Hotline: 1900 6129</div>
-                        <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
-                        <h3 class="f-title">HOSCO MIỀN NAM</h3>
-                        <div class="f-line">Lầu 3, Tòa nhà Ngọc Vân Trâm Anh, 33 Lê Văn Huân, Phường 13, Quận Tân Bình, TP. HCM</div>
-                        <div class="f-line">Hotline: 1900 6129</div>
-                        <div class="f-line">Số điện thoại tiếp nhận phàn nàn, khiếu nại: <span>0909 934 689</span></div>
-                        <div class="social_footer">
-                            <a class="smooth f" target="_blank" href="https://www.facebook.com/" title=""><i class="fa fa-facebook"></i></a>
-                            <a class="smooth f" target="_blank" href="https://www.facebook.com/groups/138659120889619/" title=""><i class="fa fa-facebook"></i></a>
-                            <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a class="smooth y" target="_blank" href="https://www.youtube.com/channel/UChNHN8SaECRb3u8h9S8owSw/" title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                            <a class="smooth l" target="_blank" href="index.html" title=""><i class="fa fa-linkedin"></i></a>
-                            <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="themes/default/assets/images/zalo.png" alt=""></a>
+<footer>
+    <div class="container">
+        <div class="row col-mar-0 footer-lien-he"  id="lien-he">
+            <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+               <?php 
+               if ( dynamic_sidebar('sidebar1') ) : else : endif; 
+
+               ?>
+                    <div class="social_footer">
+                        <a class="smooth f" target="_blank" href="https://www.facebook.com/" title=""><i class="fa fa-facebook"></i></a>
+                        <a class="smooth f" target="_blank" href="https://www.facebook.com/groups/138659120889619/" title=""><i class="fa fa-facebook"></i></a>
+                        <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="smooth y" target="_blank" href="https://www.youtube.com/channel/UChNHN8SaECRb3u8h9S8owSw/" title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a class="smooth l" target="_blank" href="index.html" title=""><i class="fa fa-linkedin"></i></a>
+                        <a class="smooth l" target="_blank" href="https://zalo.me/2405075103217684078" title=""><img class="lazy" data-src="themes/default/assets/images/zalo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-auto col-md-4 wow " >
+                            <?php if ( dynamic_sidebar('menuFooter') ) : else : endif;  ?>
+
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow " >
+                             <?php if ( dynamic_sidebar('menuProduct') ) : else : endif;  ?>
+
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow ">
+                             <?php if ( dynamic_sidebar('trungtamhotro') ) : else : endif;  ?>
+
+                        </div>
+                        <div class="col-xl-auto col-md-4 wow hint-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="row justify-content-between">
-                            <div class="col-xl-auto col-md-4 wow " >
-                                <h4 class="f-title">HOSCO HOLDINGS</h4>
-                                <ul>
-                                    <li><a class="smooth" href="blogs/tin-tuc/gioi-thieu-cnv-loyalty-tien-phong-nen-tang-cham-soc-khach-hang-1-vn.html" title="">Về chúng tôi</a></li>
-                                    <li><a class="smooth" href="index.html" title="">Sản phẩm</a></li>
-                                    <li><a href="index.html">Khách hàng</a></li>
-                                    <li><a href="index.html" target="_blank" rel="noopener noreferrer">Tuyển dụng</a></li>
-                                    <li><a href="index.html">Tin tức</a></li>
-                                    <li><a class="smooth" href="index.html">Liên hệ</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-auto col-md-4 wow " >
-                                <h4 class="f-title">Phần mềm</h4>
-                                <ul>
-                                    <li>Phần mềm bán hàng Master Pro</li>
-                                    <li>Phần mềm quản lý nhân sự Lotus Pro</li>
-                                    <li>Phần mềm quản lý phân phối Lotus DMS</li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-auto col-md-4 wow ">
-                                <h4 class="f-title">Trung tâm hỗ trợ</h4>
-                                <ul>
-                                    <li><a class="smooth" href="index.html">Hướng dẫn sử dụng</a></li>
-                                    <li><a class="smooth" href="index.html" title="">Hình thức thanh toán</a></li>
-                                    <li><a class="smooth" href="#">Tài liệu nhà phát triển</a></li>
-                                    <li><a class="smooth" href="http://tuyendung.cnv.vn/" target="_blank" title="" rel="noopener noreferrer">Tuyển dụng</a></li>
-                                    <li><a href="index.html">Chính sách bảo mật</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-auto col-md-4 wow hint-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-            </div>
-        </footer>
+                </div>
+            </div>     
+        </div>
+    </footer>
         <div id="informationForm" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content trial-md-ct">
@@ -230,12 +207,18 @@ l <footer>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/jquery.fancybox.pack.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/fancybox/helpers/jquery.fancybox-thumbs.js" defer></script>
 <script defer>
+    var script=function(){var e=$(window),a=($("html"),$("body")),t=function(){var t=$(""),i=t.find(".nav-ct"),n=t.find(".nav-top"),s=$(".nav-open"),o=$(".nav-close");n.append($("nav.navbarmain-primary").clone()),$(".navbar-super-logo").append($(".logo-wrap .logo").clone()),i.append($(".header-contact-top").clone()),i.append($(".main-nav").clone()),i.append($(".social-link").clone()),s.click(function(i){i.preventDefault(),e.width()<991&&(t.addClass("act"),a.addClass("stage-open"))}),o.click(function(i){i.preventDefault(),e.width()<991&&(t.removeClass("act"),a.removeClass("stage-open"))});var l=$(".sb-nav"),r=(n=l.find(".nav-ct"),$(".sb-open")),c=$(".sb-close");r.click(function(a){a.preventDefault(),e.width()<1200&&l.addClass("act")}),c.click(function(a){a.preventDefault(),e.width()<1200&&l.removeClass("act")}),e.click(function(e){0!=t.has(e.target).length||t.is(e.target)||0!=s.has(e.target).length||s.is(e.target)||(t.removeClass("act"),a.removeClass("stage-open")),0!=l.has(e.target).length||l.is(e.target)||0!=r.has(e.target).length||r.is(e.target)||l.removeClass("act")}),nav=t.find(".main-nav"),nav.find("ul li").each(function(){$(this).find("ul>li").length>0&&$(this).prepend('<i class="nav-drop"></i>')}),$(".navsub-primary-menu").find("ul>li").each(function(){$(this).find("ul>li").length>0&&$(this).prepend('<i class="nav-drop"></i>')}),$(".nav-drop").click(function(){var e=$(this).nextAll("ul");!0===e.is(":hidden")?(e.parent("li").parent().children().children(".groupmenu-drop").slideUp(200),e.parent("li").parent().children().children(".nav-drop").removeClass("act"),$(this).addClass("act"),e.slideDown(200)):(e.slideUp(200),$(this).removeClass("act"))})},i=function(){$(".drop").each(function(){var a=$(this),t=a.children("a"),i=a.children("ul"),n=i.children("li").children("a");a.click(function(){i.slideToggle(150)}),n.click(function(e){e.preventDefault(),t.html($(this).html())}),e.click(function(e){0!=a.has(e.target).length||a.is(e.target)||a.children("ul").slideUp(150)})})},n=function(){var a=$(".back-to-top");e.scrollTop()>600&&a.fadeIn(),a.click(function(){return $("html, body").animate({scrollTop:0},800),!1}),e.scroll(function(){e.scrollTop()>600?a.fadeIn():a.fadeOut()})},s=function(){$("[data-show]").each(function(){var e=$(this),a=$(e.attr("data-show"));e.click(function(e){e.preventDefault(),a.slideToggle(200)})}),e.click(function(e){$("[data-show]").each(function(){var a=$(this),t=$(a.attr("data-show"));0!=t.has(e.target).length||t.is(e.target)||0!=a.has(e.target).length||a.is(e.target)||t.slideUp(200)})})};function o(e){e.each(function(){var e=$(this),a=e.data("animation");e.addClass(a).one("webkitAnimationEnd animationend",function(){e.removeClass(a)})})}var l=function(){$(".slider-cas").slick({autoplay:!1,autoplaySpeed:3e3,arrows:!1,dots:!0}),$(".partner-cas").slick({slidesToShow:8,autoplay:!0,autoplaySpeed:1500,arrows:!1,responsive:[{breakpoint:1199,settings:{slidesToShow:7}},{breakpoint:420,settings:{slidesToShow:3}}]}),$(".blog-cas").slick({slidesToShow:3,autoplay:!1,autoplaySpeed:1500,arrows:!0,responsive:[{breakpoint:767,settings:{slidesToShow:2}},{breakpoint:420,settings:{slidesToShow:1}}]}),o($(".slider-cas .slick-current [data-animation ^= 'animated']")),$(".slider-cas").on("beforeChange",function(e,a,t,i){t!=i&&o($(this).find(".slick-slide").find("[data-animation ^= 'animated']"))})},r=function(){$(".reviews-slide").slick({slidesToShow:3,nextArrow:'<div class="next"><span class="icon-next"></span> </div>',prevArrow:'<div class="prev"><span class="icon-prev"></span> </div>',arrows:!0,dots:!1,autoplay:!0,autoplaySpeed:3e3,infinite:!0,responsive:[{breakpoint:1199,settings:{slidesToShow:3}},{breakpoint:991,settings:{slidesToShow:2}},{breakpoint:700,settings:{slidesToShow:2}},{breakpoint:480,settings:{slidesToShow:1}}]}),$(".service-slide").slick({slidesToShow:3,slidesToScroll:3,swipeToSlide:!0,autoplay:!1,autoplaySpeed:4e3,dots:!0,responsive:[{breakpoint:1199,settings:{slidesToShow:3}},{breakpoint:991,settings:{slidesToShow:3}},{breakpoint:700,settings:{slidesToShow:2}},{breakpoint:480,settings:{slidesToShow:1}}]}),$(".pediatricians-slide").slick({slidesToShow:1,slidesToScroll:1,swipeToSlide:!0,autoplay:!1,autoplaySpeed:4e3,dots:!0})},c=function(){var t=$("header").innerHeight();$(".header-bottom").innerHeight();e.width()>768?e.scrollTop()>t&&($("header").addClass("fixed"),a.css("margin-top",t)):e.scrollTop()>0&&($("header").addClass("fixed"),a.css("margin-top",t)),e.scroll(function(i){e.width()>768?e.scrollTop()>t?($("header").addClass("fixed"),a.css("margin-top",t)):($("header").removeClass("fixed"),a.css("margin-top","")):e.scrollTop()>0?($("header").addClass("fixed"),a.css("margin-top",t)):($("header").removeClass("fixed"),a.css("margin-top",""))})},d=function(){},p=function(){function a(){e.width()<767?$(".price td").attr("colspan",2):$(".price td").removeAttr("colspan")}a(),window.onresize=function(){a()},$("article ul").on("click","li",function(){var e=$(this).index()+2;$("article tr").find("td:not(:eq(0))").hide(),$("article td:nth-child("+e+")").css("display","table-cell"),$("article tr").find("th:not(:eq(0))").hide(),$("article li").removeClass("active"),$(this).addClass("active")});var t=window.matchMedia("(min-width: 768px)");function i(e){e.matches?$(".sep").attr("colspan",4):$(".sep").attr("colspan",2)}t.addListener(i),i(t)};return{uiInit:function(e){switch(e){case"mMenu":t();break;case"backToTop":n();break;case"uiSlider":l();break;case"uiSlick":r();break;case"uiClickShow":s();break;case"uiScroll":c();break;case"uiDrop":i();break;case"calendar":d();break;case"tabbelprice":p();break;default:t(),n(),l(),r(),s(),c(),i(),d(),p()}}}}();jQuery(function(e){new WOW({offset:50,mobile:!1}).init(),script.uiInit(),e(".yt-box .play").click(function(a){var t=e(this).closest(".yt-box").attr("data-id");e(this).closest(".yt-box iframe").remove(),e(this).closest(".yt-box").append('<iframe src="https://www.youtube.com/embed/'+t+'?rel=0&amp;autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')}),e(window).width()>991&&e(".fanpage").innerWidth()>500&&e(".fb-page").css({"-webkit-transform":"scale("+e(".fanpage").innerWidth()/500+")",transform:"scale("+e(".fanpage").innerWidth()/500+")"}),e(".t-gallery:not(.slick-cloned) a").fancybox({prevEffect:"fade",nextEffect:"fade",transitionIn:"fade",transitionOut:"fade",speedIn:600,speedOut:200,overlayShow:!1,autoScale:!0,helpers:{thumbs:{width:50,height:50}}}),e(".action.search").click(function(){e(".action-control-search").toggleClass("active")})});
+</script>
+<script defer>
     !function(t){"use strict";"function"==typeof define&&define.amd?define(["jquery"],t):"undefined"!=typeof module&&module.exports?module.exports=t(require("jquery")):t(jQuery)}(function(t){var e=-1,o=-1,a=function(t){return parseFloat(t)||0},n=function(e){var o=t(e),n=null,i=[];return o.each(function(){var e=t(this),o=e.offset().top-a(e.css("margin-top")),r=i.length>0?i[i.length-1]:null;null===r?i.push(e):Math.floor(Math.abs(n-o))<=1?i[i.length-1]=r.add(e):i.push(e),n=o}),i},i=function(e){var o={byRow:!0,property:"height",target:null,remove:!1};return"object"==typeof e?t.extend(o,e):("boolean"==typeof e?o.byRow=e:"remove"===e&&(o.remove=!0),o)},r=t.fn.matchHeight=function(e){var o=i(e);if(o.remove){var a=this;return this.css(o.property,""),t.each(r._groups,function(t,e){e.elements=e.elements.not(a)}),this}return this.length<=1&&!o.target?this:(r._groups.push({elements:this,options:o}),r._apply(this,o),this)};r.version="master",r._groups=[],r._throttle=80,r._maintainScroll=!1,r._beforeUpdate=null,r._afterUpdate=null,r._rows=n,r._parse=a,r._parseOptions=i,r._apply=function(e,o){var s=i(o),h=t(e),l=[h],c=t(window).scrollTop(),p=t("html").outerHeight(!0),u=h.parents().filter(":hidden");return u.each(function(){var e=t(this);e.data("style-cache",e.attr("style"))}),u.css("display","block"),s.byRow&&!s.target&&(h.each(function(){var e=t(this),o=e.css("display");"inline-block"!==o&&"flex"!==o&&"inline-flex"!==o&&(o="block"),e.data("style-cache",e.attr("style")),e.css({display:o,"padding-top":"0","padding-bottom":"0","margin-top":"0","margin-bottom":"0","border-top-width":"0","border-bottom-width":"0",height:"100px",overflow:"hidden"})}),l=n(h),h.each(function(){var e=t(this);e.attr("style",e.data("style-cache")||"")})),t.each(l,function(e,o){var n=t(o),i=0;if(s.target)i=s.target.outerHeight(!1);else{if(s.byRow&&n.length<=1)return void n.css(s.property,"");n.each(function(){var e=t(this),o=e.attr("style"),a=e.css("display");"inline-block"!==a&&"flex"!==a&&"inline-flex"!==a&&(a="block");var n={display:a};n[s.property]="",e.css(n),e.outerHeight(!1)>i&&(i=e.outerHeight(!1)),o?e.attr("style",o):e.css("display","")})}n.each(function(){var e=t(this),o=0;s.target&&e.is(s.target)||("border-box"!==e.css("box-sizing")&&(o+=a(e.css("border-top-width"))+a(e.css("border-bottom-width")),o+=a(e.css("padding-top"))+a(e.css("padding-bottom"))),e.css(s.property,i-o+"px"))})}),u.each(function(){var e=t(this);e.attr("style",e.data("style-cache")||null)}),r._maintainScroll&&t(window).scrollTop(c/p*t("html").outerHeight(!0)),this},r._applyDataApi=function(){var e={};t("[data-match-height], [data-mh]").each(function(){var o=t(this),a=o.attr("data-mh")||o.attr("data-match-height");e[a]=a in e?e[a].add(o):o}),t.each(e,function(){this.matchHeight(!0)})};var s=function(e){r._beforeUpdate&&r._beforeUpdate(e,r._groups),t.each(r._groups,function(){r._apply(this.elements,this.options)}),r._afterUpdate&&r._afterUpdate(e,r._groups)};r._update=function(a,n){if(n&&"resize"===n.type){var i=t(window).width();if(i===e)return;e=i}a?-1===o&&(o=setTimeout(function(){s(n),o=-1},r._throttle)):s(n)},t(r._applyDataApi);var h=t.fn.on?"on":"bind";t(window)[h]("load",function(t){r._update(!1,t)}),t(window)[h]("resize orientationchange",function(t){r._update(!0,t)})});
 </script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/assets/js/jquery.matchheight.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/js/script.js" defer></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/js/jscolor.js"></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/js/cnv.js" defer></script>
+<script src="<?php bloginfo("template_directory"); ?>/themes/default/js/custom.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/themes/default/js/jquery.parallax.js" ></script>
+
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: {
@@ -427,6 +410,27 @@ $(".sub-menu a").click(function () {
   $(this).parent(".sub-menu").children("ul").slideToggle("100");
   $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
 });
+</script>
+<script type="text/javascript">
+    jQuery(function($){
+      $('.tab').click(function(){
+        $('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.is-show').removeClass('is-show');
+        const index = $(this).index();
+        $('.panel').eq(index).addClass('is-show');
+    });
+  });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.colors').hide(); //hide
+        $('.1').show(); //set default class to be shown here, or remove to hide all
+    });
+    $('#colorselector').change(function(){
+    $('.colors').hide();
+    $('#' + $(this).val()).show();
+  });
 </script>
 </body>
 </html>

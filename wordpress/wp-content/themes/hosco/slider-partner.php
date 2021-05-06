@@ -16,7 +16,7 @@
                 <?php if( $the_query->have_posts() ): ?>
                     <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
                        <div>
-                        <img style="width: 100px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
+                        <img style="width: 200px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
                     </div>
                         
                     <?php endwhile; ?>
@@ -43,7 +43,7 @@
                 <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
                   
                      <div>
-                        <img style="width: 100px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
+                        <img style="width: 200px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
                     </div>
                     
                 <?php endwhile; ?>

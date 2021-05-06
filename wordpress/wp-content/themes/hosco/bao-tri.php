@@ -15,7 +15,7 @@
                 <?php if( $the_query->have_posts() ): ?>
                     <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
                        <div>
-                        <img style="width: 100px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
+                        <img style="width: 140px !important;" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="<?php the_title(); ?>"  />
                     </div>
 
                 <?php endwhile; ?>
@@ -52,7 +52,7 @@
 <div class="tab-content-news">
     <div id="tin-tuc" class="tab-pane fade in active show">
         <div class="row row-ibl">
-            <?php $args = array( 'post_type' => 'Press_talk','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
+            <?php $args = array( 'category_name' => 'bao-chi','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
             <?php $getposts = new WP_query( $args);?>
             <?php global $wp_query; $wp_query->in_the_loop = true; ?>
             <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
@@ -63,7 +63,7 @@
                     <img class="news-blog fade show lazy" data-src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="social Loyalty" title="social Loyalty" >
                 </a>
                 <div class="title">
-                    <a href="" class="article-title"><?php the_title(); ?></a>
+                    <a href="<?php echo permalink_link(); ?>" class="article-title"><?php the_title(); ?></a>
                 </div>
                 <div class="description">
                     <?php echo get_post()->post_excerpt; ?>
@@ -82,7 +82,7 @@
          
 
             <div class="col-lg-12 col-12 text-center load_more_new">
-                <a href="index.html"> →Xem tất cả bài viết </a>
+                <a href="?page_id=24"> →Xem tất cả bài viết </a>
             </div>
         </div>
     </div>
