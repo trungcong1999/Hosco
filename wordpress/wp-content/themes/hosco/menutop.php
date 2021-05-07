@@ -27,7 +27,7 @@ foreach ( $primatyNav as $navItem ) {
 
 					} else if($navItem2 -> menu_item_parent == $navItem ->ID && $kt ==TRUE){
 						// var_dump($navItem2);
-						echo "<li><a data-toggle='tab' href='#".$navItem2->post_name."'>".$navItem2->title;
+						echo "<li><a data-toggle='tab'  href='#".$navItem2->post_name."'>".$navItem2->title;
 						echo "</a></li>";
 						$kt = TRUE;
 
@@ -35,11 +35,12 @@ foreach ( $primatyNav as $navItem ) {
 				}
 
 				echo "</ul>";?>
-				<?php 
-				foreach ( $primatyNav as $navItem2 ) { 
-					$kt = FALSE;
-					if($navItem2 -> menu_item_parent == $navItem ->ID){ ?>
-						<div class="tab-content">
+				<div class="tab-content">
+					<?php $kt = FALSE;
+					foreach ( $primatyNav as $navItem2 ) { 
+
+						if($navItem2 -> menu_item_parent == $navItem ->ID){ ?>
+
 							<?php if($kt==FALSE) {?>
 								<div id="<?php echo $navItem2->post_name; ?>" class="tab-pane fade in active show">
 									<div class="tab-menu-mini">
@@ -53,13 +54,13 @@ foreach ( $primatyNav as $navItem ) {
 														<div class="map-product-item">
 															<div class="map-product-logo">
 																<a class="smooth icon " href="pages_id_1.html" title="">
-																	<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+																	<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($navItem3->ID-1) );?>" alt="" title="">
 																</a>
 															</div>
 															<div class="map-product-info">
 																<div class="content-sub-menu">
 																	<a class="title" href="<?php echo $navItem3->url; ?>" title=""><?php echo $navItem3->title; ?></a>
-																	<p>Phần mềm quản lý bán hàng</p>
+																	<p><?php echo get_post($navItem3->ID-1)->post_content; ?></p>
 																</div>
 															</div>
 														</div>
@@ -89,62 +90,61 @@ foreach ( $primatyNav as $navItem ) {
 															<div class="map-product-item">
 																<div class="map-product-logo">
 																	<a class="smooth icon " href="pages_id_1.html" title="">
-																		<img src="https://bahanto.net/wp-content/uploads/2021/04/ed5b9b3b3786c5d89c97.jpg" alt="" title="">
+																		<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($navItem3->ID-1) );?>" alt="" title="">
 																	</a>
 																</div>
 																<div class="map-product-info">
 																	<div class="content-sub-menu">
 																		<a class="title" href="<?php echo $navItem3->url; ?>" title=""><?php echo $navItem3->title; ?></a>
-																		<p>Phần mềm quản lý bán hàng</p>
+																		<p><?php echo get_post($navItem3->ID-1)->post_content; ?></p>																	</div>
 																	</div>
 																</div>
-															</div>
 
-														</li>
-
+															</li>
 
 
-														<?php  
 
-													} 
-												}?>
-											</ul>
+															<?php  
+
+														} 
+													}?>
+												</ul>
+											</div>
 										</div>
-									</div>
-									<?php
-								}break; ?>
-							</div>
-							<?php 
-						} 
+										<?php
+									}?>
 
-					}
+									<?php 
+								} 
 
-					?>
+							}
 
-					<?php
-					echo "</div>";
-					echo "</div>";
+							?>
+						</div>
+						<?php
+						echo "</div>";
+						echo "</div>";
 
 
-					break;
-				} 
+						break;
+					} 
 
+				}
+
+
+
+				echo '</li>';
 			}
 
 
-
-			echo '</li>';
 		}
+		echo "</ul>";
 
 
-	}
-	echo "</ul>";
+		?>
 
+		<!-- ---------------------menumobile-------------------- -->
 
-	?>
-
-	<!-- ---------------------menumobile-------------------- -->
-	
 <!-- 	<div id="myNav" class="overlay">
 		<a href="javascript:void(0)" style="position: absolute;top: -20px;" class="closebtn" onclick="closeNav()">&times;</a>
 		<nav class='menu-mobile-in'>
@@ -200,7 +200,7 @@ foreach ( $primatyNav as $navItem ) {
 						if($kt == FALSE)
 							echo '<li> <a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a>'; 
 						else {
-							echo '<li class="sub-menu"> <a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'<div class="fa fa-caret-down right"></div></a>'; 
+							echo '<li class="sub-menu"> <a href="#" title="'.$navItem->title.'">'.$navItem->title.'<div class="fa fa-caret-down right"></div></a>'; 
 							?>
 							<ul>
 
@@ -218,7 +218,7 @@ foreach ( $primatyNav as $navItem ) {
 										if($kt == FALSE)
 											echo '<li> <a href="'.$navItem2->url.'" title="'.$navItem2->title.'">'.$navItem2->title.'</a>'; 
 										else {
-											echo '<li class="sub-menu"> <a href="'.$navItem2->url.'" title="'.$navItem2->title.'">'.$navItem2->title.'<div class="fa fa-caret-down right"></div></a>'; 
+											echo '<li class="sub-menu"> <a href="#" title="'.$navItem2->title.'">'.$navItem2->title.'<div class="fa fa-caret-down right"></div></a>'; 
 											?>
 											<ul>
 

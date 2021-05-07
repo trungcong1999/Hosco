@@ -22,7 +22,8 @@
                             <h2 class="title"><?php the_title(); ?></h2>
                         </div>
                         <div class="group_post_case">
-                            <p><?php echo get_post()->post_content; ?></p>
+                            <p><?php echo get_post()->post_excerpt; ?></p>
+                            <a href="<?php echo get_post_permalink(); ?>" class="load_more" tabindex="0">Xem chi tiết</a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>

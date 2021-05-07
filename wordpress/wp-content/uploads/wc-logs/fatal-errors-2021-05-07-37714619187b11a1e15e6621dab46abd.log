@@ -1,0 +1,108 @@
+2021-05-07T06:24:14+00:00 CRITICAL Uncaught Error: Call to undefined function html5wp_pagination() in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php:45
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php on line 45
+
+2021-05-07T06:25:10+00:00 CRITICAL Uncaught Error: Call to undefined function html5wp_pagination() in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php:45
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php on line 45
+
+2021-05-07T06:25:11+00:00 CRITICAL Uncaught Error: Call to undefined function html5wp_pagination() in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php:45
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php on line 45
+
+2021-05-07T08:09:30+00:00 CRITICAL Cannot redeclare meta_box_detail_san_pham_hst() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:327) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 612
+
+2021-05-07T08:12:50+00:00 CRITICAL Cannot redeclare he_sinh_thai_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:401) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 657
+
+2021-05-07T08:15:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_category(), 0 passed in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php on line 12 and at least 1 expected in E:\Xampp\htdocs\wordpress\wp-includes\category.php:91
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\page-tuyen-dung.php(12): get_category()
+#1 E:\Xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('E:\\Xampp\\htdocs...')
+#2 E:\Xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('E:\\Xampp\\htdocs...')
+#3 E:\Xampp\htdocs\wordpress\index.php(17): require('E:\\Xampp\\htdocs...')
+#4 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-includes\category.php on line 91
+
+2021-05-07T08:19:34+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 650
+
+2021-05-07T10:12:13+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 818
+
+2021-05-07T10:13:06+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 818
+
+2021-05-07T10:14:14+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 818
+
+2021-05-07T10:15:07+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 818
+
+2021-05-07T10:16:15+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:17:08+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:17:47+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:18:09+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:18:46+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:19:47+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:20:10+00:00 CRITICAL Cannot redeclare create_randompost_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:741) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 822
+
+2021-05-07T10:31:30+00:00 CRITICAL syntax error, unexpected '.' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 767
+
+2021-05-07T10:32:21+00:00 CRITICAL syntax error, unexpected '.' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 767
+
+2021-05-07T10:32:22+00:00 CRITICAL syntax error, unexpected '.' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 767
+
+2021-05-07T10:37:20+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 828
+
+2021-05-07T10:38:47+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 828
+
+2021-05-07T11:06:42+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 782
+
+2021-05-07T11:06:43+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 782
+
+2021-05-07T11:23:47+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 778
+
+2021-05-07T11:31:35+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:33:35+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:35:35+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:36:53+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:37:53+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:39:53+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:41:54+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:43:55+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T11:45:56+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T12:28:24+00:00 CRITICAL Cannot use [] for reading in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T12:29:23+00:00 CRITICAL Uncaught Error: Function name must be a string in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:765
+Stack trace:
+#0 E:\Xampp\htdocs\wordpress\wp-includes\class-wp-widget.php(519): categoryhienthi->form(Array)
+#1 E:\Xampp\htdocs\wordpress\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 E:\Xampp\htdocs\wordpress\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 E:\Xampp\htdocs\wordpress\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 765
+
+2021-05-07T12:36:08+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 775
+

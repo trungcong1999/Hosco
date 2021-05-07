@@ -145,8 +145,8 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 6000,
 		arrows: true,
-		nextArrow: '<img src="https://'+window.location.hostname+'/wordpress/wp-content/themes/hosco/themes/default/images/template_new/arrow_right_circle.png" class="next" alt="Next">',
-		prevArrow: '<img src="https://'+window.location.hostname+'/wordpress/wp-content/themes/hosco/themes/default/images/template_new/arrow_left_circle.png" class="prev" alt="Prev">',
+		nextArrow: '<img src="https://'+window.location.hostname+'/wp-content/themes/hosco/themes/default/images/template_new/arrow_right_circle.png" class="next" alt="Next">',
+		prevArrow: '<img src="https://'+window.location.hostname+'/wp-content/themes/hosco/themes/default/images/template_new/arrow_left_circle.png" class="prev" alt="Prev">',
 		responsive: [{
 			breakpoint: 768,
 			settings: {

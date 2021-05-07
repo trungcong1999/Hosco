@@ -22,7 +22,7 @@
                      <img class="news-blog fade show lazy" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="social Loyalty" title="social Loyalty" />
                   </a>
                   <div class="title">
-                     <a href="index.html" class="article-title"><?php the_title(); ?></a>
+                     <a href="<?php echo get_post_permalink(); ?>" class="article-title"><?php the_title(); ?></a>
                   </div>
                   <div class="description">
                      <?php echo get_post()->post_excerpt; ?>
@@ -61,7 +61,7 @@
                <i class="fa fa-clock-o"></i> <?php $date=date_create(get_post()->post_date);echo date_format($date,"Y/m/d");?>
             </div>
             <div class="title">
-               <a href="index.html" class="article-title"><?php the_title(); ?></a>
+               <a href="<?php echo get_post_permalink(); ?>" class="article-title"><?php the_title(); ?></a>
             </div>
             <div class="description">
                <?php echo get_post()->post_excerpt; ?>

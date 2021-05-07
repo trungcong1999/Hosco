@@ -9,12 +9,16 @@
                         <h4 class="pull-left">Tuyển Dụng <a href="#"><i class="fa fa-rss"></i></a></h4>
                     </div><!-- end blog-top -->
                     <div class="blog-list clearfix">
-
+                        <?php var_dump(get_categories()); ?>
 
                         <?php 
                         $args = array(
 
-                            'category_name' => 'tuyen-dung'
+                            'category_name' => 'tuyen-dung',
+                            'nopaging' => false,
+                            'posts_per_page' => 5,  
+                            'paged' => get_query_var('paged'),
+                             // 'offset' => 1,     
                         );
                         $the_query = new WP_Query( $args );
                         ?>
@@ -34,6 +38,7 @@
                                     <div class="blog-meta big-meta col-md-8">
                                         <h4><a href="<?php echo get_post_permalink(); ?>" title=""><?php the_title(); ?></a></h4>
                                         <p><?php echo get_post()->post_excerpt;  ?></p>
+										   <small><?php $date=date_create(get_post( )->post_date); echo date_format($date,"d F, Y");?></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
 
@@ -42,7 +47,7 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_query(); ?>
-
+<?php html5wp_pagination($the_query); ?>
 
 
                     </div><!-- end blog-list -->
@@ -74,7 +79,7 @@
                                             <div class="w-100 justify-content-between">
                                                 <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1"><?php the_title(); ?></h5>
-                                                <small>12 Jan, 2016</small>
+                                                <small><?php $date=date_create(get_post( )->post_date); echo date_format($date,"d F, Y");?></small>
                                             </div>
                                         </a>
 
@@ -102,7 +107,7 @@
                                             <div class="w-100 justify-content-between">
                                                 <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1"><?php the_title(); ?></h5>
-                                                <small>12 Jan, 2016</small>
+                                                <small><?php $date=date_create(get_post( )->post_date); echo date_format($date,"d F, Y");?></small>
                                             </div>
                                         </a>
 

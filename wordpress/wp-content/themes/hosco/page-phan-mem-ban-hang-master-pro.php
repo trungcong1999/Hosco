@@ -12,7 +12,7 @@
         </div>
     </div>
 </section>
-<section class="four_post_bottom_banner" style="margin-top: 0px;position: relative;">
+<section class="four_post_bottom_banner" style="margin-top:20px;position: relative;">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
