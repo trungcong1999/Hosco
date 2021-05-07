@@ -28,7 +28,7 @@
                      <?php echo get_post()->post_excerpt; ?>
                   </div>
                   <div class="continue">
-                     <a href="<?php echo get_post_permalink(); ?>" class="article-title" target="_blank" title="">Đọc tiếp →</a>
+                     <a href="<?php echo get_post_permalink(); ?>" class="article-title" target="_blank" title="">Xem chi tiết</a>
                   </div>
                </div>
             </div>
@@ -68,7 +68,7 @@
 
             </div>
             <div class="continue">
-               <a href="<?php echo get_post_permalink(); ?>" class="article-title" target="_blank" title="">Đọc tiếp →</a>
+               <a href="<?php echo get_post_permalink(); ?>" class="article-title" target="_blank" title="">Xem chi tiết</a>
             </div>
          </div>
       </div>

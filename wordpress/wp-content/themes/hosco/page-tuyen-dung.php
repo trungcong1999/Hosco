@@ -9,12 +9,16 @@
                         <h4 class="pull-left">Tuyển Dụng <a href="#"><i class="fa fa-rss"></i></a></h4>
                     </div><!-- end blog-top -->
                     <div class="blog-list clearfix">
-
+                        <?php var_dump(get_categories()); ?>
 
                         <?php 
                         $args = array(
 
-                            'category_name' => 'tuyen-dung'
+                            'category_name' => 'tuyen-dung',
+                            'nopaging' => false,
+                            'posts_per_page' => 5,  
+                            'paged' => get_query_var('paged'),
+                             // 'offset' => 1,     
                         );
                         $the_query = new WP_Query( $args );
                         ?>
@@ -43,7 +47,7 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_query(); ?>
-
+<?php html5wp_pagination($the_query); ?>
 
 
                     </div><!-- end blog-list -->

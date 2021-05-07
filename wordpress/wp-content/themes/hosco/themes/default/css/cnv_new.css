@@ -237,13 +237,13 @@ ul.primary-button li a.btn-menu {
     background: #fff;
     border-radius: 15px;
     text-align: center;
-    border: 1px solid #f3f0f0;
+    border: 1px solid #adababbf;
     padding: 17px 17px 50px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1)
 }
 .four_post_bottom_banner .item:hover{
-		box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
 .four_post_bottom_banner .item .ct p {
     color: #bfbfbf;
@@ -345,6 +345,11 @@ ul.primary-button li a.btn-menu {
     margin-bottom: 0 !important;
     font-weight: 300;
     font-size: 30px !important;
+    max-width: 780px;
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 500;
+    color: #000;
 }
 .customers_partner_mobile {
     display: none !important;
@@ -954,9 +959,10 @@ ul.primary-button li a.btn-menu {
 }
 .group_case_study .headbox .title {
     color: #191717;
+    font-weight: 500;
 }
 .group_case_study .case_study {
-    margin-bottom: 30px;
+    margin-bottom: 65px;
     background: #fff;
     padding: 25px 15px;
     border-radius: 15px;
@@ -1003,6 +1009,7 @@ ul.primary-button li a.btn-menu {
     background: #faa0b8;
     color: #fff;
     border-color: #faa0b8;
+    text-align: center;
 }
 .group_case_study .slick-list .slick-slide {
     display: flex;
@@ -1023,6 +1030,7 @@ ul.primary-button li a.btn-menu {
 }
 .group_case_study .group_content_case_study {
     padding-top: 5%;
+    margin-left: 2%;
 }
 @media screen and (max-width: 1200px) and (min-width: 1200px) {
     .group_case_study .row_group {
@@ -1034,7 +1042,7 @@ ul.primary-button li a.btn-menu {
     padding-top: 50px;
 }
 .h-posts {
-    background: #ffffff;
+    background: #ECECEC;
 }
 .h-posts ul {
     font-size: 0;
@@ -1046,6 +1054,7 @@ ul.primary-button li a.btn-menu {
 .h-posts ul li {
     display: inline-block;
     vertical-align: middle;
+    padding: 0 5px;
 }
 .h-posts ul li a {
     display: block;
@@ -1055,14 +1064,16 @@ ul.primary-button li a.btn-menu {
     line-height: 41px;
     width: 154px;
     text-align: center;
-    color: #afafaf;
+    color: #ff0505;
+    border-radius: 10px;
 }
 .h-posts ul li a:hover {
     color: #f3648c;
 }
 .h-posts ul li a.active {
-    background: #f3648c;
+    background: #fb0000c7;
     color: #fff;
+    border-radius: 10px;
 }
 .h-posts .news-item {
     position: relative;
@@ -1101,14 +1112,17 @@ ul.primary-button li a.btn-menu {
 }
 .h-posts .news-item .continue a {
     font-size: 14px;
-    color: #08f;
+    color: #f00;
 }
 .tab-content-news {
-    background: #ffffff;
+   background: #ececec;
 }
 .h-posts .load_more_new {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;;
+}
+.row-ibl {
+    background: #ececec;
 }
 .cnv-img-ebook {
     padding-top: 90% !important;
@@ -2642,8 +2656,11 @@ ul.primary-button li a.btn-menu {
    padding-bottom: 35px;
 }
 .cutomer_whatSaid{
-    background: #ececec;
-    margin-top: 20px;
+    background: #1a2b4d;;
+    
+}
+.cutomer_whatSaid .headbox h2{
+    padding-top: 30px;
 }
 .content_customer{
     text-align: center;
@@ -2695,6 +2712,8 @@ ul.primary-button li a.btn-menu {
     background: #fff;
     box-shadow: #f2f2f2 0 10px 40px 1px;
     padding-bottom: 35px;
+    top: -5px;
+    border-radius: 20px;
 }
 .user{display: block;
     width: 100px;
@@ -2722,7 +2741,7 @@ ul.primary-button li a.btn-menu {
 }
 
 .blog-text p{
-    width:100%;/
+    width:100%;
     white-space: pre-wrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
@@ -2738,8 +2757,31 @@ ul.primary-button li a.btn-menu {
 .notify{
    position: relative;
     background: #fff;
-    box-shadow: inset -3px -2px 11px 3px rgb(65 72 82 / 10%);
-    border-radius: 15px;
+    border: 1px solid #adababbf;
+    border-radius: 22px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+}
+.notify:hover{
+    box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
+}
+.continue {
+    text-align: center;
+}
+
+section.group_case_study:nth-child(even) {
+    background: #f9f9f9;
+}
+section.group_case_study:nth-child(odd) {
+    background: #1A2B4D;
+}
+section.group_case_study:nth-child(odd) .headbox h2{
+    color: #fff;
+    font-weight: 600;
+}
+section.group_case_study:nth-child(odd) .headbox_case h2 {
+    color: #000;
+    font-weight: normal;
 }
 .icon-wp{
     text-align: center;
@@ -3137,7 +3179,7 @@ ul.primary-button li a.btn-menu {
     display: none;
     position: absolute;
     z-index: 999;
-    width: 120vh;
+    width: 755px;
 }
 .show-swap ul li{
     font-weight: 600;
@@ -3171,7 +3213,7 @@ ul.primary-button li a.btn-menu {
 }
 .nav-tabs li a{
     text-decoration: none;
-	padding: 50px 105px 50px 105px
+    padding: 50px 105px 50px 105px
 }
 .map-product-item{
     display: flex;
