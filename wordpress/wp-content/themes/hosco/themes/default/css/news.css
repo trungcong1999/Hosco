@@ -624,7 +624,7 @@
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 10%; 
   left: 45%;
-  top: 127%;
+  top: 130%;
 }
 /*chuyentab*/
 .tab-group{
@@ -647,7 +647,7 @@
   display:none;
 }
 .tab.is-active{
-  color:#0082ce;
+  color:#ffffff;
   transition: all 0.2s ease-out;
   position: relative;
 }
@@ -658,7 +658,7 @@
   display: block;
   height: 2px;
   position: absolute;
-  background: #008FEC;
+  background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%; 
   left: 0;
@@ -668,6 +668,9 @@
 }
 .tab-navications{
     margin-top: 20px;
+    background: #29648A;
+    color: #fff;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px){

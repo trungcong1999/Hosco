@@ -3,16 +3,15 @@
 <div id="home" class="parallax-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-12">
 				<div class="home-img"><img src="https://bahanto.net/wp-content/uploads/2021/05/home-img.jpg" alt=""></div>
 			</div>
 
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-12">
 				<div class="home-thumb">
 					<div class="section-title">
-						<h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
-						<h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Stimulus</strong> currently based in New York city.</h1>
-						<p class="wow fadeInUp" data-wow-delay="0.9s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>        
+						<h1 class="wow fadeInUp" data-wow-delay="0.5s">Hello, I am <strong>Stimulus</strong> currently based in New York city.</h1>
+						<p class="wow fadeInUp" data-wow-delay="0.6s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>        
 					</div>
 				</div>
 			</div>
@@ -48,14 +47,21 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -65,7 +71,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -78,36 +84,23 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-6">
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>
 		<!-- ket thuc section -->
-		<!-- bat dau section -->
 		<div id="education" class="parallax-section">
+
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
-
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -117,7 +110,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -130,10 +123,17 @@
 						</div>
 					</div>
 
+					<div class="col-md-6 col-sm-12">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 		<!-- ket thuc section -->
+		<!-- cái ảnh này để linh tinh cho tách biệt đẹp tí thôi -->
 		<div id="quotes" class="parallax-section">
 			<div class="overlay-fix"></div>
 			<div class="container">
@@ -148,19 +148,27 @@
 			</div>
 		</div>
 		<!-- het cai anh fix o giua -->
+		
 		<!-- bat dau section -->
 		<div id="education" class="parallax-section">
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -170,7 +178,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -180,12 +188,6 @@
 								</div>
 							</div>
 
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 
@@ -198,21 +200,14 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
-
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -222,7 +217,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -232,6 +227,12 @@
 								</div>
 							</div>
 
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 
@@ -264,19 +265,27 @@
 	<div class="panel is-show">
 		<!-- bat dau section -->
 		<h2 class="main-text-pos">GIỚI THIỆU</h2>
+		
+		<!-- bat dau section -->
 		<div id="education" class="parallax-section">
-
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -286,7 +295,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -296,12 +305,6 @@
 								</div>
 							</div>
 
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 
@@ -309,26 +312,19 @@
 			</div>
 		</div>
 		<!-- ket thuc section -->
-		<!-- bat dau section -->
 		<div id="education" class="parallax-section">
+
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
-
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -338,7 +334,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -348,6 +344,12 @@
 								</div>
 							</div>
 
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 
@@ -370,19 +372,27 @@
 			</div>
 		</div>
 		<!-- het cai anh fix o giua -->
+		
 		<!-- bat dau section -->
 		<div id="education" class="parallax-section">
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
+
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -392,7 +402,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -402,12 +412,6 @@
 								</div>
 							</div>
 
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 
@@ -420,21 +424,14 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6 col-sm-6">
-
-						<div class="background-image education-img">
-							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
-						</div>
-					</div>
-
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="color-white education-thumb">
-							<div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+							<div class="wow fadeInUp section-title" data-wow-delay="0.5s">
 								<h1>My Education</h1>
 								<p class="color-white">In cursus orci non ipsum gravida dignissim</p>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -444,7 +441,7 @@
 								</div>
 							</div>
 
-							<div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+							<div class="wow fadeInUp color-white media" data-wow-delay="0.6s">
 								<div class="media-object media-left">
 									<i class="fa fa-laptop"></i>
 								</div>
@@ -454,6 +451,12 @@
 								</div>
 							</div>
 
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="background-image education-img">
+							<img src="https://bahanto.net/wp-content/uploads/2021/05/experience-img.jpg" alt="">
 						</div>
 					</div>
 

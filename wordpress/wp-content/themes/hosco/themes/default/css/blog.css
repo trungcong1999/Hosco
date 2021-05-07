@@ -1,19 +1,7 @@
 
-.parallax-section {
-  background-attachment: fixed !important;
-  background-size: cover !important;
-}
 
 .section-title {
   position: relative;
-}
-.section-title h4{
-  color: #999;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding-top: 6px;
 }
 .section-title h1{
   font-size: 42px;
@@ -21,7 +9,7 @@
   margin-bottom: 0px;
 }
 .section-title p{
-  color: #888;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -62,11 +50,6 @@
   padding: 22px 42px 42px 42px;
 }
 
-
-#experience,
-#education {
-  background: #E9724C;
-}
 
 .media-body h3{
   font-size: 26px;
@@ -158,20 +141,12 @@
     border-color: transparent;
 }
 
-@media only screen and (min-width:768px) {
-    .custom-navbar {
-        padding: 12px 0;
-        border-bottom: 0;
-        background: 0 0; 
-    }
-    .custom-navbar.top-nav-collapse {
-        background: #ffffff;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-        padding: 0;
-    }
+@media only screen and (max-width: 580px){
+   h1 {
+    font-size: 32px !important;
+  }
 
 }
-
 
 @media only screen and (max-width: 767px){
     #home .home-thumb {
@@ -190,6 +165,18 @@
         padding: 0;
         margin: 0;
     }
+    .background-image{
+      position: relative;
+    }
+    #home .home-img{
+      height: auto !important;
+    }
+    #quotes .col-md-offset-1.col-md-10.col-sm-12 {
+    margin-left:0 !important;
+    }
+    .mobile-ve-hosco .output{
+          margin-top: 22px;
+    }
 }  
 
 /*---------------------------------------
@@ -201,10 +188,10 @@
   }
 
   #home .col-md-6 {
-      background: #f1e2d7;
-      /* light blue color: #c3eafd; */
-      padding-right: 0;
-      padding-left: 0;
+      background: #2E9CCA;
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
   }
 
   #home .home-img {
@@ -232,8 +219,15 @@
     -----------------------------------------*/
 
     #education {
-      background: #E3AE57;
+      background: #3B8BEB;
   }
+  #education:nth-child(odd){
+    background: #e6e6e68f;
+
+  }
+   #education:nth-child(odd) .color-white{
+      color: #000;
+    }
 
 
 
@@ -247,7 +241,7 @@
   }
 
   #education small {
-      color: #886D1E;
+      color: #ffc416;
       font-weight: bold;
   }
 
