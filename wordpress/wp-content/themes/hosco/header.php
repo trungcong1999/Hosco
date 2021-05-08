@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Công Ty Cổ Phần HOSCO</title>
+    <title><?php the_title(); ?></title>
     <link rel="canonical" href="https://hosco.vn/" />
     <link rel="icon" href="https://www.hosco.com.vn/wp-content/uploads/2019/05/icon-hosco.png">
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/bootstrap4.min.css" type="text/css" rel="stylesheet"/>
