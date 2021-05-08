@@ -318,7 +318,7 @@ class T5_Richtext_Excerpt
   add_filter( 'widget_text', 'do_shortcode' );
   add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
   function d4p_32752_completly_disable_block_editor($use_block_editor) {
-    return false;
+    return true;
   }
   function meta_box_detail_san_pham_hst()
   {

@@ -15,7 +15,9 @@
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/animate.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.theme.css">
+    <?php wp_head(); ?>
 <style type="text/css" media="screen">
+
         .customNavigation{
             z-index: 9999;
             position: absolute;

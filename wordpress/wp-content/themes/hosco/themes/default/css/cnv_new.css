@@ -59,6 +59,7 @@ ul.primary-button li a.btn-menu {
         background: #fffefe !important;
         padding: 0px;
     }
+    
 }
 .event_banner_area {
     background: #ffffff;
@@ -312,6 +313,9 @@ ul.primary-button li a.btn-menu {
     }
     .four_post_bottom_banner .item h3 {
         font-size: 14px;
+    }
+    .event_banner_area{
+        min-height: auto !important;
     }
 }
 .headbox:after {
@@ -1003,7 +1007,8 @@ ul.primary-button li a.btn-menu {
     background: #fff;
     margin: 10px auto 20px;
     display: block;
-    width: 30%;
+    width: 45%;
+    text-align: center;
 }
 .group_case_study .group_post_case .load_more:hover {
     background: #faa0b8;
@@ -1074,12 +1079,17 @@ ul.primary-button li a.btn-menu {
     background: #fb0000c7;
     color: #fff;
     border-radius: 10px;
+    border: 0;
 }
 .h-posts .news-item {
     position: relative;
     background: #fff;
-    box-shadow: #f2f2f2 0 10px 40px 1px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     padding-bottom: 35px;
+}
+.h-posts .news-item:hover{
+box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
 }
 .h-posts .news-item > a {
     text-align: center;
@@ -1119,7 +1129,6 @@ ul.primary-button li a.btn-menu {
 }
 .h-posts .load_more_new {
     margin-top: 30px;
-    margin-bottom: 20px;;
 }
 .row-ibl {
     background: #ececec;
@@ -2735,9 +2744,9 @@ ul.primary-button li a.btn-menu {
 }    
 .font-big{
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-    color: #606672;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1c1c1d;
 }
 
 .blog-text p{
@@ -2745,7 +2754,7 @@ ul.primary-button li a.btn-menu {
     white-space: pre-wrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
      display: -webkit-box;
      margin-top: 5%;
@@ -2763,7 +2772,7 @@ ul.primary-button li a.btn-menu {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1)
 }
 .notify:hover{
-    box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
+    box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%);
 }
 .continue {
     text-align: center;
@@ -3062,7 +3071,10 @@ section.group_case_study:nth-child(odd) .headbox_case h2 {
     .gp-apbig .owl-carousel .owl-controls{
         display: none;
     }
-    
+    #tin-tuc .col-md-6{
+        flex: unset;
+    max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -3145,6 +3157,13 @@ section.group_case_study:nth-child(odd) .headbox_case h2 {
     .group_case_study .group_content_case_study {
     padding-top: 0%;
     }
+    .tab-menu-mini .row{
+     margin-right: 0px; 
+     margin-left: 0px;
+    }
+    .event_banner_area{
+        min-height: 40vh !important;
+    }
     
     
 }
@@ -3154,6 +3173,10 @@ section.group_case_study:nth-child(odd) .headbox_case h2 {
     } 
     .icon-menu-body{
         display: none;
+    }
+    .tab-menu-mini .row{
+     margin-right: 0px; 
+     margin-left: 0px;
     }
 }  
 /*-------------menu--------------*/
@@ -3365,6 +3388,11 @@ button.menu-btn.nav-open {
   right: 35px;
   }
 }
+@media screen and (max-width: 479px){
+   .lien-he-map .row .addd .col-md-6 .col-sm-12{
+        padding: 0;
+    }
+}
 /*--------------lienhe*/
 .contact-form-main form{
     padding: 8%;
@@ -3392,9 +3420,7 @@ button.menu-btn.nav-open {
 /* style the container */
 .aaaaa {
   position: relative;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 0 30px 0;
+  border-radius: 18px;
 } 
 
 /* style inputs and link buttons */
@@ -3424,21 +3450,46 @@ button.menu-btn.nav-open {
 
 /*tesst*/
 .hosco-2mien{
-    color: #064d92;
-    margin-bottom: 5px;
+    color: #fff;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 22px;
+    line-height: 50px;
 }
 .aaaaa .wpb_wrapper p{
     padding: 5px;
 }
 .lien-he-map .cintent-mid h2{
-    padding: 15px;
+    padding: 0px;
     font-size: 30px;
-    line-height: 50px;
+    line-height: 45px;
     text-transform: uppercase;
     color: #0066b3;
     text-align: center;
+}
+.contact-hosco{
+    font-weight: 600;
+    color: #fff;
+}
+.container.contact-form {
+    width: 100%;
+    -webkit-box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+    -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 21px 41px -13px rgb(0 0 0 / 18%);
+    border-radius: 18px;
+    background: #fff;
+}
+section.lien-he-map {
+    background: #fafafa;
+}
+.contact-form h3{
+        line-height: 1.5;
+    font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #000;
+    font-size: 24px;
+    padding: 8px;
+}
+.dbox.w-100.d-flex.align-items-start {
+    line-height: 4;
 }

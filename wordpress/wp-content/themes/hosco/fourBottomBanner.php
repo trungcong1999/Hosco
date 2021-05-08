@@ -6,7 +6,7 @@
     <?php global $wp_query; $wp_query->in_the_loop = true; ?>
     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
      <?php global $product; ?>
-     <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
+     <div class="col-lg-3 col-md-6 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
       <div class="item">
         <div class="img">
           <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" title="">

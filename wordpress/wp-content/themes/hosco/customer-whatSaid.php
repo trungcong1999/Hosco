@@ -3,7 +3,7 @@
         <h2 class="title" style="color: #fff">KHÁCH HÀNG NÓI GÌ VỀ HOSCO</h2>
     </div>
     <br>
-    <div class="col" style="margin:0 auto; width: 80%; overflow:hidden;background: #fff;border-radius: 20px; ">
+    <div class="col" style="margin:0 auto; width: 100%; overflow:hidden;background: #fff;border-radius: 20px; ">
     <div class="owl-carousel owl-theme" id="slider-cutomer" >
 
 

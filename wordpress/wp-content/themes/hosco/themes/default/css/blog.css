@@ -252,7 +252,7 @@
    -----------------------------------------*/
 
    #quotes {
-    background: url('https://bahanto.net/wp-content/uploads/2021/05/quotes-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('https://bahanto.net/wp-content/uploads/2021/05/heading-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
@@ -281,5 +281,15 @@
 #quotes p {
   padding-top: 32px;
 }
+/*-------------ve hosco viet o day---------------*/
+.background-hosco{
+  padding: 0 !important;
+  margin-bottom: 0;
+}
+.image-hosco{
+  margin: 0 !important;
+}
+.text-mb-right{
 
+}
 

@@ -1,6 +1,6 @@
     
 
-<div class="col gp-apbig" style="margin:0 auto; width: 90%; overflow:hidden; ">
+<div class="gp-apbig" style="margin:0 auto; width: 100%; overflow:hidden; ">
     <div class="owl-carousel owl-theme" id="slider-product">
         <?php
         $sanpham = array();
