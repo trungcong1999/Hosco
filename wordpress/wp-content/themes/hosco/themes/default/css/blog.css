@@ -35,15 +35,15 @@
 }
 
 .background-image{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
 }
 .background-image img{
-    width: 100%;
+  width: 100%;
 }
 #experience .experience-thumb,
 #education .education-thumb  {
@@ -57,10 +57,10 @@
   padding-bottom: 6px;
 }
 .media-body p{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 .media{
   margin-top: 15px;
@@ -89,95 +89,92 @@
     -----------------------------------------*/
 
     .custom-navbar {
-        margin-bottom: 0;
-        background-color: #ffffff;
+      margin-bottom: 0;
+      background-color: #ffffff;
     }
 
     .custom-navbar .navbar-brand {
-        color: #333;
-        text-shadow: 1px 1px #fff;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 35px;
-        letter-spacing: 1px;
+      color: #333;
+      text-shadow: 1px 1px #fff;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 35px;
+      letter-spacing: 1px;
     }
 
     .custom-navbar .nav li a {
-        color: #666;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        line-height: 40px;
-        transition: all 0.4s ease-in-out;
+      color: #666;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      line-height: 40px;
+      transition: all 0.4s ease-in-out;
     }
 
     .custom-navbar .nav li a:hover {
-        background: transparent;
-        color: #E3AE57;
+      background: transparent;
+      color: #E3AE57;
     }
 
     .custom-navbar .navbar-nav > li > a:hover,
     .custom-navbar .navbar-nav > li > a:focus {
       background-color: transparent;
-  }
+    }
 
-  .custom-navbar .nav li.active > a {
-    background-color: transparent;
-    color: #E3AE57;
-}
+    .custom-navbar .nav li.active > a {
+      background-color: transparent;
+      color: #E3AE57;
+    }
 
-.custom-navbar .navbar-toggle {
-    border: none;
-    padding-top: 10px;
-}
+    .custom-navbar .navbar-toggle {
+      border: none;
+      padding-top: 10px;
+    }
 
-.custom-navbar .navbar-toggle {
-    background-color: transparent;
-}
+    .custom-navbar .navbar-toggle {
+      background-color: transparent;
+    }
 
-.custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
-    border-color: transparent;
-}
+    .custom-navbar .navbar-toggle .icon-bar {
+      background: #E3AE57;
+      border-color: transparent;
+    }
 
-@media only screen and (max-width: 580px){
-   h1 {
-    font-size: 32px !important;
-  }
-
-}
-
-@media only screen and (max-width: 767px){
-    #home .home-thumb {
+    @media only screen and (max-width: 767px){
+      #home .home-thumb {
         height: auto !important;
         padding-top: 32px !important;
         padding-bottom: 12px !important;
-    }
+      }
 
-    #home .container,
-    #education .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+      #home .container,
+      #education .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
 
-    #education .col-md-6{
+      #education .col-md-6{
         padding: 0;
         margin: 0;
-    }
-    .background-image{
-      position: relative;
-    }
-    #home .home-img{
-      height: auto !important;
-    }
-    #quotes .col-md-offset-1.col-md-10.col-sm-12 {
-    margin-left:0 !important;
-    }
-    .mobile-ve-hosco .output{
-          margin-top: 22px;
-    }
-}  
+      }
+      .background-image{
+        position: relative;
+      }
+      #home .home-img{
+        height: auto !important;
+      }
+      #quotes .col-md-offset-1.col-md-10.col-sm-12 {
+        margin-left:0 !important;
+      }
+      .mobile-ve-hosco .output{
+        margin-top: 22px;
+      }
+      .wp-block-column h1{
+        font-size: 18px;
+      }
+
+    }  
 
 /*---------------------------------------
     Home section              
@@ -185,24 +182,25 @@
 
     #home h1 {
       padding-bottom: 18px;
-  }
+      font-size: 22px;
+    }
 
-  #home .col-md-6 {
+    #home .col-md-6 {
       background: #2E9CCA;
-    padding-right: 0;
-    padding-left: 0;
-    color: #fff;
-  }
+      padding-right: 0;
+      padding-left: 0;
+      color: #fff;
+    }
 
-  #home .home-img {
+    #home .home-img {
       width: 100%;
       height: 100vh;
-  }
-  #home .home-img img{
+    }
+    #home .home-img img{
       width: 100%;
       height: 100%;
-  }
-  #home .home-thumb {
+    }
+    #home .home-thumb {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -213,37 +211,37 @@
       align-items: center;
       height: 100vh;
       padding: 0 45px 0 45px;
-  }
+    }
 /*---------------------------------------
     Education section              
     -----------------------------------------*/
 
     #education {
       background: #3B8BEB;
-  }
-  #education:nth-child(odd){
-    background: #e6e6e68f;
+    }
+    #education:nth-child(odd){
+      background: #e6e6e68f;
 
-  }
-   #education:nth-child(odd) .color-white{
+    }
+    #education:nth-child(odd) .color-white{
       color: #000;
     }
 
 
 
-  #education .media-heading {
+    #education .media-heading {
       margin-bottom: 0px;
-  }
+    }
 
-  #education .media .fa {
+    #education .media .fa {
       font-size: 42px;
       margin-right: 14px;
-  }
+    }
 
-  #education small {
+    #education small {
       color: #ffc416;
       font-weight: bold;
-  }
+    }
 
 
 
@@ -252,34 +250,84 @@
    -----------------------------------------*/
 
    #quotes {
-    background: url('https://bahanto.net/wp-content/uploads/2021/05/quotes-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('https://bahanto.net/wp-content/uploads/2021/05/heading-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
     position: relative;
     padding: 100px 0px;
-}
+  }
 
-#quotes .overlay-fix {
+  #quotes .overlay-fix {
     background: #333232d1;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     opacity: 0.7;
-}
-#quotes .col-md-offset-1.col-md-10.col-sm-12 {
+  }
+  #quotes .col-md-offset-1.col-md-10.col-sm-12 {
     margin-left: 8.33333333%;
     text-align: center;
-}
-#quotes .fa {
-  font-size: 42px;
-  margin-top: 32px;
-  margin-bottom: 22px;
-}
+  }
+  #quotes .fa {
+    font-size: 42px;
+    margin-top: 32px;
+    margin-bottom: 22px;
+  }
 
-#quotes p {
-  padding-top: 32px;
-}
+  #quotes p {
+    padding-top: 32px;
+  }
+  /*-------------ve hosco viet o day---------------*/
+  .background-hosco{
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+  .image-hosco{
+    margin: 0 !important;
+  }
+  .image-hosco img{
+    height: auto;
+  }
 
+  .text-mb-right{
 
+  }
+  @media (min-width: 600px) and (max-width: 781px){
+    .wp-block-column:not(:only-child) {
+      flex-basis: 0;
+      flex-grow: none;
+      text-align: center;
+    }
+    .wp-block-column:nth-child(2n) {
+      margin-left: 0;
+    }
+    .image-hosco img{
+      width: 100%;
+    }
+    .wp-block-columns{
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px){
+    .addd .col-md-6 {
+      flex: unset;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 375px){
+    .addd .col-md-6 {
+      padding: 0 !important;
+    }
+    .icon.d-flex.align-items-center.justify-content-center,.icon.d-flex.align-items-center.justify-content-center span{
+      display: none !important;
+    }
+    .dbox.w-100.d-flex.align-items-start{
+
+    }
+    .wpb_wrapper p{
+      text-align: center;
+    }
+  }

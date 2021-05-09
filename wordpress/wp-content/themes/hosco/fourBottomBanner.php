@@ -6,14 +6,14 @@
     <?php global $wp_query; $wp_query->in_the_loop = true; ?>
     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
      <?php global $product; ?>
-     <div class="col-lg-3 col-md-3 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
+     <div class="col-lg-3 col-md-6 col-sm-6 col-6 item_post_featured_banner four_post_bottom_banner_desktop">
       <div class="item">
         <div class="img">
           <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="" title="">
         </div>
         <div class="ct">
           <h3 class="title"><a class="smooth" href="#" title=""><?php the_title(); ?></a></h3>
-          <p> <?php echo get_post()->post_excerpt; ?></p>
+          <?php the_excerpt(); ?>
           <a class="smooth more" href="<?php echo get_post_permalink(); ?>" title="">Xem thêm</a>
         </div>
       </div>

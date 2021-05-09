@@ -1,0 +1,14 @@
+2021-05-09T06:26:53+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 906
+
+2021-05-09T09:41:15+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 931
+
+2021-05-09T09:43:15+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 931
+
+2021-05-09T09:50:09+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 940
+
+2021-05-09T09:50:10+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 940
+
+2021-05-09T09:50:10+00:00 CRITICAL syntax error, unexpected '}' in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 940
+
+2021-05-09T11:10:11+00:00 CRITICAL Cannot redeclare func99999() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:519) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 996
+

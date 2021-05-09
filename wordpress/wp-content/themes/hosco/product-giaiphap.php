@@ -1,6 +1,6 @@
     
 
-<div class="col gp-apbig" style="margin:0 auto; width: 90%; overflow:hidden; ">
+<div class="gp-apbig" style="margin:0 auto; width: 100%; overflow:hidden; ">
     <div class="owl-carousel owl-theme" id="slider-product">
         <?php
         $sanpham = array();
@@ -28,7 +28,7 @@
                    
                 ?>
                <div class="owl-min owl-desktop" style="padding: 0 12px;">
-                    <div class="item notify" style="padding: 5%;">
+                    <div class="item notify">
                         <div class="fh5co-blog" style="box-shadow: none;">
                             <img alt="" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($value->ID) );?>" />
                             <div class="blog-text"   style="padding: 5%;"  >

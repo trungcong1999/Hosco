@@ -42,7 +42,9 @@
 <!-- slide -->
 <section class="cutomer_whatSaid">
     <?php get_template_part("customer-whatSaid"); ?>
+    <br><br>
 </section>
+
 <!-- endslide -->
 <section class="group_news h-posts">
       <?php get_template_part("van_hoa_hosco"); ?>

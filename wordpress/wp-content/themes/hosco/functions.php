@@ -318,7 +318,6 @@ class T5_Richtext_Excerpt
   add_filter( 'widget_text', 'do_shortcode' );
   add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
   function d4p_32752_completly_disable_block_editor($use_block_editor) {
-
     return true;
   }
   function meta_box_detail_san_pham_hst()
@@ -715,9 +714,10 @@ class Random_Post extends WP_Widget {
 
       echo '<div class="content">';
       echo' <ul>';
-
+ 
       while( $random_query->have_posts() ) :
-        $random_query->the_post(); ?>
+        $random_query->the_post();?>
+
         <li><a href="<?php the_permalink(); ?>">
           <p class="imagea">
             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="">
@@ -735,7 +735,7 @@ class Random_Post extends WP_Widget {
 
 
     endif;
-    
+    wp_reset_postdata(); 
     echo '</div>';
     echo '</div>';
   }
@@ -811,7 +811,7 @@ class categoryhienthi extends WP_Widget {
     echo '<ul>';
     foreach ($instance as $key => $value) {
       if($key!='title'){
-        
+
         foreach (get_categories() as $value1) {
           if($value1->slug == $value){
             echo '<li><a href="#">- '.$value1->name.'</a></li>';
@@ -834,3 +834,193 @@ function create_categoryhienthi_widget() {
   register_widget('categoryhienthi');
 }
 
+// ve hosco box
+function meta_box_tab_ve_hosco()
+{
+  if(strpos(basename(get_page_template()), 'hosco')===0){
+
+   add_meta_box( 've-hosco', 'Lựa Chọn tab giới thiệu', 'hosco_box', 'page' );
+ }
+}
+add_action( 'add_meta_boxes', 'meta_box_tab_ve_hosco' );
+
+
+function hosco_box( $post )
+{
+
+  wp_enqueue_script( 'nghanhhang.js', get_theme_file_uri( '/template/js/nghanhhang.js' ) , array(), '1.0', true );  
+  // var_dump(get_pages( ));
+  
+  echo "<label for='product'>Chọn trang Hiển Thị trong tab :</label>";
+  echo "<select name='pr_ID' id='hosco_tab' onchange='validateSelectBox(this)'>";
+  echo "<option value=''>Chưa Chọn Sản Phẩm</option> ";
+  foreach (get_pages( ) as  $value) {
+   echo "<option value='".$value->ID."'>".$value->post_title."</option> ";
+ }
+ 
+
+
+ echo "</select>";
+ echo "<h5>Danh Sách Trang Hiển Thị :</h5>";
+ echo "<div id='choose-pr'>";
+ $nghanh_hang_post = get_post_meta( $post->ID, 'hosco_box', true );
+ if($nghanh_hang_post != ""){
+  foreach ($nghanh_hang_post as  $value) {
+
+    $args = array(
+
+      'post_type'      => 'page',
+      'p'=> $value
+    );
+    $the_query = new WP_Query( $args );
+    if( $the_query->have_posts() ): 
+     while( $the_query->have_posts() ) : $the_query->the_post(); 
+       echo "<div style='display:inline-block;''>";
+       echo "<p style='display:inline-block;box-shadow: 0px 0px 10px 2px inset gray ;'>".get_post()->post_title."</p>";
+       echo "<button type='button' style='width: 16.2px;padding: 0;border: 1px solid #c56565;'' onclick='remove(this)''><img src='../wp-content/themes/hosco/template/image/remove-image.png' alt='' width='100%'' height='100%''></button>";
+       echo "<input type='hidden' name='prozzzzduct-".$value."' value='".$value."'>";
+       echo "</div>";
+
+     endwhile; 
+   endif;
+   wp_reset_query();
+
+ }
+}
+
+echo "</div>";
+}
+function hosco_save( $post_id )
+{
+  if(strpos(basename(get_page_template()), 'hosco')===0){
+
+    $list = array();
+    foreach ($_POST as $key => $value) {
+
+      if(strpos($key, 'prozzzzduct')===0){
+        array_push($list, $value);
+      }
+
+    }
+
+
+    update_post_meta( $post_id, 'hosco_box', $list );
+  }
+    // die();
+
+}
+add_action( 'save_post', 'hosco_save' );
+
+// lien he box
+function meta_box_lien_he()
+{
+  if(strpos(basename(get_page_template()), 'lienhe')===0){
+
+   add_meta_box( 've-hosco', 'Lựa Chọn tab giới thiệu', 'lienhe_box', 'page' );
+ }
+}
+add_action( 'add_meta_boxes', 'meta_box_lien_he' );
+
+
+function lienhe_box( $post )
+{
+
+
+  $formVal = get_post_meta( $post->ID, 'lienhe_box', true );
+  // var_dump($formVal);
+  if($formVal==NULL || $formVal ==''){
+    echo '<label for="shotcode">Nhập shotcode form</label>';
+    
+    echo '<textarea  id="shotcode" cols="70" name="shotcode"></textarea>';
+
+  }else{
+    echo '<label for="shotcode">Nhập shotcode form</label>';
+    echo '<textarea  id="shotcode" cols="70" name="shotcode" >'.$formVal.'</textarea>';
+
+  }
+  $valueMienNam = get_post_meta( $post->ID, 'lienhe_map_mien_nam_box', true );
+
+  echo '<h1>Chi Nhánh Miền Nam (iframe google)</h1>';
+  if($formVal==NULL || $formVal ==''){    
+  echo '<textarea  cols="70" name="mien_nam"></textarea>';
+
+  }else{
+  echo '<textarea  cols="70" name="mien_nam">'.$valueMienNam.'</textarea>';
+
+  }
+  // add_filter('user_can_richedit',true,999999);
+ 
+  $valueMienBac = get_post_meta( $post->ID, 'lienhe_map_mien_bac_box', true );
+
+  echo '<h1>Chi Nhánh Miền Bắc(iframe google) </h1>';
+  if($formVal==NULL || $formVal ==''){    
+  echo '<textarea  cols="70" name="mien_bac"></textarea>';
+
+  }else{
+  echo '<textarea  cols="70" name="mien_bac">'.$valueMienBac.'</textarea>';
+
+  }
+
+
+
+}
+function lienhe_save( $post_id )
+{
+   // die();
+  if(strpos(basename(get_page_template()), 'lienhe')===0){
+
+    
+    update_post_meta( $post_id, 'lienhe_box', $_POST['shotcode'] );
+     update_post_meta( $post_id, 'lienhe_map_mien_nam_box', $_POST['mien_nam'] );
+     update_post_meta( $post_id, 'lienhe_map_mien_bac_box', $_POST['mien_bac'] );
+    
+  }
+
+
+}
+add_action( 'save_post', 'lienhe_save' );
+// anh tintuc
+
+function aw_custom_meta_boxes( $post_type, $post ) {
+    add_meta_box(
+        'aw-meta-box',
+        __( 'Custom Image' ),
+        'render_aw_meta_box',
+        array('post'), //post types here
+        'normal',
+        'high'
+    );
+}
+add_action( 'add_meta_boxes', 'aw_custom_meta_boxes', 10, 2 );
+ 
+function render_aw_meta_box($post) {
+    $image = get_post_meta($post->ID, 'aw_custom_image', true);
+    ?>
+    <table>
+        <tr>
+            <td><a href="#" class="aw_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a></td>
+            <td><input type="text" name="aw_custom_image" id="aw_custom_image" value="<?php echo $image; ?>" style="width:500px;" /></td>
+        </tr>
+    </table>
+    <?php
+}
+function aw_include_script() {
+ 
+    if ( ! did_action( 'wp_enqueue_media' ) ) {
+        wp_enqueue_media();
+    }
+  
+    wp_enqueue_script( 'awscript', get_stylesheet_directory_uri() . '/template/js/awscript.js', array('jquery'), null, false );
+}
+add_action( 'admin_enqueue_scripts', 'aw_include_script' );
+function aw_save_postdata($post_id)
+{
+    if (array_key_exists('aw_custom_image', $_POST)) {
+        update_post_meta(
+            $post_id,
+            'aw_custom_image',
+            $_POST['aw_custom_image']
+        );
+    }
+}
+add_action('save_post', 'aw_save_postdata');

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title><?php the_title(); ?></title>
+    <title>Công Ty Cổ Phần HOSCO</title>
     <link rel="canonical" href="https://hosco.vn/" />
     <link rel="icon" href="https://www.hosco.com.vn/wp-content/uploads/2019/05/icon-hosco.png">
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/bootstrap4.min.css" type="text/css" rel="stylesheet"/>
@@ -15,7 +15,9 @@
     <link href="<?php bloginfo("template_directory"); ?>/themes/default/assets/css/animate.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.theme.css">
+    <?php wp_head(); ?>
 <style type="text/css" media="screen">
+
         .customNavigation{
             z-index: 9999;
             position: absolute;
