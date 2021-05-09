@@ -12,3 +12,63 @@
 
 2021-05-09T11:10:11+00:00 CRITICAL Cannot redeclare func99999() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:519) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 996
 
+2021-05-09T14:54:35+00:00 CRITICAL Cannot redeclare he_sinh_thai_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:401) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1106
+
+2021-05-09T14:55:35+00:00 CRITICAL Cannot redeclare he_sinh_thai_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:401) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1043
+
+2021-05-09T14:57:36+00:00 CRITICAL Cannot redeclare he_sinh_thai_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:401) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1043
+
+2021-05-09T14:59:37+00:00 CRITICAL Cannot redeclare he_sinh_thai_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:401) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1043
+
+2021-05-09T16:04:32+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:06:33+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:10:06+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:10:07+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:10:08+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:10:08+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1104
+
+2021-05-09T16:10:39+00:00 CRITICAL syntax error, unexpected '$strTXT' (T_VARIABLE) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1123
+
+2021-05-09T17:14:02+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1214
+
+2021-05-09T17:15:24+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1214
+
+2021-05-09T17:16:03+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1218
+
+2021-05-09T17:17:19+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:18:04+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:18:19+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:18:36+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:19:03+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:20:21+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:20:58+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1220
+
+2021-05-09T17:21:39+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1182
+
+2021-05-09T17:21:39+00:00 CRITICAL Cannot redeclare why_choose_save() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:1103) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1182
+
+2021-05-09T18:20:20+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\template\product-template.php on line 186
+
+2021-05-09T18:45:25+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1360
+
+2021-05-09T18:46:25+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1360
+
+2021-05-09T18:48:25+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1348
+
+2021-05-09T18:49:25+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1347
+
+2021-05-09T18:51:25+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1328
+
+2021-05-09T18:51:29+00:00 CRITICAL Cannot redeclare create_categoryhienthi_widget() (previously declared in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php:841) in E:\Xampp\htdocs\wordpress\wp-content\themes\hosco\functions.php on line 1328
+

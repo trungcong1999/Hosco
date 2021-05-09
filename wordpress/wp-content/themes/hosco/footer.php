@@ -40,55 +40,11 @@
 <div id="informationForm" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content trial-md-ct">
-            <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
-            <h2 class="title">Điền thông tin của bạn</h2>
-            <form method="POST" id="sheet-forms" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
-                <input type="hidden" name="url_full" value="https://hosco.vn/">
-                <div class="row col-mar-13">
-                    <div class="col-sm-12">
-                        <p>Họ và tên của bạn</p>
-                        <div class="input">
-                            <i class="ic ic-user"></i>
-                            <input required="" type="text" name="name">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>Số điện thoại</p>
-                        <div class="input">
-                            <i class="ic ic-phone"></i>
-                            <input required="" type="text" class="numberic" name="phone">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>Email đăng ký</p>
-                        <div class="input">
-                            <i class="ic ic-email"></i>
-                            <input type="text" name="email" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Ngành nghề</p>
-                        <div class="input">
-                            <input style="padding-left: 15px;" required="" type="text" name="job">
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Mã giảm giá</p>
-                        <div class="input">
-                            <input style="padding-left: 15px;" type="text" name="voucher">
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Nội dung</p>
-                        <div class="input">
-                            <textarea class="form-control" name="messages"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
-            </form>
-        </div>
-    </div>
+            
+         <?php if ( dynamic_sidebar('formTuVan') ) : else : endif;  ?>
+
+     </div>
+ </div>
 </div>
 <div id="price_quote" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -315,10 +271,10 @@
  $(document).ready(function() {
   $("#slider-cutomer").owlCarousel({
     center:true,
-      pagination:true,
-      items:3,
-      responsiveClass:true,
-      responsive:{
+    pagination:true,
+    items:3,
+    responsiveClass:true,
+    responsive:{
         0:{
             items:1,
             nav:true

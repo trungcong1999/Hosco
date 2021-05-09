@@ -418,7 +418,10 @@ add_action( 'save_post', 'he_sinh_thai_save' );
 // metabox nghanh hang
 function meta_box_nghanh_hang()
 {
- add_meta_box( 'nghanh-hang', 'Lựa Chọn Nghành Hàng', 'nghanh_hang_box', 'product' );
+  if(get_post_type( )=='product'){
+   add_meta_box( 'nghanh-hang', 'Lựa Chọn Nghành Hàng', 'nghanh_hang_box', 'product' );
+
+ }
 }
 add_action( 'add_meta_boxes', 'meta_box_nghanh_hang' );
 
@@ -485,17 +488,20 @@ echo "</div>";
 }
 function nghanh_hang_save( $post_id )
 {
-  $list = array();
-  foreach ($_POST as $key => $value) {
+  if(get_post_type($post_id )=='product'){
+    $list = array();
+    foreach ($_POST as $key => $value) {
 
-    if(strpos($key, 'prozzzzduct')===0){
-      array_push($list, $value);
+      if(strpos($key, 'prozzzzduct')===0){
+        array_push($list, $value);
+      }
+
     }
 
+
+    update_post_meta( $post_id, '_product_nghanh_hang', $list );
   }
-
-
-  update_post_meta( $post_id, '_product_nghanh_hang', $list );
+  
 
     // die();
 
@@ -584,6 +590,7 @@ function showWidget(){
   register_sidebar(  array('name'=>'menuProduct','id'=>'menuProduct') );
   register_sidebar(  array('name'=>'trungtamhotro','id'=>'trungtamhotro') );
   register_sidebar(  array('name'=>'sidebarTinTUc','id'=>'sidebarTinTUc') );
+  register_sidebar(  array('name'=>'formTuVan','id'=>'formTuVan') );
 }
 add_action( 'widgets_init', 'showWidget' );
 
@@ -714,7 +721,7 @@ class Random_Post extends WP_Widget {
 
       echo '<div class="content">';
       echo' <ul>';
- 
+
       while( $random_query->have_posts() ) :
         $random_query->the_post();?>
 
@@ -942,22 +949,22 @@ function lienhe_box( $post )
 
   echo '<h1>Chi Nhánh Miền Nam (iframe google)</h1>';
   if($formVal==NULL || $formVal ==''){    
-  echo '<textarea  cols="70" name="mien_nam"></textarea>';
+    echo '<textarea  cols="70" name="mien_nam"></textarea>';
 
   }else{
-  echo '<textarea  cols="70" name="mien_nam">'.$valueMienNam.'</textarea>';
+    echo '<textarea  cols="70" name="mien_nam">'.$valueMienNam.'</textarea>';
 
   }
   // add_filter('user_can_richedit',true,999999);
- 
+
   $valueMienBac = get_post_meta( $post->ID, 'lienhe_map_mien_bac_box', true );
 
   echo '<h1>Chi Nhánh Miền Bắc(iframe google) </h1>';
   if($formVal==NULL || $formVal ==''){    
-  echo '<textarea  cols="70" name="mien_bac"></textarea>';
+    echo '<textarea  cols="70" name="mien_bac"></textarea>';
 
   }else{
-  echo '<textarea  cols="70" name="mien_bac">'.$valueMienBac.'</textarea>';
+    echo '<textarea  cols="70" name="mien_bac">'.$valueMienBac.'</textarea>';
 
   }
 
@@ -969,10 +976,10 @@ function lienhe_save( $post_id )
    // die();
   if(strpos(basename(get_page_template()), 'lienhe')===0){
 
-    
+
     update_post_meta( $post_id, 'lienhe_box', $_POST['shotcode'] );
-     update_post_meta( $post_id, 'lienhe_map_mien_nam_box', $_POST['mien_nam'] );
-     update_post_meta( $post_id, 'lienhe_map_mien_bac_box', $_POST['mien_bac'] );
+    update_post_meta( $post_id, 'lienhe_map_mien_nam_box', $_POST['mien_nam'] );
+    update_post_meta( $post_id, 'lienhe_map_mien_bac_box', $_POST['mien_bac'] );
     
   }
 
@@ -982,45 +989,342 @@ add_action( 'save_post', 'lienhe_save' );
 // anh tintuc
 
 function aw_custom_meta_boxes( $post_type, $post ) {
-    add_meta_box(
-        'aw-meta-box',
-        __( 'Custom Image' ),
-        'render_aw_meta_box',
+  add_meta_box(
+    'aw-meta-box',
+    __( 'Custom Image' ),
+    'render_aw_meta_box',
         array('post'), //post types here
         'normal',
         'high'
-    );
+      );
 }
 add_action( 'add_meta_boxes', 'aw_custom_meta_boxes', 10, 2 );
- 
+
 function render_aw_meta_box($post) {
-    $image = get_post_meta($post->ID, 'aw_custom_image', true);
-    ?>
-    <table>
-        <tr>
-            <td><a href="#" class="aw_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a></td>
-            <td><input type="text" name="aw_custom_image" id="aw_custom_image" value="<?php echo $image; ?>" style="width:500px;" /></td>
-        </tr>
-    </table>
-    <?php
+  $image = get_post_meta($post->ID, 'aw_custom_image', true);
+  ?>
+  <table>
+    <tr>
+      <td><a href="#" class="aw_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a></td>
+      <td><input type="text" name="aw_custom_image" id="aw_custom_image" value="<?php echo $image; ?>" style="width:500px;" /></td>
+    </tr>
+  </table>
+  <?php
 }
 function aw_include_script() {
- 
-    if ( ! did_action( 'wp_enqueue_media' ) ) {
-        wp_enqueue_media();
-    }
+
+  if ( ! did_action( 'wp_enqueue_media' ) ) {
+    wp_enqueue_media();
+  }
   
-    wp_enqueue_script( 'awscript', get_stylesheet_directory_uri() . '/template/js/awscript.js', array('jquery'), null, false );
+  wp_enqueue_script( 'awscript', get_stylesheet_directory_uri() . '/template/js/awscript.js', array('jquery'), null, false );
 }
 add_action( 'admin_enqueue_scripts', 'aw_include_script' );
 function aw_save_postdata($post_id)
 {
-    if (array_key_exists('aw_custom_image', $_POST)) {
-        update_post_meta(
-            $post_id,
-            'aw_custom_image',
-            $_POST['aw_custom_image']
-        );
-    }
+  if (array_key_exists('aw_custom_image', $_POST)) {
+    update_post_meta(
+      $post_id,
+      'aw_custom_image',
+      $_POST['aw_custom_image']
+    );
+  }
 }
 add_action('save_post', 'aw_save_postdata');
+// ly do chon san pham
+function meta_box_why_choose_pr()
+{
+
+  if(strpos(basename(get_page_template()), 'product-template')===0){
+   add_meta_box( 'ly-do-chon', 'Lý do chọn sản phẩm', 'why_choose_box', 'page' );
+ }
+}
+add_action( 'add_meta_boxes', 'meta_box_why_choose_pr' );
+
+
+function why_choose_box( $post )
+{
+  $image = get_post_meta($post->ID, 'aw1_custom_image', true);
+  ?>
+  <table>
+    <tr>
+      <td><a href="#" class="aw_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a></td>
+      <td><input type="text" name="aw1_custom_image" id="aw_custom_image" value="<?php echo $image; ?>" style="width:500px;" /></td>
+    </tr>
+  </table>
+  <table>
+    <caption><h1>Lý do chọn </h1></caption>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tiêu Đề</th>
+        <th>Nội Dung Ngắn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php 
+      if(get_post_meta( $post->ID, '_reason_choose', true )!=NULL || get_post_meta( $post->ID, '_reason_choose', true )!='')
+        foreach (get_post_meta( $post->ID, '_reason_choose', true ) as $key => $value) {
+          ?>
+          <tr>
+            <td><?php echo ($key+1); ?></td>
+            <td><input type="text" name="titleLD<?php echo ($key+1); ?>" value="<?php echo $value->title; ?>" placeholder=""></td>
+            <td><textarea name="txt<?php echo ($key+1); ?>" cols='70'><?php echo $value->content; ?></textarea></td>
+          </tr>
+          <?php
+        }
+        else{
+          for($i = 1 ;$i<=6;$i++){
+            ?>
+            <tr>
+              <td><?php echo ($i); ?></td>
+              <td><input type="text" name="titleLD<?php echo ($i); ?>" value="" placeholder=""></td>
+              <td><textarea name="txt<?php echo ($i); ?>" cols='70'></textarea></td>
+            </tr>
+            <?php
+          }
+        }
+        ?>
+      </tbody>
+    </table>
+    <?php
+  }
+
+
+
+  class reason {
+    public $title;
+    public $content;
+    function __construct($title, $content){
+      $this->title = $title;
+      $this->content = $content;
+    }
+    
+  }
+  function why_choose_save( $post_id )
+  {
+
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+      $list = array();
+      foreach ($_POST as $key => $value) {
+
+        if(strpos($key, 'titleLD')===0){
+          $strS = str_replace('titleLD', '', $key);
+          $strTXT ='txt'.$strS;
+          $obj = new reason($value,'');
+
+          foreach ($_POST as $key1 => $value1) {  
+            if($strTXT == $key1){
+              $obj->content = $value1;
+              break;
+            }
+          }
+          array_push($list, $obj);
+        }
+
+      }
+
+
+      update_post_meta( $post_id, '_reason_choose', $list );
+
+    }
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+      if (array_key_exists('aw1_custom_image', $_POST)) {
+        update_post_meta(
+          $post_id,
+          'aw1_custom_image',
+          $_POST['aw1_custom_image']
+        );
+      }
+    }
+
+
+  }
+  add_action( 'save_post', 'why_choose_save' );
+
+//tinh nang noi bat
+  function meta_box_tinh_nang_noi_bat()
+  {
+
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+     add_meta_box( 'tinh-nang-noi-bat', 'Tính Năng Nổi Bật', 'tinh_nang_box', 'page' );
+   }
+ }
+ add_action( 'add_meta_boxes', 'meta_box_tinh_nang_noi_bat' );
+
+
+ function tinh_nang_box($post)
+ {
+  $image = get_post_meta($post->ID, 'aw2_custom_image', true);
+  $linkBaiViet =get_post_meta($post->ID, '_LinkBaiViet', true);
+  ?>
+  <label for="BaiViet">Link Bài Viết</label>
+  <textarea id="BaiViet" name="txtLinkBaiViet"><?php echo $linkBaiViet; ?></textarea>
+  <table>
+    <tr>
+      <td><a href="#" class="aw2_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a></td>
+      <td><input type="text" name="aw2_custom_image" id="aw2_custom_image" value="<?php echo $image; ?>" style="width:500px;" /></td>
+    </tr>
+  </table>
+  <table>
+    <caption><h1>Lý do chọn </h1></caption>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tiêu Đề</th>
+        <th>Nội Dung Ngắn</th>
+        <th>Ảnh</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php 
+      if(get_post_meta( $post->ID, '_tinhnang_noibat', true )!=NULL || get_post_meta( $post->ID, '_tinhnang_noibat', true )!='')
+        foreach (get_post_meta( $post->ID, '_tinhnang_noibat', true ) as $key => $value) {
+          ?>
+          <tr>
+            <td><?php echo ($key+1); ?></td>
+            <td><input type="text" name="titleTN<?php echo ($key+1); ?>" value="<?php echo $value->title; ?>" placeholder=""></td>
+            <td><textarea name="txtTN<?php echo ($key+1); ?>" cols='70'><?php echo $value->content; ?></textarea></td>
+            <td><a href="#" class=" linkTinhNang button button-secondary"><?php _e('Upload Image'); ?></a><input type="text" class="linkIMG" name="aw_custom_image<?php echo ($key+1); ?>" id="linkTinhNang<?php echo ($key+1); ?>" value="<?php echo $value->linkImg; ?>" style="width:500px;" /></td>
+
+          </tr>
+          <?php
+          if(($key+1)==4)
+            break;
+        }
+        else{
+          for($i = 1 ;$i<=4;$i++){
+            ?>
+            <tr>
+              <td><?php echo ($i); ?></td>
+              <td><input type="text" name="titleTN<?php echo ($i); ?>" value="" placeholder=""></td>
+              <td><textarea name="txtTN<?php echo ($i); ?>" cols='70'></textarea></td>
+              <td><a href="#" class="linkTinhNang button button-secondary"><?php _e('Upload Image'); ?></a><input type="text" class="linkIMG" name="aw_custom_image<?php echo ($i); ?>" id="linkTinhNang<?php echo ($i); ?>"  value="" style="width:500px;" /></td>
+
+            </tr>
+            <?php
+          }
+        }
+        ?>
+      </tbody>
+    </table>
+    <?php
+  }
+
+
+
+  class tinhnang {
+    public $linkImg;
+    public $title;
+    public $content;
+    function __construct($title, $content,$linkImg){
+      $this->title = $title;
+      $this->content = $content;
+      $this->linkImg = $linkImg;
+    }
+    
+  }
+  function tinh_nang_save( $post_id )
+  {
+
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+      $list = array();
+      foreach ($_POST as $key => $value) {
+
+        if(strpos($key, 'titleTN')===0){
+          $strS = str_replace('titleTN', '', $key);
+          $strTXT ='txtTN'.$strS;
+          $obj = new tinhnang($value,'','');
+          $strIMG = 'aw_custom_image'.$strS;
+          foreach ($_POST as $key1 => $value1) {  
+            if($strTXT == $key1){
+              $obj->content = $value1;
+              break;
+            }
+          }
+          foreach ($_POST as $key1 => $value1) {  
+            if($strIMG == $key1){
+              $obj->linkImg = $value1;
+              break;
+            }
+          }
+          array_push($list, $obj);
+        }
+
+      }
+
+
+      update_post_meta( $post_id, '_tinhnang_noibat', $list );
+      update_post_meta( $post_id, '_LinkBaiViet', $_POST['txtLinkBaiViet'] );
+
+    }
+    if(strpos(basename(get_page_template()), 'product-template')===0){
+      if (array_key_exists('aw2_custom_image', $_POST)) {
+        update_post_meta(
+          $post_id,
+          'aw2_custom_image',
+          $_POST['aw2_custom_image']
+        );
+      }
+    }
+
+
+  }
+  add_action( 'save_post', 'tinh_nang_save' );
+
+  // widget do shotcode
+
+  class do_shortcode_formTUVan extends WP_Widget {
+
+    function __construct() {
+      parent::__construct(
+        'shortcodeTuVan',
+        'doshortcode',
+        array( 'description'  =>  'Hiển Thị Shortcode' )
+      );
+    }
+
+    function form( $instance ) {
+
+      $default = array(
+        'title' => 'Thông Tin Của Bạn',
+        'shortcodeTV'=>''
+      );
+      $instance = wp_parse_args( (array) $instance, $default );
+      $title = esc_attr($instance['title']);
+      $shortcodeTV = esc_attr($instance['shortcodeTV']);
+
+
+      echo '<p>Nhập tiêu đề <input type="text" class="widefat" name="'.$this->get_field_name('title').'" value="'.$title.'"/></p>';
+      echo '<p>Nhập shortcode form: <textarea name="'.$this->get_field_name('shortcodeTV').'">'.$shortcodeTV.'</textarea>';
+
+
+
+
+    }
+
+    function update( $new_instance, $old_instance ) {
+    $instance = $old_instance;
+    $instance['title'] = strip_tags($new_instance['title']);
+    $instance['shortcodeTV'] = strip_tags($new_instance['shortcodeTV']);
+    return $instance;
+
+    }
+
+    function widget( $args, $instance ) {
+      extract($args);
+      $title = apply_filters( 'widget_title', $instance['title'] );
+
+
+      echo '<button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>';
+      echo '<h2 class="title">'.$title.'</h2>';
+      echo do_shortcode( $instance['shortcodeTV']  );
+
+    }
+
+  }
+
+  add_action( 'widgets_init', 'create_shortcode_widget' );
+  function create_shortcode_widget() {
+    register_widget('do_shortcode_formTUVan');
+  }
