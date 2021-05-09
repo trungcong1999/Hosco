@@ -3,7 +3,7 @@
         <h2 class="title">Khách hàng - Đối tác</h2>
         <p><span style="font-family: arial, helvetica, sans-serif;">Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết kiệm</span></p>
     </div>
-    <div class="customers_partner customers_partner_desktop" >
+    <div class="customers_partner customers_partner_desktop col-md-12" >
         <div id="jssor_1" style="margin:auto;width:1000px;height:100px;overflow:hidden;">        
             <div data-u="slides" style="cursor:default;width:1000px;height:100px;overflow:hidden;" class="slider-ads">
                 <?php 
@@ -30,7 +30,7 @@
 
 
 <div class="customers_partner customers_partner_mobile">
-    <div id="jssor_2" style="margin:auto;width:500px;height:100px;overflow:hidden;">        
+    <div id="jssor_2" style="margin:auto;width:800px;height:100px;overflow:hidden;">        
         <div data-u="slides" class="slider-ads" style="cursor:default;width:500px;height:100px;overflow:hidden;">
             <?php 
             $args = array(

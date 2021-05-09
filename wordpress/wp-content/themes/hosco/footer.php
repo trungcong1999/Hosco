@@ -314,30 +314,21 @@
 <script>
  $(document).ready(function() {
   $("#slider-cutomer").owlCarousel({
-    nav: true,
-    loop:true,
-    mouseDrag: true,
-    responsiveClass: true,
-    responsive:{
+    center:true,
+      pagination:true,
+      items:3,
+      responsiveClass:true,
+      responsive:{
         0:{
             items:1,
+            nav:true
+        },
+        600:{
+            items:5,
             nav:false
         },
-        480:{
-            items:2,
-            nav:false
-        },
-        768:{
-            items:2,
-        },
-        992:{
-            items:2,
-        },
-        1024:{
-            items:3,
-        },
-        1200:{
-            items:3,
+        1000:{
+            items:10,
             nav:true,
             loop:false
         }

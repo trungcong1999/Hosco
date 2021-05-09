@@ -13,7 +13,7 @@
         </div>
         <div class="ct">
           <h3 class="title"><a class="smooth" href="#" title=""><?php the_title(); ?></a></h3>
-          <p> <?php echo get_post()->post_excerpt; ?></p>
+          <?php the_excerpt(); ?>
           <a class="smooth more" href="<?php echo get_post_permalink(); ?>" title="">Xem thêm</a>
         </div>
       </div>

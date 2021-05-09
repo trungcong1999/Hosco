@@ -613,19 +613,6 @@
     font-weight: 600;
     color: #0082ce;
 }
-.main-text-pos::after{
-  background: none repeat scroll 0 0 #008FEC;
-  bottom: 14px;
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-  background: #008FEC;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 10%; 
-  left: 45%;
-  top: 130%;
-}
 /*chuyentab*/
 .tab-group{
   display: flex;
@@ -685,7 +672,7 @@
         margin-top: 20px;
     }
     .tab-navications{
-        display: none;
+        display: block;
     }
     .custom-select{
         background: #26b3ef;
@@ -694,7 +681,7 @@
         font-size: 16px;
     }
     .panel-group{
-        display: none;
+        display: block;
     }
     .main-acitvity-mobile{
         margin-top: 15px;
@@ -724,6 +711,12 @@
         background: #fff;
         color: #0066b3;
     }
+    .wp-block-column.is-vertically-aligned-center.wow.fadeInUp.text-hosco-mana {
+    flex-basis: 52%;
+    }
+    .wp-block-column {
+    flex-basis: 52%;
+}
 
 }
 @media only screen and (max-width: 1024px){

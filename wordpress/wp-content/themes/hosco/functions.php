@@ -810,7 +810,7 @@ class categoryhienthi extends WP_Widget {
     echo '<ul>';
     foreach ($instance as $key => $value) {
       if($key!='title'){
-        
+
         foreach (get_categories() as $value1) {
           if($value1->slug == $value){
             echo '<li><a href="#">- '.$value1->name.'</a></li>';
@@ -833,3 +833,79 @@ function create_categoryhienthi_widget() {
   register_widget('categoryhienthi');
 }
 
+// ve hosco box
+function meta_box_tab_ve_hosco()
+{
+  if(strpos(basename(get_page_template()), 'hosco')===0){
+
+   add_meta_box( 've-hosco', 'Lựa Chọn tab giới thiệu', 'hosco_box', 'page' );
+ }
+}
+add_action( 'add_meta_boxes', 'meta_box_tab_ve_hosco' );
+
+
+function hosco_box( $post )
+{
+
+  wp_enqueue_script( 'nghanhhang.js', get_theme_file_uri( '/template/js/nghanhhang.js' ) , array(), '1.0', true );  
+  // var_dump(get_pages( ));
+  
+  echo "<label for='product'>Chọn trang Hiển Thị trong tab :</label>";
+  echo "<select name='pr_ID' id='hosco_tab' onchange='validateSelectBox(this)'>";
+  echo "<option value=''>Chưa Chọn Sản Phẩm</option> ";
+  foreach (get_pages( ) as  $value) {
+   echo "<option value='".$value->ID."'>".$value->post_title."</option> ";
+ }
+ 
+
+
+ echo "</select>";
+ echo "<h5>Danh Sách Trang Hiển Thị :</h5>";
+ echo "<div id='choose-pr'>";
+ $nghanh_hang_post = get_post_meta( $post->ID, 'hosco_box', true );
+ if($nghanh_hang_post != ""){
+  foreach ($nghanh_hang_post as  $value) {
+
+    $args = array(
+
+      'post_type'      => 'page',
+      'p'=> $value
+    );
+    $the_query = new WP_Query( $args );
+    if( $the_query->have_posts() ): 
+     while( $the_query->have_posts() ) : $the_query->the_post(); 
+       echo "<div style='display:inline-block;''>";
+       echo "<p style='display:inline-block;box-shadow: 0px 0px 10px 2px inset gray ;'>".get_post()->post_title."</p>";
+       echo "<button type='button' style='width: 16.2px;padding: 0;border: 1px solid #c56565;'' onclick='remove(this)''><img src='../wp-content/themes/hosco/template/image/remove-image.png' alt='' width='100%'' height='100%''></button>";
+       echo "<input type='hidden' name='prozzzzduct-".$value."' value='".$value."'>";
+       echo "</div>";
+
+     endwhile; 
+   endif;
+   wp_reset_query();
+
+ }
+}
+
+echo "</div>";
+}
+function hosco_save( $post_id )
+{
+  if(strpos(basename(get_page_template()), 'hosco')===0){
+
+    $list = array();
+    foreach ($_POST as $key => $value) {
+
+      if(strpos($key, 'prozzzzduct')===0){
+        array_push($list, $value);
+      }
+
+    }
+
+
+    update_post_meta( $post_id, 'hosco_box', $list );
+  }
+    // die();
+
+}
+add_action( 'save_post', 'hosco_save' );
