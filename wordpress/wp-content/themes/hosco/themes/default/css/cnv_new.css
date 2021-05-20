@@ -306,12 +306,17 @@ ul.primary-button li a.btn-menu {
     .four_post_bottom_banner .item {
         padding: 17px 17px 35px;
         margin-bottom: 15px;
+            height: auto !important;
     }
     .four_post_bottom_banner .item h3 {
         font-size: 14px;
     }
     .event_banner_area{
         min-height: auto !important;
+    }
+    .wrapper-navbar-primary {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
     }
 }
 .headbox:after {
@@ -379,6 +384,10 @@ ul.primary-button li a.btn-menu {
     }
     .customers_partner_desktop {
         display: none !important;
+    }
+    .col-xl-4.col-lg-4.col-md-6.col-12.item {
+    max-width: 100%;
+    flex: auto;
     }
 
 }
@@ -1746,6 +1755,10 @@ box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
     header.fixed {
         box-shadow: none;
     }
+    header.fixed{
+        z-index: 10;
+    }
+    
     .navbar-logo img {
         filter: initial;
     }
@@ -1861,9 +1874,9 @@ box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
     .slick-prev.slick-arrow:hover {
         background: url(../assets/images/icon-prev.png);
     }
-    body {
+    /*body {
         margin-top: 0 !important;
-    }
+    }*/
     .group_ebook {
         margin-left: 0;
         margin-right: 0;
@@ -2020,7 +2033,7 @@ box-shadow: 0 14px 8px rgb(0 0 0 / 25%), 0px 4px 10px rgb(0 0 0 / 22%)
 }
 @media (max-width: 991px) {
     header.fixed nav.navbarmain-primary {
-        display: none;
+        display: block;
     }
     nav.navbarmain-primary {
         display: block;
@@ -3071,6 +3084,15 @@ section.group_case_study:nth-child(odd) .headbox_case h2 {
         flex: unset;
     max-width: 100%;
     }
+    .four_post_bottom_banner .item{
+        height: auto !important;
+    }
+    .four_post_bottom_banner .item .ct p {
+         height: 115px !important;
+    }
+    .customNavigation{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -3341,13 +3363,6 @@ button.menu-btn.nav-open {
   transition: 0.5s;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
 
 .overlay a {
   padding: 8px;
@@ -3470,6 +3485,9 @@ button.menu-btn.nav-open {
 }
 section.lien-he-map {
     background: #fafafa;
+    z-index: 9999;
+    height: 100%;
+
 }
 .contact-form h3{
         line-height: 1.5;
@@ -3489,11 +3507,24 @@ section.lien-he-map {
     width: 100%;
     height: 470px;
 }
-@media (max-width: 992px){
+@media only screen and (max-width: 992px){
     .four_post_bottom_banner .item{
-        height: 467px !important;
+        height: 467px;
     }
     .four_post_bottom_banner .item .ct p{
-        height: 168px !important;
+        height: 168px ;
     }
+}
+@media (max-width: 480px){
+    header.fixed{
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    header.fixed{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+
 }

@@ -7,7 +7,6 @@
     <div class="owl-carousel owl-theme" id="slider-cutomer" >
 
 
-
         <?php $args = array( 'post_type' => 'customer_whatSaid','posts_per_page' => 10,'ignore_sticky_posts' => 1,   'orderby' => 'date','order' => 'DESC',     ); ?>
         <?php $getposts = new WP_query( $args);?>
         <?php global $wp_query; $wp_query->in_the_loop = true; ?>

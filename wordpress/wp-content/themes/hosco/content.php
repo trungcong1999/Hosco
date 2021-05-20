@@ -34,10 +34,8 @@
 <section class="group_case_study">
  <?php get_template_part('slider-product-tieu-bieu'); ?>
 </section>
-<section class="group_news h-posts">
+<section class="talk_cnv">
  <?php get_template_part('bao-tri'); ?>
-</div>
-</div>
 </section>
 <!-- slide -->
 <section class="cutomer_whatSaid">

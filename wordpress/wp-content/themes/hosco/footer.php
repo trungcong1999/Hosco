@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row col-mar-0 footer-lien-he"  id="lien-he">
             <div class="col-lg-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-               <?php 
-               if ( dynamic_sidebar('sidebar1') ) : else : endif; 
+             <?php 
+             if ( dynamic_sidebar('sidebar1') ) : else : endif; 
 
-               ?>
-               <div class="social_footer">
+             ?>
+             <div class="social_footer">
                 <a class="smooth f" target="_blank" href="https://www.facebook.com/" title=""><i class="fa fa-facebook"></i></a>
                 <a class="smooth f" target="_blank" href="https://www.facebook.com/groups/138659120889619/" title=""><i class="fa fa-facebook"></i></a>
                 <a class="smooth t" target="_blank" href="index.html" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -22,14 +22,14 @@
 
                 </div>
                 <div class="col-xl-auto col-md-4 wow " >
-                 <?php if ( dynamic_sidebar('menuProduct') ) : else : endif;  ?>
+                   <?php if ( dynamic_sidebar('menuProduct') ) : else : endif;  ?>
 
-             </div>
-             <div class="col-xl-auto col-md-4 wow ">
-                 <?php if ( dynamic_sidebar('trungtamhotro') ) : else : endif;  ?>
+               </div>
+               <div class="col-xl-auto col-md-4 wow ">
+                   <?php if ( dynamic_sidebar('trungtamhotro') ) : else : endif;  ?>
 
-             </div>
-             <div class="col-xl-auto col-md-4 wow hint-map">
+               </div>
+               <div class="col-xl-auto col-md-4 wow hint-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.718091697817!2d105.7807!3d21.018315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x403a93ceb1d3b663!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gSE9TQ08!5e0!3m2!1svi!2sus!4v1619300839967!5m2!1svi!2sus" width="600" height="450" style="border:0;width: 400px;height: 273px;margin-left: 205px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -40,55 +40,11 @@
 <div id="informationForm" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content trial-md-ct">
-            <button type="button" class="md-close" data-dismiss="modal"><i class="ic ic-close"></i></button>
-            <h2 class="title">Điền thông tin của bạn</h2>
-            <form method="POST" id="sheet-forms" action="index.html" class="form-horizontal form-validate" data-callback="reload_page" novalidate="novalidate">
-                <input type="hidden" name="url_full" value="https://hosco.vn/">
-                <div class="row col-mar-13">
-                    <div class="col-sm-12">
-                        <p>Họ và tên của bạn</p>
-                        <div class="input">
-                            <i class="ic ic-user"></i>
-                            <input required="" type="text" name="name">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>Số điện thoại</p>
-                        <div class="input">
-                            <i class="ic ic-phone"></i>
-                            <input required="" type="text" class="numberic" name="phone">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>Email đăng ký</p>
-                        <div class="input">
-                            <i class="ic ic-email"></i>
-                            <input type="text" name="email" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Ngành nghề</p>
-                        <div class="input">
-                            <input style="padding-left: 15px;" required="" type="text" name="job">
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Mã giảm giá</p>
-                        <div class="input">
-                            <input style="padding-left: 15px;" type="text" name="voucher">
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <p>Nội dung</p>
-                        <div class="input">
-                            <textarea class="form-control" name="messages"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center"><button type="submit" class="smooth">Đăng ký</button></div>
-            </form>
-        </div>
-    </div>
+
+           <?php if ( dynamic_sidebar('formTuVan') ) : else : endif;  ?>
+
+       </div>
+   </div>
 </div>
 <div id="price_quote" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -147,7 +103,7 @@
 </div>
 <div class="fix-toolbar social-mobile">
     <ul>
-     <li class="facebook fb-pc">
+       <li class="facebook fb-pc">
         <a target="_blank" id="chatfb" href="https://www.facebook.com/" title="title" rel="noopener noreferrer">
           <img class="lazy" src="<?php bloginfo("template_directory"); ?>/themes/default/images/social/facebook.png" alt="images"><br> <span>Facebook</span>
       </li>
@@ -184,6 +140,7 @@
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/lib/isotope/isotope.pkgd.min.js"></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/lib/lightbox/js/lightbox.min.js"></script>
 <script src="<?php bloginfo("template_directory"); ?>/themes/default/lib/main.js"></script>
+
 <script>
     /*! jQuery & Zepto Lazy v1.7.10 - http://jquery.eisbehr.de/lazy - MIT&GPL-2.0 license - Copyright 2012-2018 Daniel 'Eisbehr' Kern */
     !function(t,e){"use strict";function r(r,a,i,u,l){function f(){L=t.devicePixelRatio>1,i=c(i),a.delay>=0&&setTimeout(function(){s(!0)},a.delay),(a.delay<0||a.combined)&&(u.e=v(a.throttle,function(t){"resize"===t.type&&(w=B=-1),s(t.all)}),u.a=function(t){t=c(t),i.push.apply(i,t)},u.g=function(){return i=n(i).filter(function(){return!n(this).data(a.loadedName)})},u.f=function(t){for(var e=0;e<t.length;e++){var r=i.filter(function(){return this===t[e]});r.length&&s(!1,r)}},s(),n(a.appendScroll).on("scroll."+l+" resize."+l,u.e))}function c(t){var i=a.defaultImage,o=a.placeholder,u=a.imageBase,l=a.srcsetAttribute,f=a.loaderAttribute,c=a._f||{};t=n(t).filter(function(){var t=n(this),r=m(this);return!t.data(a.handledName)&&(t.attr(a.attribute)||t.attr(l)||t.attr(f)||c[r]!==e)}).data("plugin_"+a.name,r);for(var s=0,d=t.length;s<d;s++){var A=n(t[s]),g=m(t[s]),h=A.attr(a.imageBaseAttribute)||u;g===N&&h&&A.attr(l)&&A.attr(l,b(A.attr(l),h)),c[g]===e||A.attr(f)||A.attr(f,c[g]),g===N&&i&&!A.attr(E)?A.attr(E,i):g===N||!o||A.css(O)&&"none"!==A.css(O)||A.css(O,"url('"+o+"')")}return t}function s(t,e){if(!i.length)return void(a.autoDestroy&&r.destroy());for(var o=e||i,u=!1,l=a.imageBase||"",f=a.srcsetAttribute,c=a.handledName,s=0;s<o.length;s++)if(t||e||A(o[s])){var g=n(o[s]),h=m(o[s]),b=g.attr(a.attribute),v=g.attr(a.imageBaseAttribute)||l,p=g.attr(a.loaderAttribute);g.data(c)||a.visibleOnly&&!g.is(":visible")||!((b||g.attr(f))&&(h===N&&(v+b!==g.attr(E)||g.attr(f)!==g.attr(F))||h!==N&&v+b!==g.css(O))||p)||(u=!0,g.data(c,!0),d(g,h,v,p))}u&&(i=n(i).filter(function(){return!n(this).data(c)}))}function d(t,e,r,i){++z;var o=function(){y("onError",t),p(),o=n.noop};y("beforeLoad",t);var u=a.attribute,l=a.srcsetAttribute,f=a.sizesAttribute,c=a.retinaAttribute,s=a.removeAttribute,d=a.loadedName,A=t.attr(c);if(i){var g=function(){s&&t.removeAttr(a.loaderAttribute),t.data(d,!0),y(T,t),setTimeout(p,1),g=n.noop};t.off(I).one(I,o).one(D,g),y(i,t,function(e){e?(t.off(D),g()):(t.off(I),o())})||t.trigger(I)}else{var h=n(new Image);h.one(I,o).one(D,function(){t.hide(),e===N?t.attr(C,h.attr(C)).attr(F,h.attr(F)).attr(E,h.attr(E)):t.css(O,"url('"+h.attr(E)+"')"),t[a.effect](a.effectTime),s&&(t.removeAttr(u+" "+l+" "+c+" "+a.imageBaseAttribute),f!==C&&t.removeAttr(f)),t.data(d,!0),y(T,t),h.remove(),p()});var m=(L&&A?A:t.attr(u))||"";h.attr(C,t.attr(f)).attr(F,t.attr(l)).attr(E,m?r+m:null),h.complete&&h.trigger(D)}}function A(t){var e=t.getBoundingClientRect(),r=a.scrollDirection,n=a.threshold,i=h()+n>e.top&&-n<e.bottom,o=g()+n>e.left&&-n<e.right;return"vertical"===r?i:"horizontal"===r?o:i&&o}function g(){return w>=0?w:w=n(t).width()}function h(){return B>=0?B:B=n(t).height()}function m(t){return t.tagName.toLowerCase()}function b(t,e){if(e){var r=t.split(",");t="";for(var a=0,n=r.length;a<n;a++)t+=e+r[a].trim()+(a!==n-1?",":"")}return t}function v(t,e){var n,i=0;return function(o,u){function l(){i=+new Date,e.call(r,o)}var f=+new Date-i;n&&clearTimeout(n),f>t||!a.enableThrottle||u?l():n=setTimeout(l,t-f)}}function p(){--z,i.length||z||y("onFinishedAll")}function y(t,e,n){return!!(t=a[t])&&(t.apply(r,[].slice.call(arguments,1)),!0)}var z=0,w=-1,B=-1,L=!1,T="afterLoad",D="load",I="error",N="img",E="src",F="srcset",C="sizes",O="background-image";"event"===a.bind||o?f():n(t).on(D+"."+l,f)}function a(a,o){var u=this,l=n.extend({},u.config,o),f={},c=l.name+"-"+ ++i;return u.config=function(t,r){return r===e?l[t]:(l[t]=r,u)},u.addItems=function(t){return f.a&&f.a("string"===n.type(t)?n(t):t),u},u.getItems=function(){return f.g?f.g():{}},u.update=function(t){return f.e&&f.e({},!t),u},u.force=function(t){return f.f&&f.f("string"===n.type(t)?n(t):t),u},u.loadAll=function(){return f.e&&f.e({all:!0},!0),u},u.destroy=function(){return n(l.appendScroll).off("."+c,f.e),n(t).off("."+c),f={},e},r(u,l,a,f,c),l.chainable?a:u}var n=t.jQuery||t.Zepto,i=0,o=!1;n.fn.Lazy=n.fn.lazy=function(t){return new a(this,t)},n.Lazy=n.lazy=function(t,r,i){if(n.isFunction(r)&&(i=r,r=[]),n.isFunction(i)){t=n.isArray(t)?t:[t],r=n.isArray(r)?r:[r];for(var o=a.prototype.config,u=o._f||(o._f={}),l=0,f=t.length;l<f;l++)(o[t[l]]===e||n.isFunction(o[t[l]]))&&(o[t[l]]=i);for(var c=0,s=r.length;c<s;c++)u[r[c]]=t[0]}},a.prototype.config={name:"lazy",chainable:!0,autoDestroy:!0,bind:"load",threshold:500,visibleOnly:!1,appendScroll:t,scrollDirection:"both",imageBase:null,defaultImage:"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",placeholder:null,delay:-1,combined:!1,attribute:"data-src",srcsetAttribute:"data-srcset",sizesAttribute:"data-sizes",retinaAttribute:"data-retina",loaderAttribute:"data-loader",imageBaseAttribute:"data-imagebase",removeAttribute:!0,handledName:"handled",loadedName:"loaded",effect:"show",effectTime:0,enableThrottle:!0,throttle:250,beforeLoad:e,afterLoad:e,onError:e,onFinishedAll:e},n(t).on("load",function(){o=!0})}(window);
@@ -293,99 +250,83 @@
 <script>
   $(document).ready(function(){
       $(window).on('scroll',function(){
-       var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-       if( windowWidth <= 991 ) {
-        var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-        if(scrollBottom <= 100){
-            $('.fix-toolbar').css({
-                position: 'relative'
+         var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+         if( windowWidth <= 991 ) {
+            var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+            if(scrollBottom <= 100){
+                $('.fix-toolbar').css({
+                    position: 'relative'
+                });
+            }else if(scrollBottom >= 110 ){
+             $('.fix-toolbar').css({
+                position: 'fixed'
             });
-        }else if(scrollBottom >= 110 ){
-           $('.fix-toolbar').css({
-            position: 'fixed'
-        });
-       }
-   }
-});
+         }
+     }
+ });
   });
 </script>
 <script type="text/javascript">jssor_1_slider_init();</script>
-<script src="<?php bloginfo("template_directory"); ?>/assets/owl-carousel/owl.carousel.js"></script>
+<script src="<?php bloginfo("template_directory"); ?>/themes/default/js/owl.carousel.js"></script>
 <script>
- $(document).ready(function() {
-  $("#slider-cutomer").owlCarousel({
-    center:true,
-      pagination:true,
-      items:3,
-      responsiveClass:true,
-      responsive:{
+   $(document).ready(function() {
+    var owl = $('#slider-cutomer');
+       owl.owlCarousel({
+        items: 2,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:6000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+    responsive:{
         0:{
             items:1,
-            nav:true
         },
         600:{
-            items:5,
-            nav:false
+            items:2,
         },
         1000:{
-            items:10,
-            nav:true,
-            loop:false
+            items:3,
+            loop:true
         }
     }
-});
-  $("#slider-product").owlCarousel({
-
-      center:true,
-      pagination:true,
-      items:3,
-      responsiveClass:true,
-      responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:5,
-            nav:false
-        },
-        1000:{
-            items:10,
-            nav:true,
-            loop:false
+        
+    });
+      $("#slider-product").owlCarousel({
+          center:true,
+          pagination:true,
+          items:3,
+          autoplay:true,
+        autoplayTimeout:6000,
+        autoplayHoverPause:true,
+          responsiveClass:true,
+          responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:3,
+                loop:true
+            }
         }
-    }
 
 
-});
-  $(".next").click(function(){
-    $(".owl-carousel").trigger('owl.next');
-});
-  $(".prev").click(function(){
-    $(".owl-carousel").trigger('owl.prev');
-});
-  $(".play").click(function(){
-    $(".owl-carousel").trigger('owl.play',1000);
-});
-  $(".stop").click(function(){
-    $(".owl-carousel").trigger('owl.stop');
-});
-  $("#owl-demo").owlCarousel({
+    });
+      
+      $("#owl-demo").owlCarousel({
+          slideSpeed : 300,
+          paginationSpeed : 400,
+            items:1
 
-      slideSpeed : 300,
-      // paginationSpeed : 400,
-      singleItem : true,
-      autoplay:true,
-      autoplayTimeout: 1000,
-      autoplayHoverPause: true,
-      center:true,
-      pagination:false
+      });
       
 
-  });
-  $("#owl-demo").trigger('owl.play',3000);
 
-});
+  });
 </script>
 <script type="text/javascript">
   $(".show-swap ul li").click(function(){
@@ -429,18 +370,18 @@
     });
 </script>
 <script type="text/javascript">
- let tab1 = document.querySelector("#tab1");
- let tab2 = document.querySelector("#tab2");
- let tabs = document.querySelectorAll(".tab-hosco");
- let content = document.querySelectorAll(".content");
+   let tab1 = document.querySelector("#tab1");
+   let tab2 = document.querySelector("#tab2");
+   let tabs = document.querySelectorAll(".tab-hosco");
+   let content = document.querySelectorAll(".content");
 
- tab1.onclick = () => {
-  if (tab1.checked) {
-    content[0].style.display = "block";
-    content[1].style.display = "none";
-    tabs[0].classList.add("c-active");
-    tabs[1].classList.remove("c-active");
-}
+   tab1.onclick = () => {
+      if (tab1.checked) {
+        content[0].style.display = "block";
+        content[1].style.display = "none";
+        tabs[0].classList.add("c-active");
+        tabs[1].classList.remove("c-active");
+    }
 };
 
 tab2.onclick = () => {

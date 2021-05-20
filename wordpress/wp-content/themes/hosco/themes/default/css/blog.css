@@ -280,54 +280,182 @@
     padding-top: 32px;
   }
   /*-------------ve hosco viet o day---------------*/
-  .background-hosco{
-    padding: 0 !important;
-    margin-bottom: 0;
+  .itemCultural {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
   }
-  .image-hosco{
-    margin: 0 !important;
+  .itemCultural:nth-child(odd) .colT {
+    order: 2;
   }
-  .image-hosco img{
-    height: auto;
+  .itemCultural > div {
+    width: 50%;
   }
+  .itemCultural .decsA {
+    padding: 20px 80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: 1600px){
+    .itemCultural .decsA {
+      padding: 20px 130px 20px 50px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  @media (min-width: 1600px){
+    .itemCultural:nth-child(odd) .decsA {
+      padding: 20px 50px 20px 130px;
+    }
+    .itemCultural .decsA h3 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+    .theUlAll {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .menuTab .wrapper {
+    padding: 0 130px;
+  }
+  .menuTab ul li a {
+    font-size: 18px;
+    line-height: 27px;
+}
 
-  .text-mb-right{
-
   }
-  @media (min-width: 600px) and (max-width: 781px){
-    .wp-block-column:not(:only-child) {
-      flex-basis: 0;
-      flex-grow: none;
-      text-align: center;
-    }
-    .wp-block-column:nth-child(2n) {
-      margin-left: 0;
-    }
-    .image-hosco img{
-      width: 100%;
-    }
-    .wp-block-columns{
-      display: block;
-    }
+  .itemCultural .decsA h3 {
+    color: #064d92;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
-
-  @media (max-width: 768px){
-    .addd .col-md-6 {
-      flex: unset;
-      max-width: 100%;
-    }
+  .theUlAll {
+    font-size: 16px;
+    line-height: 24px;
   }
-  @media (max-width: 375px){
-    .addd .col-md-6 {
-      padding: 0 !important;
-    }
-    .icon.d-flex.align-items-center.justify-content-center,.icon.d-flex.align-items-center.justify-content-center span{
-      display: none !important;
-    }
-    .dbox.w-100.d-flex.align-items-start{
-
-    }
-    .wpb_wrapper p{
-      text-align: center;
-    }
+  .theUlAll li, .the-content li {
+    margin-bottom: 10px;
+    padding-left: 26px !important;
+    position: relative;
   }
+  .theUlAll li {
+    padding-left: 15px;
+  }
+  .theUlAll li::before, .the-content li::before {
+    content: '';
+    width: 14px;
+    height: 12px;
+    background: url(https://www.datxanh.vn/template/tint/images/icon-bullets.svg) no-repeat left top;
+    background-size: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
+  .menuTab {
+    margin-top: 30px;
+    background-color: #fff;
+  }
+  .menuTab .wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+  .menuTab .select-j {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.menuTab .select-j .title {
+    display: none;
+}
+.menuTab ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuTab ul li {
+    margin: 0 25px;
+    position: relative;
+}
+.menuTab ul li a {
+    display: block;
+    padding: 15px 0px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 500;
+    color: #666666;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.menuTab ul li.current a {
+    color: #0066b3;
+}
+.menuTab ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    background-color: #27b3ee;
+    left: 0;
+    width: 0%;
+}
+.menuTab ul li.current a::before {
+    width: 100%;
+}
+.menuTab ul li a::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #27b3ee;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.menuTab ul li.current a::after {
+    bottom: 0px;
+    opacity: 1;
+}
+.vntTitleLine {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+.vntTitleLine::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 61px;
+    height: 4px;
+    background-color: #26b3ef;
+}
+.vntTitleLine::before {
+    background-color: #26b3ef;
+}
+.vntTitleLine h2 {
+    font-size: 33px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #0066b3;
+}
+.content-hosco {
+    margin-top: 35px;
+}

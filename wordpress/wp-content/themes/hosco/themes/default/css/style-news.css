@@ -453,13 +453,15 @@ ul.page-numbers li a:hover {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 }
-
-.content {
+.container.contact-form{
+	height: 100%;
+}
+.contentlienhe {
 	display: none;
 	background: #fff;
 }
 
-.content:nth-child(1) {
+.contentlienhe:nth-child(1) {
 	display: block;
 }
 .icon.d-flex.align-items-center.justify-content-center {
@@ -467,4 +469,7 @@ ul.page-numbers li a:hover {
     height: 50px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.form-control {
+    border: 1px solid #ccc;
 }

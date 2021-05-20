@@ -220,12 +220,17 @@
                 <div class="content">
                   <ul>
                     <li><a href="#">
-                      <p class="imagea">
+                      <span class="row">
+                        <span class="col-md-4">
+                           <p class="imagea">
                         <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-post-02.jpg" alt="">
                       </p>
-                      <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
-                      <span>May 31, 2020</span>
-                    </a></li>
+                        </span>
+                        <span class="col-md-8">
+                           <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
+                      <span>May 28, 2020</span>
+                        </span>
+                      </span>                    </a></li>
                     <li><a href="#">
                       <p class="imagea">
                         <img src="https://bahanto.net/wp-content/uploads/2021/05/blog-post-02.jpg" alt="">

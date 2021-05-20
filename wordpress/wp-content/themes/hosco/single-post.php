@@ -24,7 +24,7 @@
             <div class="col-lg-12">
               <div class="blog-post">
                 <div class="blog-thumb">
-                  <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" alt="">
+                  <img src="<?php echo get_post_meta( $post->ID, 'aw_custom_image', true );?>" alt="">
                 </div>
                 <div class="down-content">
                   
